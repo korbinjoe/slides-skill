@@ -2,6 +2,10 @@
 
 Professional presentation slides as self-contained HTML. No dependencies, no build step — open in any browser, present anywhere.
 
+[![Multi-Agent Orchestration](./assets/preview.png)](https://korbinjoe.github.io/slides-skill/multi-agent-orchestration.html)
+
+[View Live Demo](https://korbinjoe.github.io/slides-skill/multi-agent-orchestration.html)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Install
