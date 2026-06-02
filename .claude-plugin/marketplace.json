@@ -1,0 +1,18 @@
+{
+  "name": "slides-skill",
+  "owner": {
+    "name": "OpenTeam"
+  },
+  "metadata": {
+    "description": "Create stunning presentation slides as self-contained HTML",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "slides",
+      "source": ".",
+      "description": "Professional HTML presentation generator with 12 themes, 19 slide types, speaker notes, and keyboard navigation. No dependencies, no build step.",
+      "version": "1.0.0"
+    }
+  ]
+}

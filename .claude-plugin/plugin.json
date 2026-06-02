@@ -1,0 +1,19 @@
+{
+  "name": "slides",
+  "description": "Create stunning presentation slides as self-contained HTML. 12 themes, 19 slide types, speaker notes built in.",
+  "version": "1.0.0",
+  "author": {
+    "name": "OpenTeam"
+  },
+  "repository": "https://github.com/korbinjoe/slides-skill",
+  "license": "MIT",
+  "keywords": [
+    "slides",
+    "presentation",
+    "deck",
+    "keynote",
+    "html-slides",
+    "claude-code",
+    "agent-skills"
+  ]
+}
