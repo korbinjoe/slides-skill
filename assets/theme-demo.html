@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Theme Demo Deck</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link id="fontLink" rel="stylesheet">
@@ -727,12 +728,12 @@ document.getElementById("themeVars").textContent = `${themeVars(item)}
 }`;
 document.body.classList.add(`frame-${item.frame}`);
 
-function renderSlide(s, i, total, kind) {
+function renderSlide(s, i, total, themeLabel) {
   const cls = i === 0 ? "slide cover active" : "slide" + (s.type === "end" ? " end" : "") + (s.type === "section" ? " section-divider" : "") + (s.type === "big-number" ? " big-number" : "");
   switch (s.type) {
     case "cover":
       return `<section class="${cls}" data-slide-type="cover" data-rhythm="anchor">
-        <div class="label">${kind} · Full Demo</div>
+        <div class="label">${themeLabel} · Full Demo</div>
         <h1>${s.title || item.name}</h1>
         <p class="subtitle">${s.subtitle || item.desc}</p>
         ${s.info ? `<p class="subtitle" style="font-size:16px;margin-top:8px;color:var(--text-3)">${s.info}</p>` : ""}
@@ -824,7 +825,7 @@ function renderSlide(s, i, total, kind) {
       return `<section class="${cls}" data-slide-type="end" data-rhythm="breath">
         <div class="quote">
           <p>${s.text || s.heading || ""}</p>
-          <span>${item.name} · ${kind} · ${item.mode} mode</span>
+          <span>${item.name} · ${item.mode} mode</span>
         </div>
         <div class="mini-note">Use ← →, Space, F, T, and N while reviewing.</div>
       </section>`;
@@ -838,11 +839,11 @@ function renderSlide(s, i, total, kind) {
 }
 
 function slideMarkup() {
-  const kind = item.kind === "core" ? "Core Theme" : `${item.kind[0].toUpperCase()}${item.kind.slice(1)} Preset`;
+  const themeLabel = "Theme";
   const dc = item.demoContent;
 
   if (dc?.slides) {
-    return dc.slides.map((s, i) => renderSlide(s, i, dc.slides.length, kind)).join("\n");
+    return dc.slides.map((s, i) => renderSlide(s, i, dc.slides.length, themeLabel)).join("\n");
   }
 
   const cardsLabel = dc?.cardsLabel || "System Check";
@@ -876,12 +877,12 @@ function slideMarkup() {
   ];
   const quote = dc?.quote || "Pick the style that makes the argument easier to believe.";
 
-  return renderSlide({ type: "cover" }, 0, 6, kind)
-    + renderSlide({ type: "cards", label: cardsLabel, heading: cardsHeading, items: cards }, 1, 6, kind)
-    + renderSlide({ type: "stats", label: cardsLabel, heading: statsHeading, desc: statsDesc, items: stats }, 2, 6, kind)
-    + renderSlide({ type: "flow", heading: stepsHeading, steps }, 3, 6, kind)
-    + renderSlide({ type: "bars", label: "Signal Mix", heading: barsHeading, desc: barsDesc, items: bars }, 4, 6, kind)
-    + renderSlide({ type: "end", text: quote }, 5, 6, kind);
+  return renderSlide({ type: "cover" }, 0, 6, themeLabel)
+    + renderSlide({ type: "cards", label: cardsLabel, heading: cardsHeading, items: cards }, 1, 6, themeLabel)
+    + renderSlide({ type: "stats", label: cardsLabel, heading: statsHeading, desc: statsDesc, items: stats }, 2, 6, themeLabel)
+    + renderSlide({ type: "flow", heading: stepsHeading, steps }, 3, 6, themeLabel)
+    + renderSlide({ type: "bars", label: "Signal Mix", heading: barsHeading, desc: barsDesc, items: bars }, 4, 6, themeLabel)
+    + renderSlide({ type: "end", text: quote }, 5, 6, themeLabel);
 }
 
 deck.innerHTML = slideMarkup();

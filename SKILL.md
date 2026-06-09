@@ -5,13 +5,23 @@ description: >
   Use when users want to make slides, presentations, decks, pitch decks, keynotes,
   or any kind of slideshow. Also applies to "make me a presentation about...",
   "create slides for my talk", "I need to present X", "help me prepare a deck".
-  Proactively use this skill when the user mentions presentations, talks, sharing sessions,
-  team demos, or conference speaking — even if they don't say "slides" explicitly.
+  Proactively use when the user mentions presentation slides, talks, keynotes,
+  or conference speaking — even if they don't say "slides" explicitly.
+  Do not use for live code demos, app prototypes, or editable PPTX/Google Slides exports.
 ---
 
 # Slides
 
 Create stunning presentation decks as single self-contained HTML files. No dependencies, no build step — open in any browser, present anywhere.
+
+Reference example: `examples/multi-agent-orchestration.html`
+
+## When NOT to Use
+
+- User needs `.pptx`, Google Slides, or Keynote — this skill outputs browser HTML only
+- User wants a live code demo or runnable app, not a slide deck
+- User needs complex animations, embedded video, or collaborative editing
+- Primary deliverable is print/PDF layout rather than 1280×720 screen presentation
 
 ## Design Philosophy
 
@@ -25,34 +35,85 @@ This is not PowerPoint-as-HTML. These are **developer-grade presentations** with
 
 ## Workflow
 
-### 1. Choose a Theme or Style Preset (MUST be first)
+### 1. Choose a Theme (MUST be first)
 
-**This step is mandatory and comes before anything else.** Open `assets/theme-sampler.html` in the browser so the user can see all visual directions as high-fidelity preview cards:
+**This step is mandatory and comes before anything else.** The user must confirm one of **50 themes** from the sampler — do not auto-select.
+
+**Primary path (works in all agent environments):**
+
+1. Share the live sampler: https://korbinjoe.github.io/slides-skill/
+2. Ask the user to pick a theme by name or slug (e.g. "Obsidian", `ember`, `swiss-grid`)
+3. Optionally link a playable demo: `https://korbinjoe.github.io/slides-skill/assets/theme-demo.html?style=<slug>`
+
+**Local path (when the user is on a machine with a browser):**
 
 ```bash
 open assets/theme-sampler.html
 ```
 
-The sampler includes:
-- 12 core themes from `references/themes.md`
-- Brand / layout / deck presets and example styles adapted from `ppt-master` in `references/style-presets.md`
+All 50 themes are equal choices in the sampler — filter by light/dark or tags, not by category. Slugs are listed in `references/theme-slugs.md`.
 
-The sampler shows each option with identical neutral content for fast comparison. Clicking any card opens `assets/theme-demo.html?style=<slug>` in a new page with a full 6-slide playable demo deck, including navigation, fullscreen, timer, and speaker notes.
+CSS and composition details live in:
+- `references/themes.md` — 12 foundational themes (also `kind: core` in `theme-data.js`)
+- `references/style-presets.md` — 17 themes adapted from `ppt-master` with full `:root` docs (`kind: brand`, `layout`, or `deck`)
+- `assets/theme-data.js` — all 50 themes; sole source for 21 expressive themes (`kind: example`) and for `layoutDNA` by internal `kind`
 
-Then ask the user to pick one. **Do NOT auto-select a theme. Do NOT skip this step.** Even if the user's request implies urgency, the theme choice takes 5 seconds and affects the entire deck.
+The sampler shows each theme with neutral preview content. Clicking any card opens `assets/theme-demo.html?style=<slug>` — a full playable demo deck.
 
-**Anti-AI theme selection**: NEVER recommend a theme based on topic keywords. "AI topic → purple/neon" is the same cliché as "finance → green" or "healthcare → blue." If the user asks "which fits my topic," recommend based on *presentation context* (formal → Paper/Ink, high-energy → Ember, minimal → Mono) not the topic's semantic field.
+**Do NOT auto-select a theme. Do NOT skip this step.**
 
-After the user picks:
-- Core theme: read `references/themes.md`
-- Brand / layout / deck / example preset: read `references/style-presets.md`
+**Anti-AI theme selection**: NEVER recommend a theme based on topic keywords. If the user asks "which fits my topic," recommend based on *presentation context* (formal → Paper/Ink, high-energy → Ember, minimal → Mono) not the topic's semantic field.
 
-Use the exact CSS `:root` variables, Google Fonts URL, `font-family`, and layout DNA for that option. Fill these into the template placeholders:
-- `{{FONT_URL}}` — the Google Fonts `<link>` URL
+After the user picks, resolve CSS from the theme's entry in `theme-data.js` (`previews[]`, match by `name` or `slug`). Use the reference file when one exists:
+
+| Internal `kind` | Reference file | What to extract |
+|-----------------|----------------|-----------------|
+| `core` | `references/themes.md` | Font URL, font family, full `:root` block |
+| `brand`, `layout`, `deck` | `references/style-presets.md` | Font URL, font family, full `:root` block, Layout DNA |
+| `example` | `assets/theme-data.js` only | `vars`, `desc`, `frame`, `tags` → build `:root` (see below) |
+
+Always read `desc`, `frame`, and apply **composition rules** from internal `kind` via `layoutDNA` in `theme-data.js`:
+
+- **`core`** — standard slide library; palette and typography carry the personality
+- **`brand`** — identity only: colors, type, icon tone; keep layouts content-driven
+- **`layout`** — page framing, density, and rhythm; not a real organization brand
+- **`deck`** — full visual direction: identity + framing + section rhythm
+- **`example`** — expressive reference style; preserve material cues and density rules
+
+Fill template placeholders:
+- `{{FONT_URL}}` — the Google Fonts `<link>` URL. Omit the entire `<link>` tag when the preset uses system or CJK fonts only (Georgia, KaiTi, Arial, Noto Sans SC). The validator will emit a WARNING for missing `fonts.googleapis.com`; that is expected and acceptable for system/CJK-only presets.
 - `{{FONT_FAMILY}}` — the `font-family` CSS value (including fallbacks)
 - `{{THEME_VARS}}` — the complete `:root { ... }` CSS block
 
 **Light theme note**: For light themes and presets, some inline styles need adjustment — see the notes in themes.md and style-presets.md for `.compare-side.old` backgrounds, badge/tag backgrounds, and notes panel colors.
+
+#### Resolving Theme CSS
+
+**Themes with docs in `themes.md` or `style-presets.md`** — copy the documented `:root` block verbatim.
+
+**Themes documented only in `theme-data.js`** (`kind: example`) — build placeholders from the matching `previews[]` entry:
+
+```css
+:root {
+  --bg: {vars.bg};
+  --surface: {vars.surface};
+  --border: {vars.border};
+  --text: {vars.text};
+  --text-2: {vars.text2};
+  --text-3: {vars.text3};
+  --accent: {vars.accent};
+  --accent-dim: rgba({accent RGB}, 0.10);   /* derive from vars.accent when hex */
+  --mono: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+}
+```
+
+Also read from the same entry:
+- `desc` — treat as Layout DNA (material cues, density, typography attitude)
+- `frame` — decorative framing hint (`brutalist`, `glass`, `swiss`, `tech`, `academic`, etc.)
+- `tags` — mode and use-case hints
+- optional `vars.accent2`, `vars.accent3`, `vars.radius`, `vars.titleCase` — use when the deck needs secondary accents or sharp-corner / uppercase title treatment
+
+For `{{FONT_FAMILY}}`, use `vars.font`. For `{{FONT_URL}}`, map the primary face to Google Fonts when applicable; omit the tag when the preset uses system or CJK fonts only.
 
 ### 2. Understand the Presentation
 
@@ -84,10 +145,13 @@ Common narrative structures:
 
 ### 4. Lock the Deck Contract
 
-Read `references/deck-contract.md`. Before writing HTML, create a compact `deck_plan.md` and `deck_lock.json` for the deck in the output directory or alongside the final HTML.
+Read `references/deck-contract.md`. Before writing HTML, create planning artifacts alongside the final HTML (same directory):
 
-The contract is mandatory because it prevents drift between narrative, theme, slide types, pacing, and speaker notes. `deck_lock.json` MUST include:
-- Chosen theme, canvas size, and font family
+- **`deck_lock.json`** (required) — machine-readable contract; content is embedded into the HTML
+- **`deck_plan.md`** (recommended) — human-readable outline for review; may be deleted after delivery
+
+The contract prevents drift between narrative, theme, slide types, pacing, and speaker notes. `deck_lock.json` MUST include:
+- Chosen theme as a **sampler slug** (see `references/theme-slugs.md`), canvas size, and font family
 - One slide entry per final slide
 - Slide `type` and `rhythm` for every slide
 - Notes text or notes intent for every slide
@@ -107,7 +171,7 @@ Every slide element MUST declare:
 data-slide-type="..." data-rhythm="..."
 ```
 
-Use the allowed values from `references/deck-contract.md`. If a slide type is missing, the validator will infer it but this is treated as a warning and should be fixed.
+Use the allowed values from `references/deck-contract.md`. Missing `data-slide-type` or `data-rhythm` produces validator WARNINGs — fix them before delivery.
 
 ### 5. Build the Deck
 
@@ -135,23 +199,39 @@ After writing the HTML, run:
 
 ```bash
 python3 scripts/validate_deck.py <deck.html>
+python3 scripts/validate_deck.py <deck.html> --strict   # required before delivery
 ```
 
-Fix every `ERROR` before delivering. Resolve `WARNING`s when the fix improves clarity or reliability. Use `--strict` when preparing a demo or public example.
+**Delivery standard:** zero `ERROR`s and zero `WARNING`s under `--strict`.
 
-Validator-backed checks:
+The validator splits checks by severity:
+
+| Severity | Examples | Delivery rule |
+|----------|----------|---------------|
+| ERROR | Unresolved placeholders, slide/NOTES count mismatch, missing engine tokens, unknown type/rhythm | Must fix — deck fails even without `--strict` |
+| WARNING | Missing deck-lock, missing `data-slide-type`/`data-rhythm`, Anti-AI rhythm/label/callout rules, missing Google Fonts URL on system-font presets | Must fix before delivery (`--strict`) |
+
+Anti-AI rules (rhythm, labels, callouts, breath/hero) are enforced as WARNINGs by default. They are **MUST follow** design rules — treat `--strict` as the delivery gate, not optional polish.
+
+Checklist:
+
 ```
+ERRORs (must be zero):
 [ ] No unresolved template placeholders
 [ ] Exactly one active slide, and it is the first slide
 [ ] Speaker notes complete for every slide
 [ ] Slide count matches NOTES count and deck-lock count
-[ ] Font URL is present
 [ ] Hash navigation, keyboard navigation, notes, timer, and scaling code are present
 [ ] No unknown slide type or rhythm values
+
+WARNINGs (must be zero under --strict):
+[ ] deck-lock JSON embedded
+[ ] Every slide has data-slide-type and data-rhythm
+[ ] Google Fonts URL present, OR preset uses system/CJK fonts only (expected warning)
 [ ] Anti-AI: no two adjacent slides share the same layout type
-[ ] Anti-AI: labels used on <40% of slides, never on Statement/Quote/Big Number/End/Breath
+[ ] Anti-AI: labels on <40% of slides, never on Statement/Quote/Big Number/End/Breath
 [ ] Anti-AI: max 2 callout boxes in the entire deck
-[ ] Anti-AI: at least 1 Breath or Hero Image slide exists in decks with 8+ slides
+[ ] Anti-AI: at least 1 Breath or Hero Image slide in decks with 8+ slides
 ```
 
 Human visual checks still required:
@@ -196,7 +276,7 @@ Prefer inline SVG over text when showing:
 
 ### Anti-AI Rules (MUST follow)
 
-These rules prevent the deck from feeling machine-generated. Violating them is the #1 quality issue.
+These rules prevent the deck from feeling machine-generated. Violating them is the #1 quality issue. The validator enforces them under `--strict`.
 
 **Rhythm:**
 - Never use the same slide layout twice in a row
@@ -228,12 +308,17 @@ Always produce a **single .html file** that:
 - Works in any modern browser
 - Supports keyboard nav (←→), touch swipe, click, fullscreen (F), timer (T), notes (N)
 - Embeds `deck-lock` JSON and declares `data-slide-type` / `data-rhythm` on every slide
-- Passes `python3 scripts/validate_deck.py <deck.html>` with zero errors
+- Passes `python3 scripts/validate_deck.py <deck.html> --strict`
+
+Intermediate files (`deck_plan.md`, `deck_lock.json`) live alongside the HTML during generation. Only the `.html` is the user deliverable; planning files may be removed after validation passes.
 
 ## Customization
 
-The default dark theme works for most technical presentations. For other contexts:
+The default Obsidian theme works for most technical presentations. For other contexts, pick one of the **50 sampler themes** instead of improvising colors.
 
+- **Foundational themes** — 12 palette + typography combinations in `references/themes.md`
+- **Extended themes** — 38 additional directions; CSS in `references/style-presets.md` and/or `assets/theme-data.js`
+- **Slugs** — full list in `references/theme-slugs.md`
 - **Light theme**: Flip `--bg` to `#fafafa`, `--text` to `#1d1d1f`, adjust surface/border accordingly
 - **Brand colors**: Replace `--accent` with the brand's primary color
 - **Different fonts**: Change the Google Fonts import and `font-family` declarations

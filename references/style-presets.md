@@ -1,66 +1,68 @@
-# Style Presets
+# Extended Themes
 
-These presets adapt the `ppt-master` brand / layout / deck / example library for single-file HTML slides.
+These are **themes** in the sampler — same as the 12 foundational themes in `references/themes.md`, just adapted from the `ppt-master` library with richer institutional, editorial, and industry visual directions.
 
-Use them when the user wants a specific institutional style, industry deck style, government / enterprise presentation style, cultural editorial style, or a richer visual direction than the 12 core themes in `references/themes.md`.
+Use them when the user wants a specific brand identity, government/enterprise tone, cultural editorial look, or a fuller composition than a palette-only theme.
 
-Open `assets/theme-sampler.html` to preview them alongside the core themes.
+Open `assets/theme-sampler.html` to preview all 50 themes together.
 
 ## How To Use
 
-1. Let the user choose either a core theme or a style preset from the sampler.
-2. If they choose a style preset, use the CSS variables below instead of a core theme.
-3. Apply the preset's layout DNA while still using the normal HTML slide types and deck contract.
-4. Do not copy `ppt-master`'s SVG/PPTX workflow. These are visual-system presets for the HTML deck framework only.
+1. Let the user choose any theme from the sampler (all 50 are equal choices).
+2. Use the CSS variables below for themes documented here; use `assets/theme-data.js` for themes documented only there.
+3. Apply composition rules from the theme's internal `kind` (see Selection Rules) while using the normal HTML slide types and deck contract.
+4. Do not copy `ppt-master`'s SVG/PPTX workflow. These are visual-system themes for the HTML deck framework only.
 
-Each preset maps to the standard theme placeholders:
+Each theme maps to the standard template placeholders:
 
 - `{{FONT_URL}}`: use the listed Google Fonts URL or leave blank if using system/CJK fonts only.
 - `{{FONT_FAMILY}}`: use the listed font family.
 - `{{THEME_VARS}}`: use the listed `:root` block.
 
-## Selection Rules
+## Selection Rules (agent)
 
-- **Brand presets** set identity only. Keep structure free unless the user also asks for a layout direction.
-- **Layout presets** set composition, page framing, density, and rhythm. They do not imply a real organization brand.
-- **Deck presets** set both identity and structure. Use them when the user asks for a company / industry deck flavor.
-- **Example styles** adapt high-quality `ppt-master/examples/*/design_spec.md` decks into reusable visual directions. Use them when the user wants a distinctive editorial, cultural, technical, or experimental style without a real organization brand.
-- For enterprise, government, medical, university, finance, cultural, and editorial decks, prefer a style preset over generic color themes.
+Internal `kind` metadata controls composition — not shown in the sampler UI:
+
+- **`brand`** — identity only. Keep structure free unless the user also asks for a layout direction.
+- **`layout`** — composition, page framing, density, and rhythm. Does not imply a real organization brand.
+- **`deck`** — both identity and structure. Use when the user asks for a company / industry deck flavor.
+- **`example`** — expressive styles from `ppt-master` reference decks. Distinctive editorial/cultural/technical look without a real organization brand.
+- For enterprise, government, medical, university, finance, cultural, and editorial decks, prefer these themes over generic palette-only options.
 - Avoid keyword auto-matching. If unsure, show the sampler and ask the user to pick.
 
 ## Quick Reference
 
-| Preset | Kind | Mode | Best For |
+| Theme | Internal kind | Mode | Best For |
 |---|---|---|---|
-| Anthropic | Brand | Light | AI product, LLM research, technical training |
-| Google | Brand | Light | Product launches, developer events, ecosystem education |
-| Academic Defense | Layout | Light | Thesis defense, research progress, grant applications |
-| AI Ops | Layout | Light | Telecom AI operations, enterprise architecture, digital transformation |
-| Government Blue | Layout | Light | Policy briefings, Five-Year Plan, project reports |
-| Government Red | Layout | Light | Government reports, policy interpretation, official briefings |
-| Medical University | Layout | Light | Medical academic reports, hospital training, case discussion |
-| Pixel Retro | Layout | Dark | Programming tutorials, game talks, geek showcases |
-| Psychology Attachment | Layout | Light | Counseling lectures, psychology training, healing topics |
-| China Telecom | Deck | Light | Telecom /政企 digitalization, internal reporting |
-| POWERCHINA Classic | Deck | Light | Engineering proposals, annual summaries, business reports |
-| POWERCHINA Modern | Deck | Dark | Major engineering, international promotion, technology showcases |
-| CATARC Business | Deck | Dark | Automotive certification, high-end business reporting |
-| CATARC Classic | Deck | Light | Automotive evaluation, consulting-style reports |
-| CATARC Modern | Deck | Dark | Forward-looking automotive strategy, technology launches |
-| CMB Transaction Banking | Deck | Light | Finance products, transaction banking, client cases |
-| Chongqing University | Deck | Light | Academic defense, research reports, teaching presentations |
-| Brutalist Newspaper | Example | Light | Dense editorial reports, industry analysis, newspaper-style briefings |
-| Glassmorphism SaaS | Example | Dark | SaaS product stories, AI platforms, future-facing demos |
-| Swiss Grid | Example | Light | Design education, typographic lectures, minimalist cultural decks |
-| Sugar Rush Memphis | Example | Light | Pop culture, music/festival, energetic youth-facing presentations |
-| Risograph Zine | Example | Light | Indie publishing, art books, DIY cultural guides |
-| Kubernetes Blueprint | Example | Dark | DevOps, SRE, infrastructure and architecture talks |
-| Ink Wash Literati | Example | Light | Literary talks, philosophy, self-cultivation topics |
-| Plant Dye Poetry | Example | Light | Traditional craft, culture, museum/education decks |
-| Pritzker Editorial | Example | Light | Architecture and design magazine narratives |
-| Global AI Capital | Example | Dark | Finance/news infographics, AI market analysis |
-| Warm Home Editorial | Example | Dark | Interiors, home design trends, warm lifestyle decks |
-| Fashion Magazine | Example | Dark | Fashion, luxury, brand/editorial digest decks |
+| Anthropic | brand | Light | AI product, LLM research, technical training |
+| Google | brand | Light | Product launches, developer events, ecosystem education |
+| Academic Defense | layout | Light | Thesis defense, research progress, grant applications |
+| AI Ops | layout | Light | Telecom AI operations, enterprise architecture, digital transformation |
+| Government Blue | layout | Light | Policy briefings, Five-Year Plan, project reports |
+| Government Red | layout | Light | Government reports, policy interpretation, official briefings |
+| Medical University | layout | Light | Medical academic reports, hospital training, case discussion |
+| Pixel Retro | layout | Dark | Programming tutorials, game talks, geek showcases |
+| Psychology Attachment | layout | Light | Counseling lectures, psychology training, healing topics |
+| China Telecom | deck | Light | Telecom /政企 digitalization, internal reporting |
+| POWERCHINA Classic | deck | Light | Engineering proposals, annual summaries, business reports |
+| POWERCHINA Modern | deck | Dark | Major engineering, international promotion, technology showcases |
+| CATARC Business | deck | Dark | Automotive certification, high-end business reporting |
+| CATARC Classic | deck | Light | Automotive evaluation, consulting-style reports |
+| CATARC Modern | deck | Dark | Forward-looking automotive strategy, technology launches |
+| CMB Transaction Banking | deck | Light | Finance products, transaction banking, client cases |
+| Chongqing University | deck | Light | Academic defense, research reports, teaching presentations |
+| Brutalist Newspaper | example | Light | Dense editorial reports, industry analysis, newspaper-style briefings |
+| Glassmorphism SaaS | example | Dark | SaaS product stories, AI platforms, future-facing demos |
+| Swiss Grid | example | Light | Design education, typographic lectures, minimalist cultural decks |
+| Sugar Rush Memphis | example | Light | Pop culture, music/festival, energetic youth-facing presentations |
+| Risograph Zine | example | Light | Indie publishing, art books, DIY cultural guides |
+| Kubernetes Blueprint | example | Dark | DevOps, SRE, infrastructure and architecture talks |
+| Ink Wash Literati | example | Light | Literary talks, philosophy, self-cultivation topics |
+| Plant Dye Poetry | example | Light | Traditional craft, culture, museum/education decks |
+| Pritzker Editorial | example | Light | Architecture and design magazine narratives |
+| Global AI Capital | example | Dark | Finance/news infographics, AI market analysis |
+| Warm Home Editorial | example | Dark | Interiors, home design trends, warm lifestyle decks |
+| Fashion Magazine | example | Dark | Fashion, luxury, brand/editorial digest decks |
 
 ---
 

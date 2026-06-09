@@ -4,7 +4,7 @@ Design tokens and customization guide for the slides framework.
 
 ## Color Tokens
 
-> **12 core theme presets are defined in `references/themes.md`** — including Obsidian, Glacier, Paper, Ink, Ember, Forest, Neon, Mono, Dusk, Slate, Sand, and Crimson. Brand / layout / industry deck presets adapted from `ppt-master` are defined in `references/style-presets.md`. See those files for complete `:root` CSS blocks, font URLs, and usage guidance.
+> **50 themes** are defined in `assets/theme-data.js`. Twelve foundational themes with full `:root` blocks are in `references/themes.md` (Obsidian, Glacier, Paper, Ink, Ember, Forest, Neon, Mono, Dusk, Slate, Sand, Crimson). Extended themes adapted from `ppt-master` are in `references/style-presets.md`. See those files for complete CSS blocks, font URLs, and composition guidance.
 
 ### CSS Variable Reference
 

@@ -1,10 +1,8 @@
 # Theme Presets
 
-12 visual themes for slides. Each theme defines colors, typography, and mood.
+12 foundational themes for slides. Each defines colors, typography, and mood.
 
-Before building slides, present these options to the user and let them choose.
-
-For brand / layout / industry deck styles adapted from `ppt-master`, see `references/style-presets.md`.
+These are 12 of the **50 themes** in the sampler. For the full set — including enterprise, editorial, and industry themes from `ppt-master` — see `references/style-presets.md` and `assets/theme-data.js`.
 
 ---
 

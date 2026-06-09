@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir _site
           cp assets/theme-sampler.html _site/index.html
-          cp assets/theme-data.js assets/theme-demo.html _site/
+          cp assets/theme-data.js assets/theme-demo.html assets/favicon.svg _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -693,7 +693,9 @@ function fontUrl(item) {
 }
 
 function referencePath(item) {
-  return item.kind === "core" ? "references/themes.md" : "references/style-presets.md";
+  if (item.kind === "core") return "references/themes.md";
+  if (item.kind === "example") return "assets/theme-data.js";
+  return "references/style-presets.md";
 }
 
 const examplePreviews = {
@@ -721,7 +723,6 @@ const examplePreviews = {
 };
 
 function previewMarkup(item) {
-  const kind = item.kind === "core" ? "theme" : item.kind;
   const p = examplePreviews[item.name];
   const metrics = p ? p.metrics
     : item.kind === "core" ? [["93%", "Metric A"], ["2.4s", "Metric B"]]
@@ -730,7 +731,7 @@ function previewMarkup(item) {
 
   return `
     <div class="preview" data-frame="${item.frame}">
-      <div class="label">${kind} · ${String(item.index).padStart(2, "0")}</div>
+      <div class="label">${item.mode} · ${String(item.index).padStart(2, "0")}</div>
       <div class="title">${item.name}</div>
       <p class="sub">${item.desc}</p>
       <div class="mini-layout">

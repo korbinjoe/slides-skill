@@ -180,20 +180,20 @@ td:first-child { color: var(--text); font-weight: 500; }
 <div id="deck">
 
 <!-- Slide 1: Cover -->
-<div class="slide cover active">
+<div class="slide cover active" data-slide-type="cover" data-rhythm="anchor">
   <p style="font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-3); margin-bottom: 20px;">TECH SHARE · JUNE 2026</p>
   <h1>Multi-Agent<br>Orchestration</h1>
   <p style="margin-top: 12px; font-size: 20px; color: var(--text-2);">Patterns, frameworks & building AI systems that collaborate</p>
 </div>
 
 <!-- Slide 2: Statement -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="statement" data-rhythm="breath">
   <p style="font-size: 48px; font-weight: 700; line-height: 1.2; color: var(--text); letter-spacing: -1.5px; max-width: 18ch;">A single LLM call is a function.</p>
   <p style="margin-top: 20px; font-size: 48px; font-weight: 700; line-height: 1.2; color: var(--accent); letter-spacing: -1.5px; max-width: 20ch;">Multiple agents are a system.</p>
 </div>
 
 <!-- Slide 3: Two Column — Why Multi-Agent -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="two-column" data-rhythm="dense">
   <h3>Why Go Multi-Agent?</h3>
   <div class="two-col">
     <div class="block bordered">
@@ -218,7 +218,7 @@ td:first-child { color: var(--text); font-weight: 500; }
 </div>
 
 <!-- Slide 4: Diagram — Orchestration Topologies -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="diagram" data-rhythm="dense">
   <h3>Orchestration Topologies</h3>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 8px; width: 100%;">
     <svg viewBox="0 0 440 280" style="width: 100%;">
@@ -296,19 +296,19 @@ td:first-child { color: var(--text); font-weight: 500; }
 </div>
 
 <!-- Slide 5: Breath -->
-<div class="slide" style="align-items: center; justify-content: center;">
+<div class="slide breath" style="align-items: center; justify-content: center;" data-slide-type="breath" data-rhythm="breath">
   <p style="font-size: 36px; font-weight: 300; color: var(--text-3); letter-spacing: -1px;">So how do we actually build these?</p>
 </div>
 
 <!-- Slide 6: Section Intro -->
-<div class="slide section-intro">
+<div class="slide section-intro" data-slide-type="section-intro" data-rhythm="anchor">
   <div class="label">Part II · Frameworks</div>
   <h2>The Framework Landscape</h2>
   <p style="margin-top: 8px; font-size: 18px; color: var(--text-2);">Four philosophies for multi-agent systems</p>
 </div>
 
 <!-- Slide 7: Three Column Asymmetric — LangGraph -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="three-column" data-rhythm="dense">
   <h3>LangGraph</h3>
   <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; margin-top: 16px;">
     <div style="padding: 24px; background: var(--surface); border-radius: 10px; border-left: 3px solid var(--accent); grid-row: span 2;">
@@ -328,7 +328,7 @@ td:first-child { color: var(--text); font-weight: 500; }
 </div>
 
 <!-- Slide 8: Flow — CrewAI -->
-<div class="slide">
+<div class="slide" data-slide-type="flow" data-rhythm="dense">
   <h3>CrewAI: Role-Based Collaboration</h3>
   <div class="flow-visual">
     <div class="flow-step active-step">Define Roles</div>
@@ -351,7 +351,7 @@ td:first-child { color: var(--text); font-weight: 500; }
 </div>
 
 <!-- Slide 9: Code — OpenClaw -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="code" data-rhythm="dense">
   <h3>OpenClaw: Lightweight Agent Swarms</h3>
   <div class="mono" style="font-size: 14px; line-height: 1.7;"><span style="color: var(--accent);">from</span> openclaw <span style="color: var(--accent);">import</span> Agent, Swarm
 
@@ -373,7 +373,7 @@ result = swarm.run(<span style="color: #a5d6a7;">"Evaluate LLM scaling laws"</sp
 </div>
 
 <!-- Slide 10: Two Column Cards — Hermes Agent -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="two-column" data-rhythm="dense">
   <h3>Hermes Agent</h3>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; width: 100%;">
     <div style="padding: 24px; background: var(--surface); border-radius: 10px; border-top: 3px solid var(--accent);">
@@ -393,7 +393,7 @@ result = swarm.run(<span style="color: #a5d6a7;">"Evaluate LLM scaling laws"</sp
 </div>
 
 <!-- Slide 11: Table — Comparison -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="comparison" data-rhythm="dense">
   <h3>Framework Comparison</h3>
   <table style="margin-top: 12px;">
     <tr>
@@ -435,13 +435,13 @@ result = swarm.run(<span style="color: #a5d6a7;">"Evaluate LLM scaling laws"</sp
 </div>
 
 <!-- Slide 12: Breath -->
-<div class="slide" style="align-items: center; justify-content: center;">
+<div class="slide breath" style="align-items: center; justify-content: center;" data-slide-type="breath" data-rhythm="breath">
   <p style="font-size: 28px; font-weight: 400; color: var(--text-2);">Frameworks evolve. New ones appear every month.</p>
   <p style="font-size: 28px; font-weight: 700; color: var(--accent); margin-top: 8px;">Patterns are what survive.</p>
 </div>
 
 <!-- Slide 13: Layer Stack — Design Patterns -->
-<div class="slide">
+<div class="slide" data-slide-type="layer-stack" data-rhythm="dense">
   <h3>Multi-Agent Architecture Stack</h3>
   <div class="layer-stack">
     <div class="layer-item">
@@ -465,7 +465,7 @@ result = swarm.run(<span style="color: #a5d6a7;">"Evaluate LLM scaling laws"</sp
 </div>
 
 <!-- Slide 14: Four Grid Asymmetric — Pitfalls -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="four-grid" data-rhythm="dense">
   <h3>Pitfalls to Avoid</h3>
   <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 16px; margin-top: 16px;">
     <div style="grid-column: span 2; padding: 20px 24px; background: var(--accent-dim); border-radius: 10px; border-left: 3px solid var(--accent);">
@@ -484,7 +484,7 @@ result = swarm.run(<span style="color: #a5d6a7;">"Evaluate LLM scaling laws"</sp
 </div>
 
 <!-- Slide 15: Quote -->
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" style="align-items: flex-start;" data-slide-type="quote" data-rhythm="breath">
   <div class="quote-block">
     <p>"The best multi-agent system is the one with the fewest agents that still solves the problem."</p>
   </div>
@@ -492,11 +492,45 @@ result = swarm.run(<span style="color: #a5d6a7;">"Evaluate LLM scaling laws"</sp
 </div>
 
 <!-- Slide 16: End -->
-<div class="slide end-slide">
+<div class="slide end-slide" data-slide-type="end" data-rhythm="anchor">
   <h2>Start with one agent.<br>Add another when it hurts.<br><strong>That's orchestration.</strong></h2>
 </div>
 
 </div><!-- /deck -->
+
+<script type="application/json" id="deck-lock">
+{
+  "version": "1.0",
+  "title": "Multi-Agent Orchestration",
+  "theme": "slate",
+  "canvas": { "width": 1280, "height": 720 },
+  "font_family": "'Manrope', -apple-system, 'PingFang SC', 'Noto Sans SC', sans-serif",
+  "slides": [
+    { "id": "01", "type": "cover", "rhythm": "anchor", "title": "Multi-Agent Orchestration", "notes": "Welcome and set context." },
+    { "id": "02", "type": "statement", "rhythm": "breath", "title": "Function vs system", "notes": "Core framing shift." },
+    { "id": "03", "type": "two-column", "rhythm": "dense", "title": "Why Go Multi-Agent?", "notes": "Limits vs unlocks." },
+    { "id": "04", "type": "diagram", "rhythm": "dense", "title": "Orchestration Topologies", "notes": "Four topology patterns." },
+    { "id": "05", "type": "breath", "rhythm": "breath", "title": "Transition", "notes": "Pause before frameworks." },
+    { "id": "06", "type": "section-intro", "rhythm": "anchor", "title": "The Framework Landscape", "notes": "Part II opener." },
+    { "id": "07", "type": "three-column", "rhythm": "dense", "title": "LangGraph", "notes": "State graph engine." },
+    { "id": "08", "type": "flow", "rhythm": "dense", "title": "CrewAI", "notes": "Role-based collaboration." },
+    { "id": "09", "type": "code", "rhythm": "dense", "title": "OpenClaw", "notes": "Swarm handoffs demo." },
+    { "id": "10", "type": "two-column", "rhythm": "dense", "title": "Hermes Agent", "notes": "Architecture and philosophy." },
+    { "id": "11", "type": "comparison", "rhythm": "dense", "title": "Framework Comparison", "notes": "Side-by-side table." },
+    { "id": "12", "type": "breath", "rhythm": "breath", "title": "Patterns survive", "notes": "Transition to patterns." },
+    { "id": "13", "type": "layer-stack", "rhythm": "dense", "title": "Architecture Stack", "notes": "L1–L4 layers." },
+    { "id": "14", "type": "four-grid", "rhythm": "dense", "title": "Pitfalls to Avoid", "notes": "Agent sprawl and loops." },
+    { "id": "15", "type": "quote", "rhythm": "breath", "title": "Fewest agents", "notes": "Key principle." },
+    { "id": "16", "type": "end", "rhythm": "anchor", "title": "Closing", "notes": "CTA and Q&A." }
+  ],
+  "rules": {
+    "max_callouts": 2,
+    "max_label_ratio": 0.4,
+    "require_breath_or_hero": true,
+    "no_adjacent_same_type": true
+  }
+}
+</script>
 
 <!-- Chrome -->
 <div class="progress" id="progress"></div>

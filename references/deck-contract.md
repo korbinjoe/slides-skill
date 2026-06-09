@@ -9,11 +9,12 @@ validated instead of judged only by eye.
 ### `deck_plan.md`
 
 Human-readable planning document. Keep it short enough to scan before generation.
+Recommended during generation; not required in the final deliverable.
 
 Required sections:
 
 - `Brief`: audience, duration, presenter context, core message
-- `Theme`: chosen theme and why it fits the presentation context
+- `Theme`: chosen theme slug and why it fits the presentation context
 - `Narrative Arc`: the main sequence of ideas
 - `Slide Roster`: one row per slide with purpose, slide type, rhythm, title, and transition
 - `Notes Plan`: expected speaking role for each slide
@@ -22,13 +23,16 @@ Required sections:
 ### `deck_lock.json`
 
 Machine-readable contract. Use it to keep theme, layout, notes, and pacing aligned
-while writing the HTML.
+while writing the HTML. Content is embedded into the final HTML as `deck-lock`.
+
+The `theme` field MUST use the sampler **slug** (lowercase, hyphenated), not the display name.
+See `references/theme-slugs.md` for all valid values.
 
 ```json
 {
   "version": "1.0",
   "title": "Deck title",
-  "theme": "Obsidian",
+  "theme": "obsidian",
   "canvas": { "width": 1280, "height": 720 },
   "font_family": "'Outfit', -apple-system, 'PingFang SC', 'Noto Sans SC', sans-serif",
   "slides": [
@@ -59,7 +63,7 @@ Embed the lock in the final HTML so the validator can compare plan against outpu
 {
   "version": "1.0",
   "title": "Deck title",
-  "theme": "Obsidian",
+  "theme": "obsidian",
   "canvas": { "width": 1280, "height": 720 },
   "slides": []
 }
@@ -106,7 +110,8 @@ Run the validator after writing the HTML:
 
 ```bash
 python3 scripts/validate_deck.py <deck.html>
+python3 scripts/validate_deck.py <deck.html> --strict
 ```
 
-Fix every error before delivering the deck. Warnings are design risks; resolve them
-when the change does not weaken the presentation.
+Fix every ERROR before delivering. Fix every WARNING before delivery — use `--strict` as the delivery gate.
+Anti-AI rhythm, label, and callout rules are enforced as WARNINGs.
