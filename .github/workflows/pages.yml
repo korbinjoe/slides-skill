@@ -1,4 +1,4 @@
-name: Deploy examples to GitHub Pages
+name: Deploy theme sampler to GitHub Pages
 
 on:
   push:
@@ -22,9 +22,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare site
+        run: |
+          mkdir _site
+          cp assets/theme-sampler.html _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: examples
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
