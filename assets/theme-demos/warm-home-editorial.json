@@ -1,0 +1,150 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "2026 Home Design Trends",
+      "subtitle": "Return to the human scale — let color, material, and texture shape spatial elegance",
+      "info": "Based on \"The Elegance of Space\" · 2026"
+    },
+    {
+      "type": "section",
+      "label": "Part 1",
+      "title": "From \"Influencer Style\" to \"Human Scale\"",
+      "subtitle": "2026 shifts from visual symbol stacking to human-centered care"
+    },
+    {
+      "type": "cards",
+      "label": "Three Elements",
+      "heading": "Color · Material · Texture",
+      "items": [
+        {
+          "title": "Color",
+          "desc": "The mood magician of space — changes visual scale and atmosphere"
+        },
+        {
+          "title": "Material",
+          "desc": "The tactile language — natural wood, handwoven linen, ceramic"
+        },
+        {
+          "title": "Texture",
+          "desc": "The soul of detail — each surface's unique fingerprint"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Color Practice",
+      "heading": "Warm vs Cool Tones in Space",
+      "left": {
+        "title": "Light / Cool Tones",
+        "points": [
+          "Increase light reflection",
+          "Space feels open and airy",
+          "Gray-green → calm focus"
+        ]
+      },
+      "right": {
+        "title": "Warm / Saturated",
+        "points": [
+          "Room feels compact and cozy",
+          "Coffee tones → warm embrace",
+          "Accent colors → personality"
+        ]
+      }
+    },
+    {
+      "type": "image-text",
+      "label": "CMT System",
+      "heading": "CMT: Color · Material · Texture Symphony",
+      "imgAlt": "Concentric circles showing CMT system layers",
+      "points": [
+        "Physical layer: smooth/rough, transparent/opaque, gloss/matte",
+        "Psychological layer: handmade/industrial, simple/luxe",
+        "Not simple stacking — systematic weaving like a symphony"
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "2026 Styles",
+      "heading": "2026 Trending Styles",
+      "columns": [
+        {
+          "title": "Cream 2.0",
+          "points": [
+            "Beyond \"white walls + wood\"",
+            "Cream, oat, ivory base",
+            "Wool, linen, natural wood accents"
+          ]
+        },
+        {
+          "title": "Bohemian",
+          "points": [
+            "Bold colors + free textiles",
+            "Layered, unrestrained feel",
+            "Handwoven tapestries"
+          ]
+        },
+        {
+          "title": "Sustainable Luxe",
+          "points": [
+            "Eco-finishes, natural light",
+            "Reclaimed wood, cork, jute",
+            "Responsible aesthetics"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Book",
+      "heading": "\"The Elegance of Space\" — A Deconstructable Aesthetic System",
+      "desc": "By Song Wenwen, Tsinghua University Color Research Lab.",
+      "items": [
+        {
+          "value": "CMT",
+          "label": "Colour + Material + Texture framework"
+        },
+        {
+          "value": "4",
+          "label": "Chapters: Color, Material, Texture, Synthesis"
+        },
+        {
+          "value": "2",
+          "label": "Audiences: designers + homeowners"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Application",
+      "heading": "Applying the CMT Framework",
+      "steps": [
+        {
+          "title": "Color Base",
+          "desc": "Choose your emotional palette"
+        },
+        {
+          "title": "Material Selection",
+          "desc": "Match physical properties to intent"
+        },
+        {
+          "title": "Texture Layering",
+          "desc": "Add tactile and visual depth"
+        },
+        {
+          "title": "Harmony Check",
+          "desc": "Ensure all three elements resonate"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "True elegance is the exquisite resonance of color, material, and texture — with both beauty and warmth.",
+      "attribution": "The Elegance of Space, 2026"
+    },
+    {
+      "type": "end",
+      "text": "Let home return to the human scale."
+    }
+  ]
+}

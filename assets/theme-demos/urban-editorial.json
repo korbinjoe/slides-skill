@@ -1,0 +1,158 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Active Regeneration",
+      "subtitle": "After the fire — where do aging high-rises go?",
+      "info": "Based on \"Sun Wantong\" public account · 2026.05"
+    },
+    {
+      "type": "big-number",
+      "number": "36,000",
+      "label": "High-Rise Fires in 8 Months",
+      "desc": "China 2025 Jan–Aug, exceeding the 2023 full-year total. Ground rescue reaches 50–80m; above 100m buildings must self-rescue."
+    },
+    {
+      "type": "cards",
+      "label": "The Problem",
+      "heading": "High-Rises Are Aging",
+      "items": [
+        {
+          "title": "Rising Maintenance",
+          "desc": "Fire, elevator, facade risks emerge after 10+ years"
+        },
+        {
+          "title": "Declining Demand",
+          "desc": "Fewer people want to live in aging towers"
+        },
+        {
+          "title": "Western Precedent",
+          "desc": "Pruitt-Igoe: 33 towers → full demolition in 1972"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Sydney Model",
+      "heading": "Quay Quarter Tower: A Regeneration Benchmark",
+      "desc": "World's first fully upgraded skyscraper — 3XN design.",
+      "items": [
+        {
+          "value": "−80%",
+          "label": "Construction Waste"
+        },
+        {
+          "value": "−40%",
+          "label": "Carbon Emissions"
+        },
+        {
+          "value": "−30%",
+          "label": "Energy Consumption"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Global Cases",
+      "heading": "Global Adaptive Reuse Cases",
+      "events": [
+        {
+          "date": "1976→2020",
+          "title": "QQT Sydney",
+          "desc": "65% structure retained, 95% core reused"
+        },
+        {
+          "date": "1994→2024",
+          "title": "Shenzhen MVRDV",
+          "desc": "Colorful grid facade adds shade + ventilation"
+        },
+        {
+          "date": "1988→2023",
+          "title": "Shanghai Edison",
+          "desc": "China's first carbon-neutral renovation hotel"
+        },
+        {
+          "date": "1931→2022",
+          "title": "NYC One Wall St",
+          "desc": "50-story office → 566 apartments"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "China Trials",
+      "heading": "Chinese Pilot Projects",
+      "columns": [
+        {
+          "title": "Beijing \"Office Orange\"",
+          "points": [
+            "Tiantongyuan high-rise residential → office",
+            "Addresses live-work separation",
+            "Functional transformation"
+          ]
+        },
+        {
+          "title": "Hangzhou Zhegong Village",
+          "points": [
+            "First rebuild-in-place project",
+            "Demolished 13, rebuilt 7 buildings",
+            "¥530M total, residents funded ¥470M"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "The Hard Part",
+      "heading": "The Real Challenge: Getting Everyone to Pay",
+      "left": {
+        "title": "Obstacles",
+        "points": [
+          "More units = harder consensus",
+          "Funding sources unclear",
+          "Cost per household: ¥100K–1M"
+        ]
+      },
+      "right": {
+        "title": "Possible Path",
+        "points": [
+          "Co-build, co-govern, co-share model",
+          "Building \"pension fund\" concept",
+          "Community self-management committees"
+        ]
+      }
+    },
+    {
+      "type": "flow",
+      "label": "Roadmap",
+      "heading": "From Height to Depth: Four Steps",
+      "steps": [
+        {
+          "title": "Health Check",
+          "desc": "297 cities + 150+ counties started urban checkups"
+        },
+        {
+          "title": "Design",
+          "desc": "Professional institutions provide safe plans"
+        },
+        {
+          "title": "Coordinate",
+          "desc": "Government platform + community organizations"
+        },
+        {
+          "title": "Regenerate",
+          "desc": "Multi-party collaboration for renewal"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The real question isn't how high we built — it's how deep we're willing to invest in what we've already built.",
+      "attribution": "Urban Regeneration Editorial"
+    },
+    {
+      "type": "end",
+      "text": "From pursuing height to accumulating depth."
+    }
+  ]
+}

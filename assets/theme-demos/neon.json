@@ -1,0 +1,167 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "SYNTHWAVE",
+      "subtitle": "Next-Gen Creative Platform",
+      "info": "Product Launch · Summer 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "120fps",
+      "label": "Real-Time Rendering",
+      "desc": "Full creative pipeline at 120 frames per second — no compromise between quality and speed."
+    },
+    {
+      "type": "section",
+      "label": "Drop 01",
+      "title": "The Engine",
+      "subtitle": "Built for creators who refuse to wait for renders."
+    },
+    {
+      "type": "cards",
+      "label": "Features",
+      "heading": "Core Creative Tools",
+      "items": [
+        {
+          "title": "Neural Brush",
+          "desc": "AI-powered brushes that understand context, style, and intent in real-time"
+        },
+        {
+          "title": "Live Collab",
+          "desc": "Up to 50 creators in one canvas with conflict-free simultaneous editing"
+        },
+        {
+          "title": "Instant Export",
+          "desc": "One-click publish to every platform — web, mobile, print, video"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Performance",
+      "heading": "Benchmark Numbers",
+      "desc": "Tested on M4 Pro and RTX 5090 at 4K resolution.",
+      "items": [
+        {
+          "value": "120fps",
+          "label": "Canvas render rate"
+        },
+        {
+          "value": "<50ms",
+          "label": "AI brush response"
+        },
+        {
+          "value": "8K",
+          "label": "Max export resolution"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "vs Others",
+      "heading": "Why Creators Switch",
+      "columns": [
+        {
+          "title": "SYNTHWAVE",
+          "points": [
+            "GPU-native engine from scratch",
+            "AI tools built-in, not plugins",
+            "Real-time multiplayer canvas"
+          ]
+        },
+        {
+          "title": "Legacy Tools",
+          "points": [
+            "CPU-bound rendering pipeline",
+            "AI via third-party extensions",
+            "Turn-based file sharing"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Workflow",
+      "heading": "From Concept to Published",
+      "steps": [
+        {
+          "title": "Sketch",
+          "desc": "Neural brush captures rough ideas into refined shapes"
+        },
+        {
+          "title": "Compose",
+          "desc": "Layer, blend, and arrange with non-destructive editing"
+        },
+        {
+          "title": "Animate",
+          "desc": "Timeline-based motion with physics simulation"
+        },
+        {
+          "title": "Ship",
+          "desc": "Multi-format export and direct social publishing"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Adoption",
+      "heading": "Beta Community Growth",
+      "desc": "Three months of closed beta with creator-led growth.",
+      "items": [
+        {
+          "label": "Signups",
+          "value": 95
+        },
+        {
+          "label": "DAU/MAU",
+          "value": 72
+        },
+        {
+          "label": "Content created",
+          "value": 88
+        },
+        {
+          "label": "Shared externally",
+          "value": 64
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Launch Plan",
+      "heading": "SYNTHWAVE Release Timeline",
+      "events": [
+        {
+          "date": "Jun",
+          "title": "Open Beta",
+          "desc": "Public access, free tier"
+        },
+        {
+          "date": "Aug",
+          "title": "Pro Launch",
+          "desc": "Paid tier + team features"
+        },
+        {
+          "date": "Oct",
+          "title": "Marketplace",
+          "desc": "Creator asset store"
+        },
+        {
+          "date": "Dec",
+          "title": "Mobile",
+          "desc": "iPad + Android tablet"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We don't make tools for people who follow tutorials. We make tools for people who skip them.",
+      "attribution": "SYNTHWAVE Design Philosophy"
+    },
+    {
+      "type": "end",
+      "text": "SYNTHWAVE · Create at the Speed of Thought"
+    }
+  ]
+}

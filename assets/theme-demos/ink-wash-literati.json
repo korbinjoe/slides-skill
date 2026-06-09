@@ -1,0 +1,173 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "The Ultimate Depth: Strategic Restraint",
+      "subtitle": "Stay Calm, Stay Hidden, Wait",
+      "info": "On the Logic of Achievement"
+    },
+    {
+      "type": "quote",
+      "text": "A man who shows his cards too early is handing others a knife.",
+      "attribution": "The Way of Restraint"
+    },
+    {
+      "type": "two-column",
+      "label": "Observation",
+      "heading": "Two Types at the Dinner Table",
+      "left": {
+        "title": "The Newly Promoted",
+        "points": [
+          "Talks about resources, connections, projects",
+          "Others nod politely, eyes calculating"
+        ]
+      },
+      "right": {
+        "title": "The Other Man",
+        "points": [
+          "Speaks little, asks the right questions",
+          "By evening's end, has read everyone's hand"
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "label": "Definition",
+      "heading": "Restraint ≠ Playing Dumb ≠ Backing Down",
+      "items": [
+        {
+          "title": "Sheathe Edge",
+          "desc": "Put away your sharpness"
+        },
+        {
+          "title": "Suppress Desire",
+          "desc": "Hold back your impulses"
+        },
+        {
+          "title": "Shift Center",
+          "desc": "Move out of others' line of sight"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Common Mistakes",
+      "heading": "Mistaking \"Being Seen\" for \"Being Respected\"",
+      "headers": [
+        "Behavior",
+        "Consequence"
+      ],
+      "rows": [
+        [
+          "Showing off every achievement",
+          "Invites testing and jealousy"
+        ],
+        [
+          "Flaunting resources",
+          "Invites borrowing and undermining"
+        ],
+        [
+          "Revealing insights too soon",
+          "Makes everyone defensive"
+        ],
+        [
+          "Standing in the open, exposed",
+          "All challenges come at once"
+        ]
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Historical Proof",
+      "heading": "Han Xin's Humiliation",
+      "imgAlt": "Han Xin enduring humiliation",
+      "points": [
+        "Not glorifying humiliation",
+        "He didn't stake his life on a street fight",
+        "Winning the small battle is just venting",
+        "Winning the big battle earns the right to rise"
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Strategy",
+      "heading": "Turn Restraint Into a Shield",
+      "desc": "Be a bit slower, a bit duller, a bit calmer — reduce needless friction.",
+      "items": [
+        {
+          "label": "Too Smart → Guarded",
+          "value": 90
+        },
+        {
+          "label": "Too Strong → Avoided",
+          "value": 80
+        },
+        {
+          "label": "Too Eager → Lowballed",
+          "value": 70
+        },
+        {
+          "label": "Too Competitive → Drawn In",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Distinction",
+      "heading": "Strategic Restraint vs Passive Avoidance",
+      "columns": [
+        {
+          "title": "Passive Avoidance",
+          "points": [
+            "Motivation: fear of losing",
+            "State: weaker with each retreat",
+            "Silence as excuse",
+            "Inner feeling: resentment"
+          ]
+        },
+        {
+          "title": "Strategic Restraint",
+          "points": [
+            "Motivation: to win",
+            "State: stronger with each concealment",
+            "Silence as stored energy",
+            "Inner feeling: planning"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Core Output",
+      "heading": "Hide Four Things · Cultivate Four Powers",
+      "steps": [
+        {
+          "title": "Conceal Emotions",
+          "desc": "Don't be provoked by words"
+        },
+        {
+          "title": "Conceal Ambition",
+          "desc": "Don't let others prepare defenses"
+        },
+        {
+          "title": "Conceal Strength",
+          "desc": "Don't be depleted prematurely"
+        },
+        {
+          "title": "Conceal Judgment",
+          "desc": "Don't pick sides in unclear situations"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The hidden dragon does not act — not from lack of power, but because the time has not come.",
+      "attribution": "I Ching"
+    },
+    {
+      "type": "end",
+      "text": "Stay Calm, Stay Hidden, Wait · Let Results Speak"
+    }
+  ]
+}

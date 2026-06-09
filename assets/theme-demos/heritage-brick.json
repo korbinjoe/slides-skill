@@ -1,0 +1,151 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Lin Huiyin",
+      "subtitle": "Rediscover the Architect, Not the Legend",
+      "info": "70th Anniversary · Re-examined through work, theory, and action"
+    },
+    {
+      "type": "big-number",
+      "number": "70",
+      "label": "Anniversary",
+      "desc": "What gets seen is often not her most important part. What truly supports her historical standing is architectural practice, theoretical construction, and disciplinary foundation."
+    },
+    {
+      "type": "timeline",
+      "label": "Practice",
+      "heading": "From Tombstone to Station: A Clear Architectural Trajectory",
+      "events": [
+        {
+          "date": "1929",
+          "title": "Liang Qichao Tombstone",
+          "desc": "Starting point upon returning from abroad"
+        },
+        {
+          "date": "1929",
+          "title": "Jihai Railway Station",
+          "desc": "Modernity and national symbolism combined"
+        },
+        {
+          "date": "1932",
+          "title": "Peking University Geology Building",
+          "desc": "Turn toward modernism"
+        },
+        {
+          "date": "1938",
+          "title": "Yingqiu Academy",
+          "desc": "Local materials and vernacular experience"
+        },
+        {
+          "date": "1940",
+          "title": "Kunming Residence",
+          "desc": "Self-built under wartime conditions"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Four Sites",
+      "heading": "Four Sites, Four Architectural Responses",
+      "items": [
+        {
+          "title": "Jihai Railway Station",
+          "desc": "Symbolic expression in landmark public architecture"
+        },
+        {
+          "title": "Peking University Geology Building",
+          "desc": "Turn toward modernism"
+        },
+        {
+          "title": "Kunming Residence",
+          "desc": "Self-built under wartime conditions"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "National Scale",
+      "heading": "Architectural Work in National Memory",
+      "left": {
+        "title": "Monument to the People's Heroes",
+        "points": [
+          "Proposed expanded pedestal and double-tier steps",
+          "Ornamentation and scale reflecting traditional architectural vocabulary"
+        ]
+      },
+      "right": {
+        "title": "Babaoshan Revolutionary Cemetery",
+        "points": [
+          "Main layout design",
+          "She was ultimately buried here too"
+        ]
+      }
+    },
+    {
+      "type": "image-text",
+      "label": "Theoretical Foundation",
+      "heading": "In 1932, She Was Already Defining \"Chinese Architecture\"",
+      "imgAlt": "Lin Huiyin 1932 paper manuscript",
+      "points": [
+        "First systematic discourse on Chinese architecture by a Chinese professional scholar",
+        "Rebutted misreadings within Western knowledge frameworks",
+        "Proposed key features of the timber frame system",
+        "Laid the theoretical skeleton for Chinese architectural history narrative"
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Methodology",
+      "heading": "What She Truly Left Was a Method",
+      "columns": [
+        {
+          "title": "Research Method",
+          "points": [
+            "Survey, fieldwork, and historical analysis combined",
+            "Architectural intent, construction manuals"
+          ]
+        },
+        {
+          "title": "Disciplinary Building",
+          "points": [
+            "Participated in Northeastern and Tsinghua architecture departments",
+            "Housing survey, vernacular architecture protection"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Actor",
+      "heading": "She Was an Actor Herself",
+      "steps": [
+        {
+          "title": "Field Survey",
+          "desc": "Crossing mountains and rivers — not a bystander"
+        },
+        {
+          "title": "Wartime Displacement",
+          "desc": "Illness did not halt research"
+        },
+        {
+          "title": "Professional Mission",
+          "desc": "\"I have so much work to do\""
+        },
+        {
+          "title": "Foundational Moment",
+          "desc": "Pressed her life into architecture"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "To rediscover her is not to return from legend to gossip, but from gossip to profession. What she left is not just works, but a language for how China understands its own architecture.",
+      "attribution": "Architect Lin Huiyin's Tomb"
+    },
+    {
+      "type": "end",
+      "text": "Seven words on the tombstone — already accurate enough."
+    }
+  ]
+}

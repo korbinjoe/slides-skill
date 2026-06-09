@@ -1,0 +1,198 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Engineering Excellence 2026",
+      "subtitle": "Building Systems That Scale",
+      "info": "Technical Keynote · Q2 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "99.97%",
+      "label": "Platform Uptime",
+      "desc": "Sustained across 14 regions over 365 days — the result of deliberate architectural investment."
+    },
+    {
+      "type": "cards",
+      "label": "Architecture",
+      "heading": "Three Pillars of Reliability",
+      "items": [
+        {
+          "title": "Isolation",
+          "desc": "Every service runs in its own failure domain with independent scaling"
+        },
+        {
+          "title": "Observability",
+          "desc": "Distributed tracing from edge to storage, p99 latency tracked per-route"
+        },
+        {
+          "title": "Automation",
+          "desc": "Zero-touch deployments with automated canary analysis and rollback"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Scale",
+      "heading": "Platform Numbers",
+      "desc": "Serving a global developer community with sub-100ms response targets.",
+      "items": [
+        {
+          "value": "2.1M",
+          "label": "API calls per second"
+        },
+        {
+          "value": "48ms",
+          "label": "p50 global latency"
+        },
+        {
+          "value": "340TB",
+          "label": "Daily data processed"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Delivery",
+      "heading": "From Commit to Production",
+      "steps": [
+        {
+          "title": "Merge",
+          "desc": "PR passes CI and two approvals"
+        },
+        {
+          "title": "Canary",
+          "desc": "5% traffic for 30 minutes"
+        },
+        {
+          "title": "Ramp",
+          "desc": "Progressive rollout over 4 hours"
+        },
+        {
+          "title": "Bake",
+          "desc": "24-hour stability window"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Trade-offs",
+      "heading": "Monolith vs Microservices — Our Decision",
+      "columns": [
+        {
+          "title": "Monolith",
+          "points": [
+            "Simple deployment model",
+            "Lower operational overhead",
+            "Faster initial development"
+          ]
+        },
+        {
+          "title": "Microservices",
+          "points": [
+            "Independent scaling per service",
+            "Team autonomy and ownership",
+            "Fault isolation by design"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Performance",
+      "heading": "Latency Distribution by Region",
+      "desc": "Edge caching and regional replicas keep all regions under target.",
+      "items": [
+        {
+          "label": "US-East",
+          "value": 92
+        },
+        {
+          "label": "EU-West",
+          "value": 88
+        },
+        {
+          "label": "AP-Tokyo",
+          "value": 84
+        },
+        {
+          "label": "AP-Mumbai",
+          "value": 76
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "Platform Evolution",
+      "events": [
+        {
+          "date": "2024",
+          "title": "Multi-region",
+          "desc": "Expanded to 8 regions"
+        },
+        {
+          "date": "2025-Q1",
+          "title": "Zero-trust",
+          "desc": "mTLS everywhere"
+        },
+        {
+          "date": "2025-Q3",
+          "title": "Edge compute",
+          "desc": "Function-at-edge layer"
+        },
+        {
+          "date": "2026",
+          "title": "14 regions",
+          "desc": "Full global coverage"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "SLA",
+      "heading": "Service Level Objectives",
+      "headers": [
+        "Service",
+        "Target",
+        "Actual",
+        "Status"
+      ],
+      "rows": [
+        [
+          "API Gateway",
+          "99.95%",
+          "99.98%",
+          "Exceeded"
+        ],
+        [
+          "Data Pipeline",
+          "99.9%",
+          "99.94%",
+          "Exceeded"
+        ],
+        [
+          "Search Index",
+          "99.9%",
+          "99.91%",
+          "Met"
+        ],
+        [
+          "Auth Service",
+          "99.99%",
+          "99.99%",
+          "Met"
+        ]
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The best architecture is the one that makes the next change easy, not the one that anticipates every future change.",
+      "attribution": "Platform Engineering Team · Internal Retrospective"
+    },
+    {
+      "type": "end",
+      "text": "Engineering Excellence · Building for the Next Decade"
+    }
+  ]
+}

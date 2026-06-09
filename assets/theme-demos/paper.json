@@ -1,0 +1,213 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Q2 Business Review",
+      "subtitle": "Growth, Retention, and Next Horizons",
+      "info": "Executive Summary · June 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Highlights",
+      "heading": "Quarter at a Glance",
+      "desc": "Strong growth across all primary business metrics.",
+      "items": [
+        {
+          "value": "$42M",
+          "label": "ARR (+34% YoY)"
+        },
+        {
+          "value": "94%",
+          "label": "Net Revenue Retention"
+        },
+        {
+          "value": "1,240",
+          "label": "Enterprise Customers"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Revenue",
+      "heading": "Revenue by Segment",
+      "desc": "Enterprise segment overtook SMB for the first time this quarter.",
+      "items": [
+        {
+          "label": "Enterprise",
+          "value": 48
+        },
+        {
+          "label": "Mid-Market",
+          "value": 28
+        },
+        {
+          "label": "SMB",
+          "value": 18
+        },
+        {
+          "label": "Self-Serve",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Growth",
+      "heading": "Three Growth Engines",
+      "items": [
+        {
+          "title": "Product-Led",
+          "desc": "Self-serve funnel converting at 12% from free to paid — up 3pp QoQ"
+        },
+        {
+          "title": "Sales-Led",
+          "desc": "Enterprise ACV reached $180K with 14-day median close cycle"
+        },
+        {
+          "title": "Platform",
+          "desc": "API marketplace launched with 34 partner integrations"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Retention",
+      "heading": "What's Driving NRR",
+      "left": {
+        "title": "Expansion Drivers",
+        "points": [
+          "Seat-based upsell: +18% per account",
+          "Feature tier upgrades: 22% of base",
+          "API consumption growth: 3.2× YoY"
+        ]
+      },
+      "right": {
+        "title": "Churn Signals",
+        "points": [
+          "Day-14 activation rate predicts 6-month churn",
+          "Support ticket volume inversely correlates",
+          "Contract length: 2-year churns 60% less"
+        ]
+      }
+    },
+    {
+      "type": "flow",
+      "label": "GTM",
+      "heading": "Customer Journey",
+      "steps": [
+        {
+          "title": "Discover",
+          "desc": "Content + community drive 68% of top-of-funnel"
+        },
+        {
+          "title": "Activate",
+          "desc": "Time-to-value under 8 minutes for core workflow"
+        },
+        {
+          "title": "Convert",
+          "desc": "Usage-based paywall at natural expansion point"
+        },
+        {
+          "title": "Expand",
+          "desc": "CSM-driven upsell at 90-day maturity mark"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Pipeline",
+      "heading": "Sales Pipeline by Stage",
+      "headers": [
+        "Stage",
+        "Deals",
+        "Value",
+        "Win Rate"
+      ],
+      "rows": [
+        [
+          "Discovery",
+          "142",
+          "$8.4M",
+          "—"
+        ],
+        [
+          "Evaluation",
+          "86",
+          "$12.1M",
+          "42%"
+        ],
+        [
+          "Negotiation",
+          "34",
+          "$7.8M",
+          "71%"
+        ],
+        [
+          "Closed Won",
+          "28",
+          "$5.2M",
+          "100%"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Competitive",
+      "heading": "Market Position",
+      "columns": [
+        {
+          "title": "Our Advantage",
+          "points": [
+            "Fastest time-to-value (8 min)",
+            "Deepest API integration layer",
+            "Highest NPS in category (72)"
+          ]
+        },
+        {
+          "title": "Areas to Close",
+          "points": [
+            "Mobile experience gap",
+            "APAC localization",
+            "Enterprise SSO/compliance"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "H2 2026 Priorities",
+      "events": [
+        {
+          "date": "Jul",
+          "title": "Mobile v2",
+          "desc": "Native iOS and Android"
+        },
+        {
+          "date": "Aug",
+          "title": "APAC launch",
+          "desc": "Tokyo + Singapore"
+        },
+        {
+          "date": "Oct",
+          "title": "Enterprise+",
+          "desc": "SSO, audit logs, DLP"
+        },
+        {
+          "date": "Dec",
+          "title": "Platform v2",
+          "desc": "Marketplace + revenue share"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We're not selling software — we're selling the time our customers get back.",
+      "attribution": "Founding Principle"
+    },
+    {
+      "type": "end",
+      "text": "Q2 Business Review · Onward"
+    }
+  ]
+}

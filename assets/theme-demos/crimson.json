@@ -1,0 +1,198 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Strategic Direction",
+      "subtitle": "Board of Directors · Annual Strategy Briefing",
+      "info": "Confidential · June 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Position",
+      "heading": "Where We Stand",
+      "desc": "Market position strengthened across all three strategic pillars.",
+      "items": [
+        {
+          "value": "#2",
+          "label": "Global market rank (from #4)"
+        },
+        {
+          "value": "$8.6B",
+          "label": "Revenue (+28% YoY)"
+        },
+        {
+          "value": "22%",
+          "label": "Operating margin"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "$8.6B",
+      "label": "Annual Revenue",
+      "desc": "Crossed the $8B threshold for the first time — 28% growth driven by enterprise and international expansion."
+    },
+    {
+      "type": "cards",
+      "label": "Strategy",
+      "heading": "Three Strategic Priorities",
+      "items": [
+        {
+          "title": "Market Expansion",
+          "desc": "Enter 6 new markets in APAC and LATAM by Q4, targeting $1.2B incremental TAM"
+        },
+        {
+          "title": "Platform Consolidation",
+          "desc": "Unify three product lines into single platform, reducing operational complexity 40%"
+        },
+        {
+          "title": "Talent Density",
+          "desc": "Increase senior IC ratio to 35% through targeted hiring and internal development"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Competition",
+      "heading": "Competitive Landscape Shift",
+      "columns": [
+        {
+          "title": "Our Position",
+          "points": [
+            "Strongest enterprise relationships",
+            "Deepest product integration moat",
+            "Highest customer lifetime value"
+          ]
+        },
+        {
+          "title": "Competitive Threats",
+          "points": [
+            "Aggressive pricing from new entrants",
+            "Open-source alternatives maturing",
+            "Vertical-specific challengers emerging"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Execution",
+      "heading": "Strategic Execution Framework",
+      "steps": [
+        {
+          "title": "Align",
+          "desc": "Quarterly OKR cascade from board priorities"
+        },
+        {
+          "title": "Resource",
+          "desc": "Capital allocation tied to strategic pillars"
+        },
+        {
+          "title": "Execute",
+          "desc": "90-day sprint cycles with milestone gates"
+        },
+        {
+          "title": "Review",
+          "desc": "Monthly operating review with course correction"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Financial",
+      "heading": "Three-Year Financial Outlook",
+      "headers": [
+        "Metric",
+        "FY2026",
+        "FY2027E",
+        "FY2028E"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "$8.6B",
+          "$11.2B",
+          "$14.5B"
+        ],
+        [
+          "Gross Margin",
+          "72%",
+          "74%",
+          "76%"
+        ],
+        [
+          "Operating Margin",
+          "22%",
+          "25%",
+          "28%"
+        ],
+        [
+          "Free Cash Flow",
+          "$1.4B",
+          "$2.1B",
+          "$3.0B"
+        ]
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Segments",
+      "heading": "Revenue by Business Unit",
+      "desc": "Enterprise segment accelerating; consumer segment stable.",
+      "items": [
+        {
+          "label": "Enterprise",
+          "value": 52
+        },
+        {
+          "label": "Platform",
+          "value": 28
+        },
+        {
+          "label": "Consumer",
+          "value": 14
+        },
+        {
+          "label": "Services",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Milestones",
+      "heading": "Key Dates — Next 12 Months",
+      "events": [
+        {
+          "date": "Q3",
+          "title": "APAC Launch",
+          "desc": "Japan + Singapore offices"
+        },
+        {
+          "date": "Q4",
+          "title": "Platform v3",
+          "desc": "Unified product release"
+        },
+        {
+          "date": "2027-Q1",
+          "title": "LATAM",
+          "desc": "Brazil + Mexico entry"
+        },
+        {
+          "date": "2027-Q2",
+          "title": "IPO Prep",
+          "desc": "S-1 readiness milestone"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Strategy is not a plan. It is a set of choices that position you to win — and the discipline to say no to everything else.",
+      "attribution": "Board Strategy Session"
+    },
+    {
+      "type": "end",
+      "text": "Strategic Direction · Confidential"
+    }
+  ]
+}

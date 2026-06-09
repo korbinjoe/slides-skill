@@ -1,0 +1,211 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Causal Inference in Observational Health Data",
+      "subtitle": "PhD Thesis Defense",
+      "info": "Department of Biostatistics · June 2026"
+    },
+    {
+      "type": "section",
+      "label": "Chapter 1",
+      "title": "Research Question",
+      "subtitle": "Can we recover causal treatment effects from electronic health records without randomization?"
+    },
+    {
+      "type": "cards",
+      "label": "Background",
+      "heading": "Three Methodological Challenges",
+      "items": [
+        {
+          "title": "Confounding",
+          "desc": "Treatment assignment correlates with patient severity — naïve comparison is biased"
+        },
+        {
+          "title": "Missing Data",
+          "desc": "EHR data is collected for clinical care, not research — missingness is non-random"
+        },
+        {
+          "title": "Time-Varying",
+          "desc": "Treatment decisions change over time in response to evolving patient status"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Dataset",
+      "heading": "Study Population",
+      "desc": "Retrospective cohort from three academic medical centers, 2018–2025.",
+      "items": [
+        {
+          "value": "2.4M",
+          "label": "Patient records"
+        },
+        {
+          "value": "340",
+          "label": "Variables per patient"
+        },
+        {
+          "value": "7 yr",
+          "label": "Median follow-up"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Method",
+      "heading": "Analytical Pipeline",
+      "steps": [
+        {
+          "title": "Extract",
+          "desc": "Structured EHR data + NLP on clinical notes"
+        },
+        {
+          "title": "Align",
+          "desc": "Target trial emulation framework"
+        },
+        {
+          "title": "Estimate",
+          "desc": "Doubly-robust TMLE with Super Learner"
+        },
+        {
+          "title": "Validate",
+          "desc": "Negative control outcomes + RCT benchmark"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Results",
+      "heading": "Primary Findings",
+      "left": {
+        "title": "Treatment A vs B",
+        "points": [
+          "ATE: −2.3 days (95% CI: −3.1, −1.5)",
+          "Consistent across subgroups",
+          "Robust to unmeasured confounding (E-value: 2.8)"
+        ]
+      },
+      "right": {
+        "title": "Sensitivity Analysis",
+        "points": [
+          "Results stable across 5 Super Learner specifications",
+          "Missing data mechanism: MAR assumption supported",
+          "Propensity score overlap: sufficient across all strata"
+        ]
+      }
+    },
+    {
+      "type": "table",
+      "label": "Results",
+      "heading": "Treatment Effect Estimates by Subgroup",
+      "headers": [
+        "Subgroup",
+        "N",
+        "ATE",
+        "95% CI",
+        "p-value"
+      ],
+      "rows": [
+        [
+          "Overall",
+          "18,432",
+          "−2.3 days",
+          "(−3.1, −1.5)",
+          "<0.001"
+        ],
+        [
+          "Age ≥ 65",
+          "6,812",
+          "−2.8 days",
+          "(−4.0, −1.6)",
+          "<0.001"
+        ],
+        [
+          "Female",
+          "9,104",
+          "−2.1 days",
+          "(−3.2, −1.0)",
+          "<0.001"
+        ],
+        [
+          "Comorbidity ≥ 3",
+          "4,228",
+          "−3.4 days",
+          "(−5.1, −1.7)",
+          "<0.001"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Validation",
+      "heading": "Our Estimates vs RCT Benchmark",
+      "columns": [
+        {
+          "title": "This Study (Observational)",
+          "points": [
+            "ATE: −2.3 days (−3.1, −1.5)",
+            "N = 18,432",
+            "Cost: $0 (existing data)",
+            "Time: 6 months"
+          ]
+        },
+        {
+          "title": "CLARITY Trial (RCT)",
+          "points": [
+            "ATE: −2.1 days (−3.0, −1.2)",
+            "N = 4,200",
+            "Cost: $12M",
+            "Time: 4 years"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Contributions",
+      "heading": "Methodological Contributions",
+      "desc": "Novel extensions to existing causal inference methods.",
+      "items": [
+        {
+          "label": "TMLE with EHR missingness",
+          "value": 92
+        },
+        {
+          "label": "NLP confounder extraction",
+          "value": 78
+        },
+        {
+          "label": "Time-varying protocol",
+          "value": 85
+        },
+        {
+          "label": "Validation framework",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Implications",
+      "heading": "Clinical and Policy Impact",
+      "imgAlt": "Causal DAG diagram",
+      "points": [
+        "Method enables causal learning from routine clinical data",
+        "Reduces dependence on expensive RCTs for evidence generation",
+        "Framework is generalizable to other treatment comparisons",
+        "Open-source R package: causalEHR v1.2 on CRAN"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The randomized trial remains the gold standard — but when we can recover the same answer from data that already exists, we owe it to patients to try.",
+      "attribution": "Thesis Conclusion"
+    },
+    {
+      "type": "end",
+      "text": "Causal Inference in Observational Health Data · PhD Defense"
+    }
+  ]
+}

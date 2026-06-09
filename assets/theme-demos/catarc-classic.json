@@ -1,0 +1,235 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "China Automotive Industry Annual Analysis",
+      "subtitle": "Market Landscape, Technology Trends & Policy Outlook",
+      "info": "CATARC · Industry Research Institute · 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Market",
+      "heading": "2026 Market Panorama",
+      "desc": "NEV penetration crosses 50% for the first time — industry structure deeply reshaped.",
+      "items": [
+        {
+          "value": "28.6M",
+          "label": "Annual Vehicle Sales"
+        },
+        {
+          "value": "52.4%",
+          "label": "NEV Penetration Rate"
+        },
+        {
+          "value": "4.8M",
+          "label": "Export Volume"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "52.4%",
+      "label": "NEV Penetration Rate",
+      "desc": "Historic milestone: new energy vehicle sales exceed ICE vehicles for the first time, marking the industry inflection point."
+    },
+    {
+      "type": "cards",
+      "label": "Trends",
+      "heading": "Three Structural Shifts",
+      "items": [
+        {
+          "title": "Price Band Downshift",
+          "desc": "Sub-$14K NEV share rises from 18% to 32%, accelerating replacement of entry-level ICE market"
+        },
+        {
+          "title": "Export Upgrade",
+          "desc": "NEV export average price rises from $15K to $22K — brand premium capability significantly strengthened"
+        },
+        {
+          "title": "Technology Route Divergence",
+          "desc": "BEV vs PHEV ratio shifts from 7:3 to 5.5:4.5; range-extender models surge"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Rankings",
+      "heading": "NEV Sales Top 10",
+      "headers": [
+        "Rank",
+        "Brand",
+        "Sales",
+        "Market Share",
+        "Growth"
+      ],
+      "rows": [
+        [
+          "1",
+          "BYD",
+          "4.2M",
+          "28.0%",
+          "+18%"
+        ],
+        [
+          "2",
+          "Tesla",
+          "1.8M",
+          "12.0%",
+          "+8%"
+        ],
+        [
+          "3",
+          "Geely",
+          "1.24M",
+          "8.3%",
+          "+42%"
+        ],
+        [
+          "4",
+          "Changan",
+          "980K",
+          "6.5%",
+          "+36%"
+        ],
+        [
+          "5",
+          "Li Auto",
+          "640K",
+          "4.3%",
+          "+52%"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Routes",
+      "heading": "Technology Route Competition",
+      "columns": [
+        {
+          "title": "Battery Electric",
+          "points": [
+            "Charging anxiety easing",
+            "800V fast charge 10→80% in 15 minutes",
+            "Battery cost down to $60/kWh",
+            "Solid-state mass production imminent"
+          ]
+        },
+        {
+          "title": "PHEV / Range Extender",
+          "points": [
+            "1,200+ km combined range",
+            "No range anxiety",
+            "Cold-weather performance advantage",
+            "Compatible with existing fuel infrastructure"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Exports",
+      "heading": "Export Destination Distribution",
+      "desc": "Top four export markets by share.",
+      "items": [
+        {
+          "label": "Europe",
+          "value": 35
+        },
+        {
+          "label": "Southeast Asia",
+          "value": 28
+        },
+        {
+          "label": "Middle East",
+          "value": 18
+        },
+        {
+          "label": "South America",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Supply Chain",
+      "heading": "Industry Chain Restructuring Logic",
+      "steps": [
+        {
+          "title": "Upstream",
+          "desc": "Lithium material prices normalize; capacity consolidation"
+        },
+        {
+          "title": "Midstream",
+          "desc": "Battery plant concentration rises; CR3 reaches 72%"
+        },
+        {
+          "title": "Downstream",
+          "desc": "OEM software-defined vehicle capability diverges"
+        },
+        {
+          "title": "Aftermarket",
+          "desc": "NEV after-sales service system rebuilt"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Policy",
+      "heading": "Policy Environment Changes",
+      "left": {
+        "title": "Domestic Policy",
+        "points": [
+          "NEV purchase tax exemption extended to 2027",
+          "Carbon credit trading mechanism optimized",
+          "Charging infrastructure in new infrastructure plan",
+          "Intelligent connected vehicle road test regulations refined"
+        ]
+      },
+      "right": {
+        "title": "International Environment",
+        "points": [
+          "EU CBAM carbon border tax fully implemented",
+          "US IRA Act localization requirements",
+          "ASEAN NEV tariff reciprocity negotiations",
+          "Belt and Road capacity cooperation deepened"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Outlook",
+      "heading": "Industry Milestone Forecast",
+      "events": [
+        {
+          "date": "2026",
+          "title": "50% Penetration",
+          "desc": "NEV sales exceed ICE"
+        },
+        {
+          "date": "2027",
+          "title": "Solid-State Battery",
+          "desc": "First solid-state battery vehicle mass-produced"
+        },
+        {
+          "date": "2028",
+          "title": "L3 Commercial",
+          "desc": "Highway L3 deployed at scale"
+        },
+        {
+          "date": "2030",
+          "title": "Carbon Peak",
+          "desc": "Automotive sector carbon peak target"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "China's auto industry completed the shift from follower to leader in two decades. The next two decades ask: how do we make leadership sustainable?",
+      "attribution": "Industry Research Conclusion"
+    },
+    {
+      "type": "end",
+      "text": "China Automotive Industry Annual Analysis · CATARC"
+    }
+  ]
+}

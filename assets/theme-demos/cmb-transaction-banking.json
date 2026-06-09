@@ -1,0 +1,228 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Transaction Banking Business Report",
+      "subtitle": "China Merchants Bank · Corporate Finance Digital Transformation",
+      "info": "Transaction Banking Division · H1 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Performance",
+      "heading": "H1 Operating Metrics",
+      "desc": "Transaction banking maintains high-quality growth momentum.",
+      "items": [
+        {
+          "value": "$2.6T",
+          "label": "Transaction Settlement Volume"
+        },
+        {
+          "value": "+22%",
+          "label": "YoY Growth"
+        },
+        {
+          "value": "$1.8B",
+          "label": "Fee & Commission Income"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Products",
+      "heading": "Three Core Product Lines",
+      "items": [
+        {
+          "title": "CBS Cash Management",
+          "desc": "Serving 28,000 group clients — fund pooling efficiency up 40%, cross-bank payment success rate 99.6%"
+        },
+        {
+          "title": "Cross-Border Finance",
+          "desc": "130+ currency settlement coverage, CIPS direct participant advantage, e-commerce T+0 receipt"
+        },
+        {
+          "title": "Supply Chain Finance",
+          "desc": "Blockchain receivables platform: $44B cumulative financing, 1,200 anchor enterprises"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "$2.6T",
+      "label": "Transaction Settlement Volume",
+      "desc": "H1 settlement volume up 22% YoY — corporate client activity continues to rise."
+    },
+    {
+      "type": "flow",
+      "label": "Digital",
+      "heading": "Transaction Banking Digitalization Path",
+      "steps": [
+        {
+          "title": "Online",
+          "desc": "98% of transactions completed through digital channels"
+        },
+        {
+          "title": "Intelligent",
+          "desc": "AI-driven cash flow forecasting and risk early warning"
+        },
+        {
+          "title": "Ecosystem",
+          "desc": "Open banking APIs integrated with ERP and finance systems"
+        },
+        {
+          "title": "Platform",
+          "desc": "CMB Corporate App as one-stop service hub"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Products",
+      "heading": "Core Product Operating Data",
+      "headers": [
+        "Product",
+        "Clients",
+        "Volume",
+        "Revenue",
+        "Growth"
+      ],
+      "rows": [
+        [
+          "Cash Management",
+          "28,000",
+          "$1.15T",
+          "$580M",
+          "+18%"
+        ],
+        [
+          "Trade Finance",
+          "6,400",
+          "$430B",
+          "$525M",
+          "+24%"
+        ],
+        [
+          "Cross-Border Settlement",
+          "12,800",
+          "$670B",
+          "$385M",
+          "+28%"
+        ],
+        [
+          "Supply Chain Finance",
+          "1,200",
+          "$350B",
+          "$250M",
+          "+34%"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Advantage",
+      "heading": "CMB Transaction Banking Differentiation",
+      "columns": [
+        {
+          "title": "Our Strengths",
+          "points": [
+            "#1 corporate app user experience",
+            "800+ API interfaces — most comprehensive",
+            "Blockchain supply chain finance platform",
+            "Cross-border T+0 settlement capability"
+          ]
+        },
+        {
+          "title": "Areas to Strengthen",
+          "points": [
+            "Limited penetration among large SOEs",
+            "Overseas branch network coverage",
+            "Local currency swap business expansion",
+            "Scenario-based industrial chain finance"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Channels",
+      "heading": "Transaction Channel Distribution",
+      "desc": "Digital channel share continues to rise.",
+      "items": [
+        {
+          "label": "Corporate App",
+          "value": 52
+        },
+        {
+          "label": "Online Banking",
+          "value": 34
+        },
+        {
+          "label": "API Direct Connect",
+          "value": 12
+        },
+        {
+          "label": "Branch Counter",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Risk",
+      "heading": "Risk Control & Compliance",
+      "left": {
+        "title": "Intelligent Risk Control",
+        "points": [
+          "Transaction fraud model accuracy 99.4%",
+          "Automated suspicious transaction blocking",
+          "Real-time client profile updates",
+          "Smart review for large transactions"
+        ]
+      },
+      "right": {
+        "title": "Compliance Framework",
+        "points": [
+          "AML system fully upgraded",
+          "Automated cross-border compliance review",
+          "Regulatory reporting T+1 completion",
+          "End-to-end internal audit coverage"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "History",
+      "heading": "Transaction Banking Evolution",
+      "events": [
+        {
+          "date": "2015",
+          "title": "Foundation",
+          "desc": "Transaction banking division established"
+        },
+        {
+          "date": "2019",
+          "title": "Digitalization",
+          "desc": "Corporate app launched"
+        },
+        {
+          "date": "2022",
+          "title": "Open Banking",
+          "desc": "API platform released"
+        },
+        {
+          "date": "2026",
+          "title": "Intelligence",
+          "desc": "AI-driven transaction banking"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The essence of transaction banking is helping enterprises move capital faster, more securely, and at lower cost.",
+      "attribution": "Transaction Banking Philosophy"
+    },
+    {
+      "type": "end",
+      "text": "Transaction Banking Business Report · China Merchants Bank"
+    }
+  ]
+}

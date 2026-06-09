@@ -1,0 +1,178 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Designing with Intention",
+      "subtitle": "Lessons from a Decade of Product Design",
+      "info": "Creative Retrospective · 2026"
+    },
+    {
+      "type": "quote",
+      "text": "Good design is obvious. Great design is transparent. The best work disappears into the experience it creates.",
+      "attribution": "Studio Principle #1"
+    },
+    {
+      "type": "section",
+      "label": "Chapter 01",
+      "title": "Less, But Better",
+      "subtitle": "Why reduction is the hardest design skill to master."
+    },
+    {
+      "type": "cards",
+      "label": "Philosophy",
+      "heading": "Three Tensions in Every Project",
+      "items": [
+        {
+          "title": "Beauty vs Clarity",
+          "desc": "Aesthetics should amplify comprehension, never compete with it"
+        },
+        {
+          "title": "Delight vs Speed",
+          "desc": "Micro-interactions matter, but not at the cost of task completion"
+        },
+        {
+          "title": "Consistency vs Context",
+          "desc": "Systems enable speed; breaking them enables meaning"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Process",
+      "heading": "How We Work",
+      "left": {
+        "title": "Discovery",
+        "points": [
+          "Stakeholder interviews, not briefs",
+          "Competitive audit of adjacent categories",
+          "User journey mapping with real data",
+          "Constraint inventory before ideation"
+        ]
+      },
+      "right": {
+        "title": "Execution",
+        "points": [
+          "Lo-fi → mid-fi → eng handoff",
+          "Design tokens, not pixel specs",
+          "Paired design-engineering sprints",
+          "Weekly user testing cadence"
+        ]
+      }
+    },
+    {
+      "type": "stats",
+      "label": "Impact",
+      "heading": "Design-Led Outcomes",
+      "desc": "Measured impact from design-led product changes over 18 months.",
+      "items": [
+        {
+          "value": "+34%",
+          "label": "Task completion rate"
+        },
+        {
+          "value": "−52%",
+          "label": "Support ticket volume"
+        },
+        {
+          "value": "72",
+          "label": "NPS (from 41)"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "System",
+      "heading": "Design System Lifecycle",
+      "steps": [
+        {
+          "title": "Audit",
+          "desc": "Inventory all existing patterns and variants"
+        },
+        {
+          "title": "Consolidate",
+          "desc": "Reduce to minimum viable component set"
+        },
+        {
+          "title": "Document",
+          "desc": "Usage guidelines with do/don't examples"
+        },
+        {
+          "title": "Evolve",
+          "desc": "Quarterly review with usage analytics"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Case Study",
+      "heading": "Redesigning the Onboarding Flow",
+      "imgAlt": "Before/after onboarding screens",
+      "points": [
+        "Reduced steps from 7 to 3 with progressive disclosure",
+        "Time-to-first-value dropped from 12 min to 4 min",
+        "Completion rate increased from 54% to 89%",
+        "Support tickets during onboarding fell 68%"
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Evolution",
+      "heading": "A Decade of Design Practice",
+      "events": [
+        {
+          "date": "2016",
+          "title": "Visual Design",
+          "desc": "Pixel-perfect deliverables"
+        },
+        {
+          "date": "2018",
+          "title": "Systems",
+          "desc": "Component-first thinking"
+        },
+        {
+          "date": "2021",
+          "title": "Research-Led",
+          "desc": "Qual + quant integrated"
+        },
+        {
+          "date": "2024",
+          "title": "AI-Augmented",
+          "desc": "Generative design tooling"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Metrics",
+      "heading": "Design Quality Indicators",
+      "desc": "Internal scoring across recent major projects.",
+      "items": [
+        {
+          "label": "Accessibility (WCAG AA)",
+          "value": 96
+        },
+        {
+          "label": "Consistency score",
+          "value": 88
+        },
+        {
+          "label": "Developer satisfaction",
+          "value": 82
+        },
+        {
+          "label": "User comprehension",
+          "value": 91
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We don't ship interfaces. We ship understanding.",
+      "attribution": "Studio Retrospective"
+    },
+    {
+      "type": "end",
+      "text": "Designing with Intention · A Creative Retrospective"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Attachment Patterns in Digital Relationships",
+      "subtitle": "A Longitudinal Study of Online Bonding Behaviors",
+      "info": "Department of Clinical Psychology · 2026"
+    },
+    {
+      "type": "quote",
+      "text": "The need for a secure base does not vanish when relationships move online — it simply finds new expressions and new vulnerabilities.",
+      "attribution": "Study Framework"
+    },
+    {
+      "type": "cards",
+      "label": "Background",
+      "heading": "Three Observations from the Literature",
+      "items": [
+        {
+          "title": "Digital Proximity",
+          "desc": "Online interactions activate the same attachment system as face-to-face, but with altered feedback loops"
+        },
+        {
+          "title": "Asynchronous Bonding",
+          "desc": "Messaging latency creates ambiguity that disproportionately affects anxious attachment styles"
+        },
+        {
+          "title": "Platform Design",
+          "desc": "Read receipts, typing indicators, and online status serve as digital proximity signals"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Sample",
+      "heading": "Study Design",
+      "desc": "Mixed-methods longitudinal study over 18 months.",
+      "items": [
+        {
+          "value": "1,240",
+          "label": "Participants (18–35)"
+        },
+        {
+          "value": "4",
+          "label": "Measurement waves"
+        },
+        {
+          "value": "18mo",
+          "label": "Follow-up period"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Method",
+      "heading": "Assessment Battery",
+      "left": {
+        "title": "Quantitative Measures",
+        "points": [
+          "ECR-R (attachment dimensions)",
+          "PHQ-9 (depressive symptoms)",
+          "Digital Communication Log (app-level)",
+          "Relationship Satisfaction Scale"
+        ]
+      },
+      "right": {
+        "title": "Qualitative Component",
+        "points": [
+          "Semi-structured interviews (n=60)",
+          "Experience sampling (5× daily, 2 weeks)",
+          "Critical incident narratives",
+          "Thematic analysis with member-checking"
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "label": "Findings",
+      "heading": "Attachment Style and Digital Behavior",
+      "columns": [
+        {
+          "title": "Secure",
+          "points": [
+            "Consistent response latency",
+            "Comfortable with offline periods",
+            "Uses voice/video frequently",
+            "Low monitoring of partner activity"
+          ]
+        },
+        {
+          "title": "Anxious",
+          "points": [
+            "Hypervigilant to read receipts",
+            "Distressed by response delays",
+            "Prefers text (controllable)",
+            "Frequent status checking"
+          ]
+        },
+        {
+          "title": "Avoidant",
+          "points": [
+            "Deliberately delayed responses",
+            "Prefers asynchronous channels",
+            "Avoids video calls",
+            "Compartmentalizes platforms"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Model",
+      "heading": "Digital Attachment Cycle",
+      "steps": [
+        {
+          "title": "Signal",
+          "desc": "Partner sends or withholds digital proximity cue"
+        },
+        {
+          "title": "Interpret",
+          "desc": "Attachment schema shapes meaning of cue"
+        },
+        {
+          "title": "Regulate",
+          "desc": "Strategy deployed: approach, avoid, or protest"
+        },
+        {
+          "title": "Feedback",
+          "desc": "Partner response reinforces or disrupts pattern"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Data",
+      "heading": "Distress Response by Attachment Style",
+      "desc": "Mean distress rating (0–10) when partner is 'seen but not replied' for 2+ hours.",
+      "items": [
+        {
+          "label": "Anxious-preoccupied",
+          "value": 82
+        },
+        {
+          "label": "Fearful-avoidant",
+          "value": 58
+        },
+        {
+          "label": "Secure",
+          "value": 24
+        },
+        {
+          "label": "Dismissive-avoidant",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Results",
+      "heading": "Key Regression Results (Standardized β)",
+      "headers": [
+        "Predictor",
+        "Satisfaction",
+        "Distress",
+        "Monitoring"
+      ],
+      "rows": [
+        [
+          "Attachment anxiety",
+          "−.34***",
+          ".48***",
+          ".52***"
+        ],
+        [
+          "Attachment avoidance",
+          "−.28***",
+          ".12*",
+          "−.18**"
+        ],
+        [
+          "Platform count",
+          "−.08",
+          ".22**",
+          ".31***"
+        ],
+        [
+          "Relationship length",
+          ".24**",
+          "−.16*",
+          "−.22**"
+        ]
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Clinical",
+      "heading": "Implications for Digital-Age Therapy",
+      "imgAlt": "Therapeutic framework diagram",
+      "points": [
+        "Therapists should assess digital communication patterns as attachment data",
+        "'Phone stacking' and 'notification fasting' as therapeutic interventions",
+        "Couples therapy protocols need platform-specific psychoeducation",
+        "Secure base provision can be taught in digital contexts"
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Context",
+      "heading": "Digital Attachment Research Timeline",
+      "events": [
+        {
+          "date": "2015",
+          "title": "First studies",
+          "desc": "Texting and attachment anxiety"
+        },
+        {
+          "date": "2019",
+          "title": "Social media",
+          "desc": "Platform-specific effects"
+        },
+        {
+          "date": "2022",
+          "title": "Pandemic shift",
+          "desc": "Forced digital-primary bonds"
+        },
+        {
+          "date": "2026",
+          "title": "This study",
+          "desc": "Longitudinal + mixed-methods"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We don't need to unplug to heal. We need to understand how our deepest relational patterns show up in every notification, every ellipsis, every silence.",
+      "attribution": "Study Conclusion"
+    },
+    {
+      "type": "end",
+      "text": "Attachment Patterns in Digital Relationships · Longitudinal Study"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "subtitle": "Paper Deep-Read",
+      "info": "Hu et al., 2021 · Microsoft · arXiv:2106.09685"
+    },
+    {
+      "type": "big-number",
+      "number": "175B",
+      "label": "Trainable Parameters per Task",
+      "desc": "GPT-3 full fine-tuning: each downstream task requires a complete 175B parameter copy. N tasks = N × 175B in storage."
+    },
+    {
+      "type": "cards",
+      "label": "Prior Art",
+      "heading": "Why Existing Efficient Methods Fall Short",
+      "items": [
+        {
+          "title": "Adapter Layers",
+          "desc": "Add model depth → inference latency, especially on short sequences"
+        },
+        {
+          "title": "Prefix/Prompt Tuning",
+          "desc": "Consume input length → compress usable sequence"
+        },
+        {
+          "title": "Common Issue",
+          "desc": "Rarely match full fine-tuning baseline — efficiency vs quality tradeoff"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Core Insight",
+      "heading": "Weight Updates Are Low-Rank",
+      "imgAlt": "Low-rank decomposition diagram W0 + BA",
+      "points": [
+        "Over-parameterized models live on a low-dimensional manifold",
+        "Hypothesis: adaptation ΔW also has low intrinsic rank",
+        "Even with d = 12,288, rank r = 1–2 suffices",
+        "Freeze W₀, train only A and B matrices"
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Method",
+      "heading": "LoRA: Freeze W₀, Inject Low-Rank BA",
+      "steps": [
+        {
+          "title": "Decompose",
+          "desc": "ΔW = B·A where A∈R^(r×d), B∈R^(d×r)"
+        },
+        {
+          "title": "Initialize",
+          "desc": "A ~ Gaussian, B = 0 → start ΔW = 0"
+        },
+        {
+          "title": "Train",
+          "desc": "W₀ frozen, only train A and B"
+        },
+        {
+          "title": "Merge",
+          "desc": "Deploy: W = W₀ + BA — same as original model"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Advantages",
+      "heading": "Four Key Advantages",
+      "columns": [
+        {
+          "title": "Efficiency",
+          "points": [
+            "No gradient storage for frozen params",
+            "VRAM: 1.2TB → 350GB",
+            "Training throughput +25%"
+          ]
+        },
+        {
+          "title": "Deployment",
+          "points": [
+            "Zero inference latency added",
+            "Merge weights: W = W₀ + BA",
+            "Hot-swap: subtract BA, add B'A'"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "GLUE Results",
+      "heading": "GLUE Benchmark: Fewer Params, Same or Better",
+      "headers": [
+        "Model",
+        "Method",
+        "Score",
+        "Params"
+      ],
+      "rows": [
+        [
+          "RoBERTa-base",
+          "Full FT",
+          "86.4",
+          "125M"
+        ],
+        [
+          "RoBERTa-base",
+          "LoRA",
+          "87.2",
+          "0.3M"
+        ],
+        [
+          "RoBERTa-large",
+          "Full FT",
+          "88.9",
+          "355M"
+        ],
+        [
+          "RoBERTa-large",
+          "LoRA",
+          "89.0",
+          "0.8M"
+        ],
+        [
+          "DeBERTa-XXL",
+          "Full FT",
+          "91.1",
+          "1500M"
+        ],
+        [
+          "DeBERTa-XXL",
+          "LoRA",
+          "91.3",
+          "4.7M"
+        ]
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "GPT-3 Results",
+      "heading": "GPT-3 175B: Still Holds at Scale",
+      "desc": "WikiSQL, MNLI, SAMSum all match or exceed full fine-tuning.",
+      "items": [
+        {
+          "value": "10,000×",
+          "label": "Parameter reduction (350GB → 35MB)"
+        },
+        {
+          "value": "1/3",
+          "label": "VRAM usage (1.2TB → 350GB)"
+        },
+        {
+          "value": "0%",
+          "label": "Extra inference latency"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Rank Analysis",
+      "heading": "How Much Rank Do You Need?",
+      "desc": "Adapting Wq + Wv: rank r=1 already sufficient; r=64 adds minimal gain.",
+      "items": [
+        {
+          "label": "r=1 (Wq,Wv)",
+          "value": 95
+        },
+        {
+          "label": "r=4 (Wq,Wv)",
+          "value": 97
+        },
+        {
+          "label": "r=64 (Wq,Wv)",
+          "value": 98
+        },
+        {
+          "label": "r=1 (Wq only)",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Low-rank adaptation = parameter efficient + zero extra inference latency + quality on par or better. One foundation model, many hot-swappable LoRA modules.",
+      "attribution": "Hu et al., 2021 · Microsoft Research"
+    },
+    {
+      "type": "end",
+      "text": "LoRA · Low-Rank Adaptation · arXiv:2106.09685"
+    }
+  ]
+}

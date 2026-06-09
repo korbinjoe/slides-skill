@@ -1,0 +1,183 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "2026 Pritzker Prize Masters Season",
+      "subtitle": "8 New Works, 8 Kinds of Dedication",
+      "info": "From the Suzhou Creek to the desert hinterland · 2026"
+    },
+    {
+      "type": "table",
+      "label": "Overview",
+      "heading": "Eight Masters, Eight Commitments",
+      "headers": [
+        "#",
+        "Architect",
+        "Project",
+        "Location"
+      ],
+      "rows": [
+        [
+          "01",
+          "Tadao Ando",
+          "H+ Museum",
+          "Suzhou, China"
+        ],
+        [
+          "02",
+          "David Chipperfield",
+          "Santa Giulia Arena",
+          "Milan, Italy"
+        ],
+        [
+          "03",
+          "Zaha Hadid (posthumous)",
+          "Danjiang Bridge",
+          "Taipei"
+        ],
+        [
+          "04",
+          "Norman Foster",
+          "JIA Art",
+          "Shanghai, China"
+        ],
+        [
+          "05",
+          "Peter Zumthor",
+          "LACMA Geffen",
+          "Los Angeles, USA"
+        ],
+        [
+          "06",
+          "Frank Gehry (posthumous)",
+          "Guggenheim Abu Dhabi",
+          "Abu Dhabi, UAE"
+        ]
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Ando",
+      "heading": "A Concrete Poem in Jiangnan Gardens",
+      "imgAlt": "Tadao Ando H+ Museum concrete facade",
+      "points": [
+        "Tadao Ando · 1995 Pritzker · Opened Jan 2026",
+        "Three-dimensional garden — roaming architecture",
+        "Fair-faced concrete, geometric lines × light and shadow",
+        "\"Let architecture return to nature, let art heal the heart\""
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Three Projects",
+      "heading": "Three Milestones in 2026",
+      "items": [
+        {
+          "title": "Zaha Hadid · Danjiang Bridge",
+          "desc": "920m span, longest single-tower asymmetric cable-stayed bridge. 100% faithful to original design."
+        },
+        {
+          "title": "Norman Foster · JIA Art Shanghai",
+          "desc": "Steel petals blooming on Suzhou Creek. Triple experience: art, views, city."
+        },
+        {
+          "title": "OMA × SANAA · New Museum NYC",
+          "desc": "$82M expansion, 5,574 m². Deconstructivist meets ethereal transparency."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Zumthor",
+      "heading": "Peter Zumthor · LACMA Geffen Gallery",
+      "desc": "20 years of refinement — a poetic vessel for art.",
+      "items": [
+        {
+          "value": "$724M",
+          "label": "Total Investment"
+        },
+        {
+          "value": "32,293 m²",
+          "label": "Gallery Area"
+        },
+        {
+          "value": "20 yrs",
+          "label": "In Development"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "920m",
+      "label": "Danjiang Bridge Span",
+      "desc": "Zaha Hadid's posthumous masterwork. World's longest single-tower asymmetric cable-stayed bridge, opened May 2026."
+    },
+    {
+      "type": "two-column",
+      "label": "Gehry & Kéré",
+      "heading": "Two Visions at the Edges",
+      "left": {
+        "title": "Frank Gehry · Abu Dhabi",
+        "points": [
+          "Deconstructivist swan song",
+          "Metal facade shifts with desert light",
+          "Advanced shading for extreme climate"
+        ]
+      },
+      "right": {
+        "title": "Francis Kéré · Dakar",
+        "points": [
+          "Rammed-earth brick screens",
+          "Baobab tree in central courtyard",
+          "Natural ventilation, no AC dependency"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Pritzker Timeline",
+      "heading": "Prize Years of Featured Architects",
+      "events": [
+        {
+          "date": "1989",
+          "title": "Frank Gehry",
+          "desc": "Deconstructivism pioneer"
+        },
+        {
+          "date": "1995",
+          "title": "Tadao Ando",
+          "desc": "Concrete poetry"
+        },
+        {
+          "date": "1999",
+          "title": "Norman Foster",
+          "desc": "High-tech humanism"
+        },
+        {
+          "date": "2004",
+          "title": "Zaha Hadid",
+          "desc": "Parametric fluidity"
+        },
+        {
+          "date": "2009",
+          "title": "Peter Zumthor",
+          "desc": "Poetic minimalism"
+        },
+        {
+          "date": "2022",
+          "title": "Francis Kéré",
+          "desc": "Vernacular innovation"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "All enduring classics are born from daily perseverance. Some spent 20 years polishing one building — that is the power of deep dedication.",
+      "attribution": "2026 Pritzker Masters Season"
+    },
+    {
+      "type": "end",
+      "text": "All enduring classics are born from deep dedication."
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "System Performance Review",
+      "subtitle": "Q2 2026 Engineering Metrics",
+      "info": "Infrastructure Team · Monthly Review"
+    },
+    {
+      "type": "stats",
+      "label": "Summary",
+      "heading": "Key Performance Indicators",
+      "desc": "All primary metrics trending positive against quarterly targets.",
+      "items": [
+        {
+          "value": "14.2ms",
+          "label": "p99 API latency (↓18%)"
+        },
+        {
+          "value": "99.98%",
+          "label": "Availability (target: 99.95%)"
+        },
+        {
+          "value": "$0.43",
+          "label": "Cost per 1M requests (↓22%)"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Latency",
+      "heading": "p99 Latency by Endpoint",
+      "desc": "Top 6 endpoints by request volume. All under 50ms target.",
+      "items": [
+        {
+          "label": "/api/query",
+          "value": 28
+        },
+        {
+          "label": "/api/ingest",
+          "value": 45
+        },
+        {
+          "label": "/api/auth",
+          "value": 12
+        },
+        {
+          "label": "/api/search",
+          "value": 38
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Incidents",
+      "heading": "Post-Incident Learnings",
+      "items": [
+        {
+          "title": "May 12 — Cache Stampede",
+          "desc": "TTL alignment caused synchronized invalidation. Fixed with jitter."
+        },
+        {
+          "title": "May 19 — DNS Timeout",
+          "desc": "Provider failover took 47s. Added secondary resolver."
+        },
+        {
+          "title": "May 28 — Memory Leak",
+          "desc": "gRPC connection pool growth. Bounded with max-idle config."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Capacity",
+      "heading": "Resource Utilization Trends",
+      "headers": [
+        "Resource",
+        "April",
+        "May",
+        "June (proj)",
+        "Threshold"
+      ],
+      "rows": [
+        [
+          "CPU (avg)",
+          "34%",
+          "38%",
+          "41%",
+          "70%"
+        ],
+        [
+          "Memory",
+          "62%",
+          "65%",
+          "68%",
+          "80%"
+        ],
+        [
+          "Disk IOPS",
+          "12K",
+          "14K",
+          "15K",
+          "25K"
+        ],
+        [
+          "Network",
+          "2.1 Gbps",
+          "2.4 Gbps",
+          "2.6 Gbps",
+          "10 Gbps"
+        ]
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Deep Dive",
+      "heading": "Cache Hit Rate Improvement",
+      "left": {
+        "title": "Before (April)",
+        "points": [
+          "78% hit rate across all caches",
+          "No tiered invalidation",
+          "Single-layer Redis"
+        ]
+      },
+      "right": {
+        "title": "After (June)",
+        "points": [
+          "94% hit rate (+16pp)",
+          "TTL-based tiered invalidation",
+          "L1 in-process + L2 Redis"
+        ]
+      }
+    },
+    {
+      "type": "flow",
+      "label": "Automation",
+      "heading": "Incident Response Pipeline",
+      "steps": [
+        {
+          "title": "Detect",
+          "desc": "PagerDuty alert within 30s of threshold breach"
+        },
+        {
+          "title": "Triage",
+          "desc": "Auto-runbook classifies by service and severity"
+        },
+        {
+          "title": "Mitigate",
+          "desc": "Pre-approved rollback or circuit-break actions"
+        },
+        {
+          "title": "Review",
+          "desc": "Blameless post-mortem within 48 hours"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "Infrastructure Milestones",
+      "events": [
+        {
+          "date": "Jul",
+          "title": "GPU cluster",
+          "desc": "ML inference tier live"
+        },
+        {
+          "date": "Aug",
+          "title": "eBPF tracing",
+          "desc": "Kernel-level observability"
+        },
+        {
+          "date": "Sep",
+          "title": "Chaos eng",
+          "desc": "Automated failure injection"
+        },
+        {
+          "date": "Oct",
+          "title": "Multi-AZ",
+          "desc": "Active-active failover"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Cost",
+      "heading": "Compute Cost Optimization Paths",
+      "columns": [
+        {
+          "title": "Reserved",
+          "points": [
+            "40% discount on baseline",
+            "1-year commitment",
+            "Predictable workloads"
+          ]
+        },
+        {
+          "title": "Spot/Preemptible",
+          "points": [
+            "70% discount on burst",
+            "2-min termination notice",
+            "Fault-tolerant batch jobs"
+          ]
+        },
+        {
+          "title": "Serverless",
+          "points": [
+            "Pay per invocation",
+            "Zero idle cost",
+            "Spiky, low-volume endpoints"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We don't optimize for the average case. We optimize for the tail — because that's where users feel the pain.",
+      "attribution": "SRE Principle #4"
+    },
+    {
+      "type": "end",
+      "text": "Q2 Performance Review · Infrastructure Engineering"
+    }
+  ]
+}

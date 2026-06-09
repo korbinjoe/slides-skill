@@ -1,0 +1,217 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Precision Oncology Initiative",
+      "subtitle": "Translational Research & Clinical Outcomes",
+      "info": "University Medical Center · Annual Report 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Program",
+      "heading": "Initiative at a Glance",
+      "desc": "Five-year precision oncology program bridging genomics to patient care.",
+      "items": [
+        {
+          "value": "12,400",
+          "label": "Patients genomically profiled"
+        },
+        {
+          "value": "34%",
+          "label": "Matched to targeted therapy"
+        },
+        {
+          "value": "2.8×",
+          "label": "Median PFS improvement"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Pillars",
+      "heading": "Three Research Pillars",
+      "items": [
+        {
+          "title": "Molecular Profiling",
+          "desc": "Comprehensive genomic profiling of solid tumors with 523-gene panel and RNA sequencing"
+        },
+        {
+          "title": "Biomarker Discovery",
+          "desc": "Multi-omics integration identifying novel predictive biomarkers for immunotherapy response"
+        },
+        {
+          "title": "Clinical Trials",
+          "desc": "18 investigator-initiated trials with 6 industry partnerships targeting actionable mutations"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "34%",
+      "label": "Patients Matched to Targeted Therapy",
+      "desc": "One in three profiled patients received a genomically-guided treatment recommendation."
+    },
+    {
+      "type": "flow",
+      "label": "Pipeline",
+      "heading": "Bench-to-Bedside Workflow",
+      "steps": [
+        {
+          "title": "Profile",
+          "desc": "523-gene panel + RNA + ctDNA on every eligible patient"
+        },
+        {
+          "title": "Analyze",
+          "desc": "Molecular tumor board reviews actionable findings weekly"
+        },
+        {
+          "title": "Match",
+          "desc": "Algorithm maps variants to approved/trial therapies"
+        },
+        {
+          "title": "Treat",
+          "desc": "Precision protocol with longitudinal ctDNA monitoring"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Trials",
+      "heading": "Active Clinical Trials",
+      "headers": [
+        "Trial",
+        "Phase",
+        "Target",
+        "Enrolled",
+        "Status"
+      ],
+      "rows": [
+        [
+          "PREC-101",
+          "II",
+          "HER2 low-expression",
+          "142/200",
+          "Enrolling"
+        ],
+        [
+          "PREC-204",
+          "I/II",
+          "KRAS G12D",
+          "48/60",
+          "Enrolling"
+        ],
+        [
+          "PREC-305",
+          "III",
+          "TMB-high solid tumors",
+          "380/500",
+          "Active"
+        ],
+        [
+          "PREC-410",
+          "II",
+          "ctDNA-guided de-escalation",
+          "92/150",
+          "Enrolling"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Outcomes",
+      "heading": "Standard vs Precision Protocol Outcomes",
+      "columns": [
+        {
+          "title": "Standard of Care",
+          "points": [
+            "Median PFS: 6.2 months",
+            "ORR: 28%",
+            "Grade 3+ AE: 42%",
+            "Median OS: 14.8 months"
+          ]
+        },
+        {
+          "title": "Precision Protocol",
+          "points": [
+            "Median PFS: 11.4 months (+84%)",
+            "ORR: 47% (+68%)",
+            "Grade 3+ AE: 31% (−26%)",
+            "Median OS: 22.6 months (+53%)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Mutations",
+      "heading": "Actionable Mutation Frequency",
+      "desc": "Top alterations identified in profiled patient cohort.",
+      "items": [
+        {
+          "label": "EGFR mutations",
+          "value": 18
+        },
+        {
+          "label": "KRAS variants",
+          "value": 24
+        },
+        {
+          "label": "HER2 amplification",
+          "value": 12
+        },
+        {
+          "label": "BRAF V600E",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Milestones",
+      "heading": "Program Evolution",
+      "events": [
+        {
+          "date": "2021",
+          "title": "Launch",
+          "desc": "First 500 patients profiled"
+        },
+        {
+          "date": "2023",
+          "title": "MTB",
+          "desc": "Weekly molecular tumor board"
+        },
+        {
+          "date": "2025",
+          "title": "ctDNA",
+          "desc": "Liquid biopsy integration"
+        },
+        {
+          "date": "2027",
+          "title": "AI-guided",
+          "desc": "ML-driven treatment matching"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Innovation",
+      "heading": "ctDNA Monitoring as Response Biomarker",
+      "imgAlt": "ctDNA kinetics chart",
+      "points": [
+        "Serial ctDNA tracking predicts radiographic response 6 weeks earlier",
+        "Molecular residual disease detection sensitivity: 0.01% VAF",
+        "Early ctDNA clearance correlates with 3.4× improved PFS",
+        "Enables adaptive trial designs with real-time response assessment"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Every tumor is unique. Our job is to read its molecular signature and find the therapy it cannot resist.",
+      "attribution": "Program Director · Precision Oncology"
+    },
+    {
+      "type": "end",
+      "text": "Precision Oncology Initiative · Translating Genomes into Cures"
+    }
+  ]
+}

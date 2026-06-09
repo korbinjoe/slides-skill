@@ -1,0 +1,228 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Major Engineering Construction Report",
+      "subtitle": "POWERCHINA · Annual Project Progress Briefing",
+      "info": "Engineering Management Department · 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Overview",
+      "heading": "Annual Engineering Data",
+      "desc": "Safety first, quality paramount — steady progress across all active projects.",
+      "items": [
+        {
+          "value": "186",
+          "label": "Active Projects"
+        },
+        {
+          "value": "$39.8B",
+          "label": "Total Contract Value"
+        },
+        {
+          "value": "99.7%",
+          "label": "Safety Compliance Rate"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Flagship",
+      "heading": "Three Landmark Projects",
+      "items": [
+        {
+          "title": "Pumped Storage Power Station",
+          "desc": "2.4 GW capacity, 620m head difference between upper and lower reservoirs; full commissioning expected 2027"
+        },
+        {
+          "title": "Inter-Basin Water Transfer",
+          "desc": "438 km pipeline, 3 billion m³ annual transfer volume, benefiting 12 million people"
+        },
+        {
+          "title": "Offshore Wind Base",
+          "desc": "5 GW total capacity, 16 MW single-turbine units, 220 kV offshore substation"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Management",
+      "heading": "Full Project Lifecycle Management",
+      "steps": [
+        {
+          "title": "Plan",
+          "desc": "Feasibility study and preliminary design review"
+        },
+        {
+          "title": "Build",
+          "desc": "Schedule, quality, safety, and cost control"
+        },
+        {
+          "title": "Accept",
+          "desc": "Sub-project and final acceptance inspections"
+        },
+        {
+          "title": "Operate",
+          "desc": "Smart O&M platform and long-term monitoring"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Schedule",
+      "heading": "Key Project Progress",
+      "headers": [
+        "Project",
+        "Planned",
+        "Actual",
+        "Variance",
+        "Status"
+      ],
+      "rows": [
+        [
+          "Pumped Storage",
+          "68%",
+          "71%",
+          "+3%",
+          "Ahead"
+        ],
+        [
+          "Water Transfer",
+          "45%",
+          "44%",
+          "−1%",
+          "On Track"
+        ],
+        [
+          "Offshore Wind",
+          "32%",
+          "35%",
+          "+3%",
+          "Ahead"
+        ],
+        [
+          "Expressway",
+          "56%",
+          "52%",
+          "−4%",
+          "Manageable"
+        ]
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "0",
+      "label": "Major Safety Incidents",
+      "desc": "1,460 consecutive days without a major safety incident — management system operating effectively."
+    },
+    {
+      "type": "comparison",
+      "label": "Innovation",
+      "heading": "Traditional vs Digital Construction",
+      "columns": [
+        {
+          "title": "Traditional Model",
+          "points": [
+            "2D drawing handover",
+            "Manual inspection primary",
+            "Post-hoc quality data analysis",
+            "Experience-driven decisions"
+          ]
+        },
+        {
+          "title": "Digital Model",
+          "points": [
+            "BIM + 3D visualization",
+            "Drone + AI inspection",
+            "Real-time quality data capture",
+            "Data-driven decisions"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Quality",
+      "heading": "Project Quality Ratings",
+      "desc": "Sub-project excellence rate statistics.",
+      "items": [
+        {
+          "label": "Pumped Storage",
+          "value": 98
+        },
+        {
+          "label": "Water Transfer",
+          "value": 96
+        },
+        {
+          "label": "Offshore Wind",
+          "value": 97
+        },
+        {
+          "label": "Expressway",
+          "value": 94
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "ESG",
+      "heading": "Green Construction & Social Responsibility",
+      "left": {
+        "title": "Green Construction",
+        "points": [
+          "Zero discharge of construction wastewater",
+          "100% dust monitoring coverage",
+          "92% solid waste recycling rate",
+          "78% green building materials usage"
+        ]
+      },
+      "right": {
+        "title": "Social Responsibility",
+        "points": [
+          "65% local employment ratio",
+          "4,200 workers trained",
+          "18 community co-development projects",
+          "$16.8M targeted assistance investment"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Milestones",
+      "heading": "Annual Engineering Highlights",
+      "events": [
+        {
+          "date": "2026-01",
+          "title": "Groundbreaking",
+          "desc": "First offshore wind turbine installation"
+        },
+        {
+          "date": "2026-04",
+          "title": "Breakthrough",
+          "desc": "Water transfer tunnel main section completed"
+        },
+        {
+          "date": "2026-08",
+          "title": "Impoundment",
+          "desc": "Pumped storage lower reservoir filled"
+        },
+        {
+          "date": "2026-12",
+          "title": "Grid Connection",
+          "desc": "First offshore wind batch connected to grid"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Every project is a commitment to nature: we build it well, and we protect it well.",
+      "attribution": "Engineering Philosophy"
+    },
+    {
+      "type": "end",
+      "text": "Major Engineering Construction Report · POWERCHINA"
+    }
+  ]
+}

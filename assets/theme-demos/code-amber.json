@@ -1,0 +1,191 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Claude Code Auto Mode",
+      "subtitle": "A Safer Way to Skip Permissions",
+      "info": "Anthropic Engineering · Mar 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "93%",
+      "label": "Permission Prompts Approved",
+      "desc": "Approval fatigue sets in. Two extremes: sandbox (safe, high-maintenance) or --dangerously-skip-permissions (zero protection)."
+    },
+    {
+      "type": "cards",
+      "label": "Threat Model",
+      "heading": "Why an Agent Might Take Dangerous Action",
+      "items": [
+        {
+          "title": "Overeager Behavior",
+          "desc": "Takes initiative beyond what user would approve"
+        },
+        {
+          "title": "Honest Mistakes",
+          "desc": "Misunderstands blast radius of actions"
+        },
+        {
+          "title": "Prompt Injection",
+          "desc": "Hijacked by planted instructions in tool outputs"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Architecture",
+      "heading": "Two Layers of Defense",
+      "steps": [
+        {
+          "title": "Input Layer",
+          "desc": "Prompt-injection probe scans tool outputs"
+        },
+        {
+          "title": "Stage 1 Filter",
+          "desc": "Fast single-token classification"
+        },
+        {
+          "title": "Stage 2 Reasoning",
+          "desc": "Chain-of-thought only if flagged"
+        },
+        {
+          "title": "Deny & Continue",
+          "desc": "Blocked → agent retries safer approach"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Permission Tiers",
+      "heading": "Three-Tier Permission System",
+      "columns": [
+        {
+          "title": "Tier 1",
+          "points": [
+            "Built-in safe-tool allowlist",
+            "User settings",
+            "No classifier needed"
+          ]
+        },
+        {
+          "title": "Tier 2",
+          "points": [
+            "In-project file operations",
+            "No classifier call",
+            "Scoped to workspace"
+          ]
+        },
+        {
+          "title": "Tier 3",
+          "points": [
+            "Shell commands, web fetches",
+            "Transcript classifier evaluates",
+            "Full reasoning pipeline"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Classifier",
+      "heading": "Reasoning-Blind by Design",
+      "imgAlt": "Diagram showing what the classifier sees vs strips",
+      "points": [
+        "Strips assistant text — agent can't \"talk\" classifier into approving",
+        "Strips tool results — primary prompt-injection defense",
+        "Sees only user messages + bare tool call commands",
+        "Complementary to CoT monitoring"
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Evaluation",
+      "heading": "Performance: The Honest Numbers",
+      "headers": [
+        "Dataset",
+        "Size",
+        "FPR",
+        "FNR"
+      ],
+      "rows": [
+        [
+          "Real traffic",
+          "n=10K",
+          "0.4%",
+          "—"
+        ],
+        [
+          "Real overeager",
+          "n=52",
+          "—",
+          "17%"
+        ],
+        [
+          "Synthetic exfil",
+          "n=1K",
+          "—",
+          "5.7%"
+        ],
+        [
+          "Stage 1 alone",
+          "—",
+          "8.5%",
+          "6.6% / 1.8%"
+        ]
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Key Metrics",
+      "heading": "Pipeline Performance Summary",
+      "desc": "Full two-stage pipeline metrics across all test sets.",
+      "items": [
+        {
+          "value": "0.4%",
+          "label": "False Positive Rate"
+        },
+        {
+          "value": "17%",
+          "label": "FNR on Overeager"
+        },
+        {
+          "value": "5.7%",
+          "label": "FNR on Exfiltration"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Design Decisions",
+      "heading": "Two-Stage Classification Efficiency",
+      "desc": "Stage 1 fast filter reduces unnecessary reasoning calls.",
+      "items": [
+        {
+          "label": "Stage 1 FPR",
+          "value": 85
+        },
+        {
+          "label": "Stage 2 FPR (final)",
+          "value": 4
+        },
+        {
+          "label": "Cache-hit savings",
+          "value": 72
+        },
+        {
+          "label": "Deny-continue success",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Auto mode catches enough dangerous actions to make autonomous operation substantially safer — but is not a replacement for careful human review on high-stakes infrastructure.",
+      "attribution": "Anthropic Engineering"
+    },
+    {
+      "type": "end",
+      "text": "Substantially safer than no guardrails. anthropic.com/engineering/claude-code-auto-mode"
+    }
+  ]
+}

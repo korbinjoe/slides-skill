@@ -1,0 +1,171 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Lin Huiyin: Architect Overshadowed by Literary Fame",
+      "subtitle": "70th Anniversary · Rediscovering a Woman's Force in Chinese Architecture",
+      "info": "Phoenix Space · 2025"
+    },
+    {
+      "type": "timeline",
+      "label": "Life",
+      "heading": "A Life in Architecture",
+      "events": [
+        {
+          "date": "1904",
+          "title": "Born in Hangzhou",
+          "desc": "Literary family background"
+        },
+        {
+          "date": "1924",
+          "title": "Studied in America",
+          "desc": "University of Pennsylvania"
+        },
+        {
+          "date": "1930",
+          "title": "Joined Yingzao Society",
+          "desc": "Chinese architectural history research"
+        },
+        {
+          "date": "1932",
+          "title": "First Paper",
+          "desc": "On Several Features of Chinese Architecture"
+        },
+        {
+          "date": "1949",
+          "title": "Designed National Emblem",
+          "desc": "Symbol of new China"
+        },
+        {
+          "date": "1955",
+          "title": "Passed Away",
+          "desc": "Tombstone reads \"Architect Lin Huiyin\""
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Practice",
+      "heading": "Early Architectural Practice After Returning Home",
+      "items": [
+        {
+          "title": "1929 Liang Qichao Tombstone",
+          "desc": "First work upon returning from study abroad"
+        },
+        {
+          "title": "1929 Jihai Railway Station",
+          "desc": "Overall design, Gothic lion motif"
+        },
+        {
+          "title": "1932 Peking University Geology Building",
+          "desc": "Earliest introduction of Western modernism to China"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Monuments",
+      "heading": "Architectural Marks on National Monuments",
+      "left": {
+        "title": "Monument to the People's Heroes",
+        "points": [
+          "Proposed creative revision to the design",
+          "Personally designed pedestal ornamentation and wreath reliefs",
+          "Based on Tang dynasty style"
+        ]
+      },
+      "right": {
+        "title": "Babaoshan Revolutionary Cemetery",
+        "points": [
+          "Main building layout design",
+          "Also buried in the space she helped design"
+        ]
+      }
+    },
+    {
+      "type": "image-text",
+      "label": "Pioneer",
+      "heading": "First Architectural Paper: A Revelation",
+      "imgAlt": "Lin Huiyin 1932 architectural paper",
+      "points": [
+        "First architectural theory article published by a Chinese scholar",
+        "Defined basic features of the timber frame structural system",
+        "Rebutted Western misreadings of Chinese architecture",
+        "Drew a complete conceptual framework for Chinese architectural history"
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Contributions",
+      "heading": "Academic Contributions Overview",
+      "steps": [
+        {
+          "title": "\"Architectural Intent\" Concept",
+          "desc": "Convergence of technique, beauty, history, and human feeling"
+        },
+        {
+          "title": "Qing Style Construction Manual",
+          "desc": "Summarized theoretical framework of Chinese architecture"
+        },
+        {
+          "title": "Folk Architecture Pioneer",
+          "desc": "First to propose protection of vernacular buildings"
+        },
+        {
+          "title": "Housing Survey Course",
+          "desc": "First systematic teaching at Tsinghua, 1949"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Resilience",
+      "heading": "Architectural Fighter Through War",
+      "desc": "Surveying ancient buildings in remote valleys — wind, rain, and hardship without retreat.",
+      "items": [
+        {
+          "value": "15+",
+          "label": "Provinces Surveyed"
+        },
+        {
+          "value": "2000+",
+          "label": "Building Measurement Records"
+        },
+        {
+          "value": "8 years",
+          "label": "Research During Wartime Displacement"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "What beauty? I have so much work to do!",
+      "attribution": "Lin Huiyin"
+    },
+    {
+      "type": "comparison",
+      "label": "Legacy",
+      "heading": "The Career She Wanted to Pursue for Life",
+      "columns": [
+        {
+          "title": "Disciplinary Foundation",
+          "points": [
+            "Co-founded architecture departments at Northeastern and Tsinghua",
+            "Surveyed ancient buildings in remote wilderness"
+          ]
+        },
+        {
+          "title": "Intellectual Pioneer",
+          "points": [
+            "Poured final energy into national emblem and monument",
+            "A pioneer in thought"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "text": "Architect Lin Huiyin's Tomb · She proved with her life that she was an architect in every sense"
+    }
+  ]
+}

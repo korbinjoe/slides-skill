@@ -1,0 +1,213 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "AI Agent Engineering",
+      "subtitle": "From Demo to Production — Beyond Just a Large Model",
+      "info": "2026 · Tech Sharing Series"
+    },
+    {
+      "type": "big-number",
+      "number": "90%",
+      "label": "Agent Projects Stall at Demo",
+      "desc": "Reaching production requires crossing four engineering thresholds: Architecture, Context, Evaluation, Observability."
+    },
+    {
+      "type": "cards",
+      "label": "Pain Points",
+      "heading": "Three Barriers to Agent Production",
+      "items": [
+        {
+          "title": "Unstable Performance",
+          "desc": "Multi-step reasoning compounds errors, P95 latency unpredictable"
+        },
+        {
+          "title": "Unpredictable Cost",
+          "desc": "Token drift per task varies 5-50x"
+        },
+        {
+          "title": "No Quality Loop",
+          "desc": "Failure causes opaque, regression tests missing"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Architecture",
+      "heading": "Workflow vs Agent vs Multi-Agent",
+      "columns": [
+        {
+          "title": "Workflow",
+          "points": [
+            "Fixed paths",
+            "Predictable & debuggable",
+            "Deterministic tasks"
+          ]
+        },
+        {
+          "title": "Agent",
+          "points": [
+            "Dynamic paths",
+            "LLM-driven decisions",
+            "Semi-structured exploration"
+          ]
+        },
+        {
+          "title": "Multi-Agent",
+          "points": [
+            "Multi-role collaboration",
+            "Task distribution",
+            "Complex long-horizon tasks"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Tool Orchestration",
+      "heading": "Six Steps to Reliable Tool Calling",
+      "steps": [
+        {
+          "title": "Parse Task",
+          "desc": "Decompose user intent"
+        },
+        {
+          "title": "Select Tool",
+          "desc": "Schema matching + retrieval"
+        },
+        {
+          "title": "Execute",
+          "desc": "Parameter fill + timeout control"
+        },
+        {
+          "title": "Validate & Retry",
+          "desc": "JSON schema check + exponential backoff"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "KPI Dashboard",
+      "heading": "Four Gauges Before Going Live",
+      "desc": "Monitor these metrics before any production deployment.",
+      "items": [
+        {
+          "value": "92.4%",
+          "label": "Task Success Rate"
+        },
+        {
+          "value": "4.8s",
+          "label": "P95 Latency"
+        },
+        {
+          "value": "$0.06",
+          "label": "Cost per Task"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Optimization",
+      "heading": "12-Week Accuracy vs Cost Trend",
+      "desc": "Continuous optimization: accuracy up, cost down.",
+      "items": [
+        {
+          "label": "Week 1",
+          "value": 71
+        },
+        {
+          "label": "Week 4 (reranker)",
+          "value": 78
+        },
+        {
+          "label": "Week 8 (fallback)",
+          "value": 85
+        },
+        {
+          "label": "Week 12 (cache)",
+          "value": 92
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Failure Modes",
+      "heading": "Four Failure Categories",
+      "headers": [
+        "Category",
+        "Symptom",
+        "Root Cause"
+      ],
+      "rows": [
+        [
+          "Tool Error",
+          "Schema mismatch",
+          "Parameter hallucination"
+        ],
+        [
+          "Infinite Loop",
+          "Plan keeps revising",
+          "No termination in reflection chain"
+        ],
+        [
+          "Hallucination",
+          "Fabricated results",
+          "Invents tools or fakes success"
+        ],
+        [
+          "Cost Blowout",
+          "Token drift",
+          "Repeated retrieval, chain too long"
+        ]
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "Prototype to Production — 12 Weeks in 4 Phases",
+      "events": [
+        {
+          "date": "W1–W3",
+          "title": "Prototype",
+          "desc": "Single task end-to-end + tool schema draft"
+        },
+        {
+          "date": "W4–W7",
+          "title": "Engineering",
+          "desc": "Eval sets + auto tests + fallback mechanisms"
+        },
+        {
+          "date": "W8–W10",
+          "title": "Scale",
+          "desc": "Cache + rate limiting + multi-tenant isolation"
+        },
+        {
+          "date": "W11–W12",
+          "title": "Production",
+          "desc": "Canary rollout + SLO monitoring"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Context Engineering",
+      "heading": "Context Is the Agent's Real Weight",
+      "imgAlt": "Hub-spoke diagram of context engineering",
+      "points": [
+        "RAG / Vector recall / BM25 hybrid",
+        "Reranker / Top-K filtering",
+        "Token budget allocation",
+        "Long-short term memory + session state"
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "It's not about \"adding an LLM\" — it's about truly fitting the LLM into your system.",
+      "attribution": "Agent Engineering Principles"
+    },
+    {
+      "type": "end",
+      "text": "Start your next Agent from engineering first."
+    }
+  ]
+}

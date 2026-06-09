@@ -12,6 +12,11 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+from theme_registry import load_slug_to_name
+
 
 ALLOWED_TYPES = {
     "cover",
@@ -197,7 +202,11 @@ def word_count(text: str) -> int:
     return len(latin) + len(cjk)
 
 
-def validate(path: Path) -> tuple[list[str], list[str], dict[str, Any]]:
+def validate(
+    path: Path,
+    *,
+    allowed_theme_slugs: set[str] | None = None,
+) -> tuple[list[str], list[str], dict[str, Any]]:
     html = path.read_text(encoding="utf-8")
     parser = DeckParser()
     parser.feed(html)
@@ -233,6 +242,17 @@ def validate(path: Path) -> tuple[list[str], list[str], dict[str, Any]]:
     if deck_lock_error:
         errors.append(deck_lock_error)
     if deck_lock:
+        theme_slugs = allowed_theme_slugs or set(load_slug_to_name())
+        theme = deck_lock.get("theme", "")
+        if isinstance(theme, str) and theme.strip():
+            if theme.strip() not in theme_slugs:
+                errors.append(
+                    f"deck-lock theme '{theme}' is not a valid sampler slug "
+                    f"(see references/theme-slugs.md)."
+                )
+        elif isinstance(theme, str):
+            warnings.append("deck-lock is missing a theme slug.")
+
         locked_slides = deck_lock.get("slides", [])
         if not isinstance(locked_slides, list):
             errors.append("deck-lock slides must be an array.")
@@ -242,6 +262,7 @@ def validate(path: Path) -> tuple[list[str], list[str], dict[str, Any]]:
             )
     else:
         warnings.append("deck-lock JSON not found; new decks should embed the contract for validation.")
+        locked_slides = []
 
     if "fonts.googleapis.com" not in html:
         warnings.append("Google Fonts URL not found; confirm the selected font is available.")
@@ -255,6 +276,28 @@ def validate(path: Path) -> tuple[list[str], list[str], dict[str, Any]]:
     label_slides = 0
     callout_count = 0
     breath_or_hero = False
+
+    if deck_lock and isinstance(locked_slides, list) and len(locked_slides) == len(slides):
+        for index, (locked, slide, slide_type) in enumerate(
+            zip(locked_slides, slides, inferred_types), start=1
+        ):
+            if not isinstance(locked, dict):
+                errors.append(f"deck-lock slide {index:02d} must be an object.")
+                continue
+            locked_type = str(locked.get("type", "")).strip()
+            html_type = slide.declared_type or slide_type
+            if locked_type and locked_type != html_type:
+                errors.append(
+                    f"Slide {index:02d} deck-lock type '{locked_type}' "
+                    f"does not match HTML type '{html_type}'."
+                )
+            locked_rhythm = str(locked.get("rhythm", "")).strip()
+            html_rhythm = slide.rhythm
+            if locked_rhythm and html_rhythm and locked_rhythm != html_rhythm:
+                errors.append(
+                    f"Slide {index:02d} deck-lock rhythm '{locked_rhythm}' "
+                    f"does not match HTML rhythm '{html_rhythm}'."
+                )
 
     for index, (slide, slide_type) in enumerate(zip(slides, inferred_types), start=1):
         if slide.declared_type:

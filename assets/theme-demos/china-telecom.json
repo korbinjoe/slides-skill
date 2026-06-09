@@ -1,0 +1,223 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Digital Intelligence Empowers · Co-Creating the Future",
+      "subtitle": "China Telecom · Digital Transformation Briefing",
+      "info": "Enterprise & Government Division · Q2 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Performance",
+      "heading": "Business Performance Overview",
+      "desc": "Industry digitalization revenue growth continues to outpace the sector.",
+      "items": [
+        {
+          "value": "$25.8B",
+          "label": "Industry Digitalization Revenue"
+        },
+        {
+          "value": "+18.6%",
+          "label": "YoY Growth"
+        },
+        {
+          "value": "52.3%",
+          "label": "Share of Service Revenue"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Strategy",
+      "heading": "Three Strategic Pillars",
+      "items": [
+        {
+          "title": "Cloud & Digital Transformation",
+          "desc": "Tianyi Cloud 4.0 fully self-developed — #1 computing scale, #1 government cloud market share"
+        },
+        {
+          "title": "AI Empowerment",
+          "desc": "12 industry versions of Xingchen LLM covering government, healthcare, education, and industry"
+        },
+        {
+          "title": "Security Foundation",
+          "desc": "Quantum-encrypted network across 31 provinces; security services revenue up 34% YoY"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "#1",
+      "label": "Government Cloud Market Share",
+      "desc": "Three consecutive years as market leader, serving 1,200+ government clients."
+    },
+    {
+      "type": "flow",
+      "label": "Delivery",
+      "heading": "Digital Solution Delivery Pipeline",
+      "steps": [
+        {
+          "title": "Discover",
+          "desc": "Industry consulting teams deeply understand client business scenarios"
+        },
+        {
+          "title": "Design",
+          "desc": "Integrated solutions built on Tianyi Cloud + AI + Security"
+        },
+        {
+          "title": "Deploy",
+          "desc": "Localized teams handle implementation and system integration"
+        },
+        {
+          "title": "Operate",
+          "desc": "24/7 O&M support with continuous optimization"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Sectors",
+      "heading": "Key Industry Digitalization Results",
+      "headers": [
+        "Sector",
+        "Clients",
+        "Flagship Project",
+        "Revenue Growth"
+      ],
+      "rows": [
+        [
+          "Government",
+          "1,200+",
+          "Integrated Digital Government Platform",
+          "+22%"
+        ],
+        [
+          "Healthcare",
+          "860+",
+          "Remote Imaging Diagnosis Center",
+          "+28%"
+        ],
+        [
+          "Education",
+          "2,400+",
+          "Smart Campus End-to-End Solution",
+          "+16%"
+        ],
+        [
+          "Industry",
+          "540+",
+          "5G + Industrial Internet",
+          "+34%"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Advantage",
+      "heading": "Differentiated Competitive Position",
+      "columns": [
+        {
+          "title": "Our Strengths",
+          "points": [
+            "Full-stack self-developed cloud platform",
+            "Localized service network nationwide",
+            "Deep enterprise and government client trust",
+            "Industry-leading security and compliance"
+          ]
+        },
+        {
+          "title": "Competitor Gaps",
+          "points": [
+            "Public cloud vendors lack local service",
+            "Internet firms lack enterprise DNA",
+            "Foreign vendors face compliance constraints",
+            "Traditional IT vendors lack cloud capability"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Cloud",
+      "heading": "Tianyi Cloud Revenue Growth",
+      "desc": "Product line YoY growth rates.",
+      "items": [
+        {
+          "label": "IaaS",
+          "value": 42
+        },
+        {
+          "label": "PaaS",
+          "value": 68
+        },
+        {
+          "label": "SaaS",
+          "value": 55
+        },
+        {
+          "label": "Security Services",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Innovation",
+      "heading": "Key Technology Breakthroughs",
+      "left": {
+        "title": "Computing Network",
+        "points": [
+          "National integrated computing scheduling platform",
+          "Edge nodes in 300+ cities",
+          "Computing power trading platform live",
+          "Cross-region latency under 10ms"
+        ]
+      },
+      "right": {
+        "title": "AI Capabilities",
+        "points": [
+          "Xingchen LLM at trillion-parameter scale",
+          "12 industry fine-tuned models",
+          "500M+ daily AI API calls",
+          "Continuous edge inference optimization"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "History",
+      "heading": "Digital Transformation Milestones",
+      "events": [
+        {
+          "date": "2020",
+          "title": "Cloud Reform",
+          "desc": "Strategy formally announced"
+        },
+        {
+          "date": "2022",
+          "title": "Tianyi Cloud 3.0",
+          "desc": "Full-stack self-development breakthrough"
+        },
+        {
+          "date": "2024",
+          "title": "Xingchen LLM",
+          "desc": "Industry large models released"
+        },
+        {
+          "date": "2026",
+          "title": "Computing Network",
+          "desc": "National integrated scheduling live"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Digital transformation is not optional — it is mandatory. Our mission is to make every client's digital journey steadier, faster, and more secure.",
+      "attribution": "Transformation Guiding Principle"
+    },
+    {
+      "type": "end",
+      "text": "Digital Intelligence Empowers · Co-Creating the Future · China Telecom"
+    }
+  ]
+}

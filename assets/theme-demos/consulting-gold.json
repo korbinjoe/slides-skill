@@ -1,0 +1,188 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Kimsoong Customer Loyalty Programme",
+      "subtitle": "Strategic Framework for Customer Retention & Growth",
+      "info": "European Headquarters | Strategic Proposal | April 2026"
+    },
+    {
+      "type": "stats",
+      "label": "The Challenge",
+      "heading": "A Critical Retention Gap",
+      "desc": "The cost of acquiring a new customer is 5–7× retaining an existing one.",
+      "items": [
+        {
+          "value": "15%",
+          "label": "Repeat Buyer Rate (vs 40% benchmark)"
+        },
+        {
+          "value": "78%",
+          "label": "Rate After-Sales Fair/Poor"
+        },
+        {
+          "value": "52%",
+          "label": "Lost to Competitors"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Root Cause",
+      "heading": "Why Customers Leave",
+      "desc": "78% of churn is within Kimsoong's control.",
+      "items": [
+        {
+          "label": "Bought competitor",
+          "value": 52
+        },
+        {
+          "label": "Disappointed with service",
+          "value": 26
+        },
+        {
+          "label": "Relocated",
+          "value": 8
+        },
+        {
+          "label": "No longer drive",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Customer Profile",
+      "heading": "Who Buys Kimsoong?",
+      "headers": [
+        "Dimension",
+        "Finding",
+        "Implication"
+      ],
+      "rows": [
+        [
+          "Age",
+          "75% under 40",
+          "High lifetime value potential"
+        ],
+        [
+          "Income",
+          "82% middle income",
+          "Price-sensitive but stable"
+        ],
+        [
+          "Occupation",
+          "75% employed",
+          "Regular purchase cycle"
+        ],
+        [
+          "Interests",
+          "Dining, Sport, Travel, Environment",
+          "Brand-aligned values"
+        ]
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Strategy",
+      "heading": "Four Pillars of Customer Loyalty",
+      "items": [
+        {
+          "title": "Long-Term Relationships",
+          "desc": "Build trust to increase profits over lifetime"
+        },
+        {
+          "title": "Accurate Profiling",
+          "desc": "Data-driven decisions from better questionnaires"
+        },
+        {
+          "title": "Staff Engagement",
+          "desc": "Service excellence starts with employee buy-in"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Initiatives",
+      "heading": "Five Recommended Initiatives",
+      "columns": [
+        {
+          "title": "High Impact",
+          "points": [
+            "3-Year Free After-Sales ★",
+            "20% Loyalty Discount",
+            "Enhanced Trade-in Programme"
+          ]
+        },
+        {
+          "title": "Quick Wins",
+          "points": [
+            "Customer Magazine (brand)",
+            "Questionnaire Incentive Pen",
+            "Highest ROI for data collection"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "Phased Rollout: Quick Wins First",
+      "events": [
+        {
+          "date": "Q1",
+          "title": "Quick Wins",
+          "desc": "Launch magazine, deploy questionnaire incentive"
+        },
+        {
+          "date": "Q2",
+          "title": "Service Uplift",
+          "desc": "3-Year Free After-Sales across franchises"
+        },
+        {
+          "date": "Q3",
+          "title": "Financial Incentives",
+          "desc": "20% discount + trade-in programme"
+        },
+        {
+          "date": "Q4",
+          "title": "Evaluate & Optimize",
+          "desc": "Measure KPIs, adjust programme"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "KPI Targets",
+      "heading": "Success Metrics: 12-Month Targets",
+      "steps": [
+        {
+          "title": "Repeat Rate",
+          "desc": "15% → 30%"
+        },
+        {
+          "title": "Satisfaction",
+          "desc": "Good+ rating: 33% → 60%"
+        },
+        {
+          "title": "Data Quality",
+          "desc": "Questionnaire return: 40% → 70%"
+        },
+        {
+          "title": "ROI Validation",
+          "desc": "Phase 4 evaluation cycle"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "2×",
+      "label": "Repeat Buyer Target",
+      "desc": "Transforming 15% repeat buyers to 30%+ is achievable within 12 months. Fix after-sales first, build data capability, then phase financial incentives."
+    },
+    {
+      "type": "end",
+      "text": "Customer retention is the highest-ROI growth lever for Kimsoong Europe."
+    }
+  ]
+}

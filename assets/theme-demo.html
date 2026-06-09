@@ -700,9 +700,11 @@ body.frame-ink .label {
 <div id="timer">00:00</div>
 <div id="notes-panel"><div class="notes-label">Speaker Notes</div><div id="notes-content"></div></div>
 
-<script src="theme-data.js?v=2"></script>
+<script src="theme-data.js?v=3"></script>
+<script src="theme-demos.js?v=1"></script>
 <script>
 const { previews, themeVars, fontUrl, slugify } = window.SLIDES_THEME_DATA;
+const themeDemos = window.SLIDES_THEME_DEMOS || {};
 const params = new URLSearchParams(location.search);
 const requested = params.get("style") || location.hash.replace("#", "") || "obsidian";
 const item = previews.find(entry => entry.slug === requested) || previews[0];
@@ -840,7 +842,7 @@ function renderSlide(s, i, total, themeLabel) {
 
 function slideMarkup() {
   const themeLabel = "Theme";
-  const dc = item.demoContent;
+  const dc = themeDemos[item.slug];
 
   if (dc?.slides) {
     return dc.slides.map((s, i) => renderSlide(s, i, dc.slides.length, themeLabel)).join("\n");

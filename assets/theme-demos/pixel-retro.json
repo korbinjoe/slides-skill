@@ -1,0 +1,206 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "PIXEL QUEST",
+      "subtitle": "Indie Game Dev Postmortem",
+      "info": "GDC Talk · 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "847K",
+      "label": "COPIES SOLD",
+      "desc": "From a two-person team working in a garage. No publisher. No marketing budget. Just a great game."
+    },
+    {
+      "type": "section",
+      "label": "LEVEL 01",
+      "title": "THE IDEA",
+      "subtitle": "How a 48-hour game jam prototype became an 847K seller."
+    },
+    {
+      "type": "cards",
+      "label": "DESIGN PILLARS",
+      "heading": "Three Design Rules",
+      "items": [
+        {
+          "title": "ONE-BUTTON DEPTH",
+          "desc": "Every mechanic uses one button. Complexity comes from timing, not input combos."
+        },
+        {
+          "title": "5-SECOND LOOPS",
+          "desc": "Core gameplay loop completes in 5 seconds. Mastery takes 50 hours."
+        },
+        {
+          "title": "READABLE PIXELS",
+          "desc": "Every sprite tells its function in 4 colors or fewer. No labels needed."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "DEV STATS",
+      "heading": "Development Numbers",
+      "desc": "28 months from jam prototype to 1.0 release.",
+      "items": [
+        {
+          "value": "28mo",
+          "label": "Development time"
+        },
+        {
+          "value": "2",
+          "label": "Team size"
+        },
+        {
+          "value": "$12K",
+          "label": "Total budget"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "PIPELINE",
+      "heading": "Asset Pipeline",
+      "steps": [
+        {
+          "title": "SKETCH",
+          "desc": "Paper prototype, photograph, trace in Aseprite"
+        },
+        {
+          "title": "ANIMATE",
+          "desc": "8-frame cycles, 2-color constraint per layer"
+        },
+        {
+          "title": "INTEGRATE",
+          "desc": "Tiled maps + custom collision in Godot"
+        },
+        {
+          "title": "POLISH",
+          "desc": "Juice pass: screenshake, particles, SFX sync"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "PLATFORMS",
+      "heading": "Sales by Platform",
+      "headers": [
+        "Platform",
+        "Units",
+        "Revenue",
+        "Avg Price"
+      ],
+      "rows": [
+        [
+          "Steam",
+          "412K",
+          "$4.1M",
+          "$9.99"
+        ],
+        [
+          "Switch",
+          "186K",
+          "$2.2M",
+          "$11.99"
+        ],
+        [
+          "Mobile",
+          "204K",
+          "$0.6M",
+          "$2.99"
+        ],
+        [
+          "itch.io",
+          "45K",
+          "$0.18M",
+          "Pay-what-you-want"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "TECH",
+      "heading": "Engine Decision: Godot vs Unity",
+      "columns": [
+        {
+          "title": "GODOT (CHOSEN)",
+          "points": [
+            "MIT license, no revenue share",
+            "GDScript = fast iteration",
+            "Tiny binary size (30MB)",
+            "Perfect for 2D pixel art"
+          ]
+        },
+        {
+          "title": "UNITY",
+          "points": [
+            "Larger ecosystem",
+            "Better 3D pipeline",
+            "Runtime fee controversy",
+            "Overkill for our scope"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "RETENTION",
+      "heading": "Player Retention Curves",
+      "desc": "Day-N retention for organic installs on Steam.",
+      "items": [
+        {
+          "label": "Day 1",
+          "value": 82
+        },
+        {
+          "label": "Day 7",
+          "value": 54
+        },
+        {
+          "label": "Day 30",
+          "value": 32
+        },
+        {
+          "label": "Day 90",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "TIMELINE",
+      "heading": "Development Journey",
+      "events": [
+        {
+          "date": "2024-01",
+          "title": "JAM",
+          "desc": "48-hour prototype"
+        },
+        {
+          "date": "2024-06",
+          "title": "DEMO",
+          "desc": "Steam Next Fest"
+        },
+        {
+          "date": "2025-04",
+          "title": "EARLY ACCESS",
+          "desc": "First 3 worlds"
+        },
+        {
+          "date": "2026-01",
+          "title": "1.0 LAUNCH",
+          "desc": "Full game + level editor"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "CONSTRAINTS ARE NOT LIMITATIONS. THEY ARE THE GAME DESIGN.",
+      "attribution": "POSTMORTEM CONCLUSION"
+    },
+    {
+      "type": "end",
+      "text": "PIXEL QUEST · GAME OVER · INSERT COIN TO CONTINUE"
+    }
+  ]
+}

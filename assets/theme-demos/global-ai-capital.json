@@ -1,0 +1,218 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "2026 Global AI Capital Landscape",
+      "subtitle": "Capital, Compute, and the Closed Loop",
+      "info": "May 2026 · Industry Insight · Data as of 2026-05-15"
+    },
+    {
+      "type": "stats",
+      "label": "Panorama",
+      "heading": "Q1 2026 Global VC: $297B Record",
+      "desc": "AI takes 81% of all venture capital.",
+      "items": [
+        {
+          "value": "$297B",
+          "label": "Single-Quarter VC"
+        },
+        {
+          "value": "81%",
+          "label": "AI Share (~$242B)"
+        },
+        {
+          "value": "65%",
+          "label": "Top 4 Deal Concentration"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Hyperscaler Capex",
+      "heading": "2026 Hyperscaler Capex: $725B (+77% YoY)",
+      "desc": "60%+ flows to power, cooling, and construction — not chips.",
+      "items": [
+        {
+          "label": "Amazon",
+          "value": 100
+        },
+        {
+          "label": "Microsoft",
+          "value": 95
+        },
+        {
+          "label": "Alphabet",
+          "value": 95
+        },
+        {
+          "label": "Meta",
+          "value": 73
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Big Three",
+      "heading": "Big Three 2026 Valuation Leaps",
+      "headers": [
+        "Company",
+        "Start of Year",
+        "Latest",
+        "Driver"
+      ],
+      "rows": [
+        [
+          "OpenAI",
+          "$300B",
+          "$852B",
+          "Consumer + IPO path"
+        ],
+        [
+          "Anthropic",
+          "$61.5B",
+          "$380B → $900B",
+          "Enterprise API"
+        ],
+        [
+          "xAI",
+          "$50B",
+          "$230B → $1.25T",
+          "SpaceX merger narrative"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "US vs China",
+      "heading": "US-China AI Capital: Two Tracks",
+      "columns": [
+        {
+          "title": "United States",
+          "points": [
+            "$30–122B single rounds",
+            "IPO delayed",
+            "Market-driven",
+            "Peak: $852B valuation"
+          ]
+        },
+        {
+          "title": "China",
+          "points": [
+            "$2–4B single rounds",
+            "Q1 HK IPOs landed",
+            "Government-led (Big Fund)",
+            "Peak: $56B market cap"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Second Tier",
+      "heading": "Second Tier: $10–50B Elites",
+      "items": [
+        {
+          "title": "SSI $32B",
+          "desc": "Sutskever's lab — 6× valuation jump"
+        },
+        {
+          "title": "Perplexity $21B",
+          "desc": "45M monthly active users"
+        },
+        {
+          "title": "Mistral $13.7B",
+          "desc": "Paris data center, 13,800 GPUs"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "$40B+",
+      "label": "Nvidia Equity Investments in 2026",
+      "desc": "Nvidia invests in OpenAI, xAI, Anthropic, Mistral — then 85% of revenue comes from just 6 customers. A circular capital loop."
+    },
+    {
+      "type": "flow",
+      "label": "Nvidia Loop",
+      "heading": "How Money Circulates: Nvidia's Closed Loop",
+      "steps": [
+        {
+          "title": "Nvidia Invests $40B",
+          "desc": "Equity into AI labs"
+        },
+        {
+          "title": "Labs Buy Chips",
+          "desc": "Hundreds of billions in compute commitments"
+        },
+        {
+          "title": "Revenue Returns",
+          "desc": "85% from 6 customers"
+        },
+        {
+          "title": "Cycle Repeats",
+          "desc": "Investment → purchase → revenue"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Bubble Risk",
+      "heading": "Four Risks That Amplify Each Other",
+      "left": {
+        "title": "Capital Side",
+        "points": [
+          "Capex/Revenue gap exceeds 2001 telecom bubble",
+          "Nvidia 85% revenue from 6 clients"
+        ]
+      },
+      "right": {
+        "title": "Business Side",
+        "points": [
+          "MIT: 95% of AI pilots produce no commercial value",
+          "Operating cash flow → debt financing"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Judgments",
+      "heading": "Six Closing Judgments",
+      "events": [
+        {
+          "date": "1",
+          "title": "Capital concentration",
+          "desc": "2026's defining theme"
+        },
+        {
+          "date": "2",
+          "title": "Compute = hard currency",
+          "desc": "Real scarcity"
+        },
+        {
+          "date": "3",
+          "title": "Power > Chips",
+          "desc": "Grid is the constraint"
+        },
+        {
+          "date": "4",
+          "title": "US-China dual track",
+          "desc": "Two systems diverge"
+        },
+        {
+          "date": "5",
+          "title": "ROI lags",
+          "desc": "But hyperscalers haven't stopped spending"
+        },
+        {
+          "date": "6",
+          "title": "Anthropic > OpenAI",
+          "desc": "Valuation crossover"
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "text": "2026 Global AI Capital Landscape · Industry Insight"
+    }
+  ]
+}

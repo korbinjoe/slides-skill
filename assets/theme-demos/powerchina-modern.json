@@ -1,0 +1,237 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Smart Energy",
+      "subtitle": "New Power System Technology Innovation Report",
+      "info": "Science & Technology Innovation Department · 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "67GW",
+      "label": "Renewable Energy Installed Capacity",
+      "desc": "Wind, solar, and pumped storage cumulative capacity exceeds 67 GW, up 23% YoY."
+    },
+    {
+      "type": "cards",
+      "label": "Innovation",
+      "heading": "Three Technology Breakthroughs",
+      "items": [
+        {
+          "title": "Digital Twin Power Station",
+          "desc": "Centimeter-level 3D modeling — O&M efficiency up 40%, fault prediction accuracy 92%"
+        },
+        {
+          "title": "Floating Offshore Wind",
+          "desc": "Self-developed 15 MW semi-submersible platform for 50–200m water depth, cost down 28%"
+        },
+        {
+          "title": "Hydrogen Storage & Transport",
+          "desc": "High-pressure solid-state hydrogen storage at 5.5 wt%, refueling station cost down 35%"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "R&D",
+      "heading": "Science & Technology Investment",
+      "desc": "R&D spending continues to grow; innovation outcomes accelerating to market.",
+      "items": [
+        {
+          "value": "$1.2B",
+          "label": "Annual R&D Investment"
+        },
+        {
+          "value": "1,240",
+          "label": "New Patents Filed"
+        },
+        {
+          "value": "18",
+          "label": "National Science Awards"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Roadmap",
+      "heading": "New Power System Development Path",
+      "steps": [
+        {
+          "title": "Source",
+          "desc": "Large-scale renewable energy base construction and transmission"
+        },
+        {
+          "title": "Grid",
+          "desc": "Flexible HVDC transmission and smart grid dispatch"
+        },
+        {
+          "title": "Load",
+          "desc": "Demand-side response and virtual power plant aggregation"
+        },
+        {
+          "title": "Storage",
+          "desc": "Diversified storage configuration and coordinated optimization"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Technology",
+      "heading": "Energy Storage Technology Comparison",
+      "columns": [
+        {
+          "title": "Pumped Storage",
+          "points": [
+            "Mature and reliable, 50+ year lifespan",
+            "Strong regulation, GW-scale capacity",
+            "Site constrained by topography",
+            "6–8 year construction cycle"
+          ]
+        },
+        {
+          "title": "Electrochemical",
+          "points": [
+            "Flexible deployment, site-independent",
+            "Millisecond response speed",
+            "10–15 year lifespan",
+            "Rapidly declining costs"
+          ]
+        },
+        {
+          "title": "Hydrogen Storage",
+          "points": [
+            "Clear long-duration storage advantage",
+            "Cross-seasonal energy transfer",
+            "Efficiency still improving",
+            "Supply chain still maturing"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Projects",
+      "heading": "Key Renewable Energy Projects Under Construction",
+      "headers": [
+        "Project",
+        "Type",
+        "Capacity",
+        "Commissioning",
+        "Status"
+      ],
+      "rows": [
+        [
+          "Hainan Base, Qinghai",
+          "Solar + Storage",
+          "16 GW",
+          "2027",
+          "Under Construction"
+        ],
+        [
+          "Yangjiang, Guangdong",
+          "Offshore Wind",
+          "8 GW",
+          "2026-Q4",
+          "Commissioning"
+        ],
+        [
+          "Fengning, Hebei",
+          "Pumped Storage",
+          "3.6 GW",
+          "2026-Q3",
+          "Impoundment"
+        ],
+        [
+          "Inner Mongolia",
+          "Wind-Solar-Hydrogen",
+          "12 GW",
+          "2028",
+          "Planning"
+        ]
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Energy Mix",
+      "heading": "Installed Capacity Structure Evolution",
+      "desc": "Clean energy share continues to rise (%).",
+      "items": [
+        {
+          "label": "Hydro",
+          "value": 38
+        },
+        {
+          "label": "Wind",
+          "value": 24
+        },
+        {
+          "label": "Solar",
+          "value": 22
+        },
+        {
+          "label": "Pumped Storage + Battery",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Digital",
+      "heading": "Digital Transformation Progress",
+      "left": {
+        "title": "Smart Construction",
+        "points": [
+          "85% BIM forward-design coverage",
+          "AI quality inspection system deployed",
+          "200+ unmanned construction devices",
+          "5G private network at 40+ sites"
+        ]
+      },
+      "right": {
+        "title": "Smart O&M",
+        "points": [
+          "120+ digital twin power stations",
+          "Equipment health management system",
+          "92% predictive maintenance accuracy",
+          "8 remote centralized control centers"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Outlook",
+      "heading": "Technology Development Roadmap",
+      "events": [
+        {
+          "date": "2026",
+          "title": "15 MW Turbines",
+          "desc": "Large-capacity offshore wind mass production"
+        },
+        {
+          "date": "2027",
+          "title": "Perovskite Solar",
+          "desc": "Next-gen PV cell pilot production"
+        },
+        {
+          "date": "2028",
+          "title": "Liquid Hydrogen",
+          "desc": "Long-distance hydrogen transport demo"
+        },
+        {
+          "date": "2030",
+          "title": "Fusion Energy",
+          "desc": "Participation in fusion energy engineering"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Let every drop of water, every gust of wind, and every ray of sunlight become part of clean energy.",
+      "attribution": "Science & Technology Vision"
+    },
+    {
+      "type": "end",
+      "text": "Smart Energy · New Power System Technology Innovation"
+    }
+  ]
+}

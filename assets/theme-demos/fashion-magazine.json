@@ -1,0 +1,187 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "NEWS Cafe | Aesthetic Weekly",
+      "subtitle": "Unlocking the Style Chapter",
+      "info": "Weekly Fashion Highlights · April 2026"
+    },
+    {
+      "type": "cards",
+      "label": "Top Luxury",
+      "heading": "Three Maisons at Milan Design Week",
+      "items": [
+        {
+          "title": "Hermes Home",
+          "desc": "30 rectangular columns, immersive staging — metal, leather, textile dialogue"
+        },
+        {
+          "title": "Louis Vuitton Objets Nomades",
+          "desc": "Art Deco tribute, Campana studio + Raw Edges new works"
+        },
+        {
+          "title": "Gucci Memoria",
+          "desc": "San Simpliciano cloister — 12 tapestries, 105-year brand journey"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "CHANEL",
+      "heading": "CHANEL COCO BEACH 2026",
+      "imgAlt": "CHANEL beachside boutique",
+      "points": [
+        "Shanghai pop-up boutique opens",
+        "Garden-facing holiday villa concept",
+        "Pastoral landscapes + black sand inspiration",
+        "Matthieu Blazy's first COCO BEACH collection"
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Dior",
+      "heading": "Dior: Fashion Meets Horology",
+      "left": {
+        "title": "Fashion",
+        "points": [
+          "Sabrina Carpenter at Coachella",
+          "Jonathan Anderson design"
+        ]
+      },
+      "right": {
+        "title": "Watches",
+        "points": [
+          "Chiffre Rouge refresh",
+          "Three limited editions",
+          "Red second hand — Dior's \"life color\""
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "label": "Art Houses",
+      "heading": "Two Expressions of Art",
+      "columns": [
+        {
+          "title": "Bottega Veneta",
+          "points": [
+            "\"for the Arts\" photo book",
+            "Peter Fraser's Venice",
+            "Weaving aesthetics in focus"
+          ]
+        },
+        {
+          "title": "Alexander McQueen",
+          "points": [
+            "\"Beneath the Surface\" Shanghai",
+            "Immersive exhibition",
+            "Manta bag reprises 2010 icon"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Collabs",
+      "heading": "This Week's Collaborations",
+      "headers": [
+        "Brand",
+        "Partner",
+        "Highlight"
+      ],
+      "rows": [
+        [
+          "JORYA",
+          "YVMIN",
+          "\"Princess Diary\" Chengdu pop-up"
+        ],
+        [
+          "ARKET",
+          "Laila Gohar",
+          "Milan 18th-century carousel installation"
+        ],
+        [
+          "Steve Madden",
+          "Lexie Liu",
+          "China brand ambassador"
+        ],
+        [
+          "Crocs",
+          "Pop Mart MOLLY",
+          "20th anniversary triple collab"
+        ]
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Beauty",
+      "heading": "Fragrance & Beauty This Week",
+      "desc": "Sensory new chapters from BOSS and fresh.",
+      "items": [
+        {
+          "value": "BOSS",
+          "label": "Heart of the King — wood-leather scent"
+        },
+        {
+          "value": "fresh",
+          "label": "\"Ferment\" outdoors — tea culture inspired"
+        },
+        {
+          "value": "2",
+          "label": "Major launches this week"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Highlights",
+      "heading": "This Week's Spotlight Brands",
+      "desc": "Top 4 brands by editorial coverage.",
+      "items": [
+        {
+          "label": "Hermes",
+          "value": 95
+        },
+        {
+          "label": "CHANEL",
+          "value": 88
+        },
+        {
+          "label": "Dior",
+          "value": 82
+        },
+        {
+          "label": "Gucci",
+          "value": 78
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Brand Tiers",
+      "heading": "Brand Panorama by Tier",
+      "steps": [
+        {
+          "title": "Top Luxury",
+          "desc": "Hermes · CHANEL · Dior · LV · Gucci"
+        },
+        {
+          "title": "Designer",
+          "desc": "BV · CELINE · McQueen · Max Mara"
+        },
+        {
+          "title": "Contemporary",
+          "desc": "TAD FAB · Apede Mod · JORYA"
+        },
+        {
+          "title": "Lifestyle",
+          "desc": "BOSS · fresh · ARKET · Crocs"
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "text": "NEWS Cafe · See You Next Week"
+    }
+  ]
+}

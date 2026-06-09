@@ -1,0 +1,244 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "THE AI INDUSTRY 2026",
+      "subtitle": "Annual Report — Volume 1, Edition 1",
+      "info": "Compiled May 2026 · Sources: Stanford HAI · Counterpoint · OneTrust · IEEE Spectrum"
+    },
+    {
+      "type": "stats",
+      "label": "Front Page",
+      "heading": "Issue at a Glance",
+      "desc": "The year the league table changed.",
+      "items": [
+        {
+          "value": "$2.02T",
+          "label": "AI Spending 2026E"
+        },
+        {
+          "value": "3.8B",
+          "label": "Monthly LLM Users"
+        },
+        {
+          "value": "$20.7B",
+          "label": "Q1 LLM Revenue"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Lead Story",
+      "heading": "Revenue League Table Q1 2026",
+      "desc": "First non-OpenAI lab in #1 since the modern LLM era began.",
+      "items": [
+        {
+          "label": "Anthropic",
+          "value": 31
+        },
+        {
+          "label": "OpenAI",
+          "value": 29
+        },
+        {
+          "label": "Google",
+          "value": 12
+        },
+        {
+          "label": "Microsoft",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Sidebar Data",
+      "heading": "The ARPU Divide — Scale ≠ Monetisation",
+      "headers": [
+        "Lab",
+        "MAU",
+        "ARPU"
+      ],
+      "rows": [
+        [
+          "Anthropic",
+          "134M",
+          "$16.20"
+        ],
+        [
+          "Microsoft",
+          "—",
+          "$5.00"
+        ],
+        [
+          "OpenAI",
+          "900M",
+          "$2.20"
+        ],
+        [
+          "Google",
+          "—",
+          "$1.10"
+        ],
+        [
+          "Meta",
+          "~1B",
+          "$0.10"
+        ]
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "$500M+",
+      "label": "Frontier Training Cost",
+      "desc": "Crossed the half-billion line per run. Power and grid interconnect, not chip supply, are the binding constraint."
+    },
+    {
+      "type": "comparison",
+      "label": "Regulation",
+      "heading": "Three Rulebooks, One Race",
+      "columns": [
+        {
+          "title": "EU",
+          "points": [
+            "AI Act full force Aug 2025",
+            "€35M or 7% turnover penalty",
+            "General-purpose AI systemic risk"
+          ]
+        },
+        {
+          "title": "United States",
+          "points": [
+            "EO 14179 + state laws",
+            "Varies by state penalty",
+            "Innovation-first reframing"
+          ]
+        },
+        {
+          "title": "China",
+          "points": [
+            "Gen-AI Services Measures",
+            "License revocation penalty",
+            "Watermark rules Sep 2025"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Timeline",
+      "heading": "2025–2026 — Six Milestones",
+      "events": [
+        {
+          "date": "2025-01",
+          "title": "US EO 14179",
+          "desc": "Federal posture reversed"
+        },
+        {
+          "date": "2025-08",
+          "title": "EU AI Act",
+          "desc": "First binding horizontal AI statute"
+        },
+        {
+          "date": "2025-09",
+          "title": "China Watermarks",
+          "desc": "State-mandated watermark regime"
+        },
+        {
+          "date": "2025-Q4",
+          "title": "DeepSeek-R1",
+          "desc": "Open-weights reasoning model"
+        },
+        {
+          "date": "2026-Q1",
+          "title": "Anthropic #1",
+          "desc": "Overtakes OpenAI on revenue"
+        },
+        {
+          "date": "2026-04",
+          "title": "HAI Index 2026",
+          "desc": "SWE-bench Verified saturated"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Inference",
+      "heading": "Watts per Query — 4.6× Spread",
+      "items": [
+        {
+          "title": "5 W",
+          "desc": "Claude 4 Opus per medium prompt"
+        },
+        {
+          "title": "23 W",
+          "desc": "DeepSeek V3 per medium prompt"
+        },
+        {
+          "title": "~10×/yr",
+          "desc": "Inference cost decline at constant capability"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Capability",
+      "heading": "Benchmarks Saturated Faster Than Built",
+      "left": {
+        "title": "SWE-bench Verified",
+        "points": [
+          "Coding: ~60% → ~100% of human baseline",
+          "Benchmark half-life dropped from years to months"
+        ]
+      },
+      "right": {
+        "title": "Frontier Science",
+        "points": [
+          "PhD-level science QA: meet/exceed baseline",
+          "Competition mathematics: meet baseline"
+        ]
+      }
+    },
+    {
+      "type": "table",
+      "label": "Closing",
+      "heading": "What Changed · What Didn't",
+      "headers": [
+        "Dimension",
+        "Changed",
+        "Did Not Change"
+      ],
+      "rows": [
+        [
+          "Revenue",
+          "Leader ≠ user-count leader",
+          "Frontier cohort still ~5 labs"
+        ],
+        [
+          "Training",
+          "Cost crossed $500M/run",
+          "China labs: $0 EU revenue"
+        ],
+        [
+          "Inference",
+          "Power 4.6× discriminator",
+          "Open-weights ≠ revenue"
+        ],
+        [
+          "Benchmarks",
+          "Half-life: years → months",
+          "Power/grid hardest to source"
+        ]
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The bench-design community is now permanently behind the model-release cycle.",
+      "attribution": "Stanford HAI AI Index 2026"
+    },
+    {
+      "type": "end",
+      "text": "THE AI INDUSTRY 2026 · Annual Report · Volume 1, Edition 1"
+    }
+  ]
+}

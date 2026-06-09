@@ -1,0 +1,167 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Ignite",
+      "subtitle": "A Product Vision for the Next Wave",
+      "info": "Product Strategy · H2 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "10×",
+      "label": "Developer Velocity Target",
+      "desc": "Ship features 10× faster by removing every manual step between idea and production."
+    },
+    {
+      "type": "section",
+      "label": "Part 01",
+      "title": "The Problem",
+      "subtitle": "Why today's tools fail at the last mile of software delivery."
+    },
+    {
+      "type": "cards",
+      "label": "Pain Points",
+      "heading": "Three Barriers to Velocity",
+      "items": [
+        {
+          "title": "Config Drift",
+          "desc": "Environments diverge within days. Staging never matches production."
+        },
+        {
+          "title": "Review Bottleneck",
+          "desc": "Average PR waits 19 hours for review. Momentum dies in queues."
+        },
+        {
+          "title": "Deploy Fear",
+          "desc": "58% of teams delay deploys to Friday-safe windows. Speed suffers."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Market",
+      "heading": "The Opportunity",
+      "desc": "Developer tools spending is accelerating while satisfaction declines.",
+      "items": [
+        {
+          "value": "$45B",
+          "label": "DevTools TAM 2026"
+        },
+        {
+          "value": "34%",
+          "label": "Developer satisfaction (↓12pp)"
+        },
+        {
+          "value": "4.2hr",
+          "label": "Daily context-switching cost"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Vision",
+      "heading": "Zero-Friction Delivery",
+      "steps": [
+        {
+          "title": "Write",
+          "desc": "AI-assisted coding with full project context"
+        },
+        {
+          "title": "Review",
+          "desc": "Automated review in < 60 seconds"
+        },
+        {
+          "title": "Test",
+          "desc": "Deterministic test gen from diff"
+        },
+        {
+          "title": "Ship",
+          "desc": "One-click deploy with auto-rollback"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Positioning",
+      "heading": "Where We Win",
+      "columns": [
+        {
+          "title": "Us",
+          "points": [
+            "End-to-end from code to prod",
+            "AI-native, not AI-bolted",
+            "Sub-minute feedback loops"
+          ]
+        },
+        {
+          "title": "Incumbents",
+          "points": [
+            "Point solutions require glue",
+            "AI features feel retrofitted",
+            "Minutes to hours for feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "Path to Market",
+      "events": [
+        {
+          "date": "Q3",
+          "title": "Alpha",
+          "desc": "50 design partners"
+        },
+        {
+          "date": "Q4",
+          "title": "Beta",
+          "desc": "Public waitlist launch"
+        },
+        {
+          "date": "2027-Q1",
+          "title": "GA",
+          "desc": "Self-serve + enterprise"
+        },
+        {
+          "date": "2027-Q2",
+          "title": "Platform",
+          "desc": "Plugin ecosystem"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Traction",
+      "heading": "Early Signal",
+      "desc": "Alpha cohort metrics after 6 weeks of usage.",
+      "items": [
+        {
+          "label": "Deploy frequency",
+          "value": 92
+        },
+        {
+          "label": "Lead time reduction",
+          "value": 78
+        },
+        {
+          "label": "Change failure rate",
+          "value": 35
+        },
+        {
+          "label": "MTTR improvement",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The best developer tool is the one that disappears. You just think, and the code is live.",
+      "attribution": "Product Manifesto"
+    },
+    {
+      "type": "end",
+      "text": "Ignite · Let's Build It"
+    }
+  ]
+}

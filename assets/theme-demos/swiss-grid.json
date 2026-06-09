@@ -1,0 +1,246 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Grid Systems",
+      "subtitle": "The Grid as a Way of Seeing",
+      "info": "A Lecture on Swiss International Typographic Style · 2026"
+    },
+    {
+      "type": "quote",
+      "text": "The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer can look for a solution appropriate to his personal style.",
+      "attribution": "Josef Müller-Brockmann, Grid Systems in Graphic Design, 1981"
+    },
+    {
+      "type": "timeline",
+      "label": "History",
+      "heading": "Twin Origins · 1896 → 1957",
+      "events": [
+        {
+          "date": "1896",
+          "title": "Akzidenz-Grotesk",
+          "desc": "First modern commercial sans-serif"
+        },
+        {
+          "date": "1908",
+          "title": "Basel Reform",
+          "desc": "Basel School of Design curriculum reform"
+        },
+        {
+          "date": "1918",
+          "title": "Ernst Keller",
+          "desc": "Zurich School of Applied Arts"
+        },
+        {
+          "date": "1936",
+          "title": "Müller-Brockmann",
+          "desc": "Opens Zurich studio"
+        },
+        {
+          "date": "1957",
+          "title": "Helvetica + Univers",
+          "desc": "Both typefaces launched in the same year"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Core Principles",
+      "heading": "Eight Core Principles",
+      "items": [
+        {
+          "title": "Objectivity",
+          "desc": "Objectivity over expression · Mathematical grid as skeleton"
+        },
+        {
+          "title": "Asymmetry",
+          "desc": "Asymmetric layout · Sans-serif typography · Flush-left ragged-right"
+        },
+        {
+          "title": "Negative Space",
+          "desc": "Whitespace is structure · Reproducible at scale"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Shapers",
+      "heading": "Eight Shapers of Swiss Design",
+      "headers": [
+        "Name",
+        "Years",
+        "Contribution"
+      ],
+      "rows": [
+        [
+          "Ernst Keller",
+          "1891–1968",
+          "Zurich school founder"
+        ],
+        [
+          "Max Bill",
+          "1908–1994",
+          "Bauhaus → Ulm"
+        ],
+        [
+          "Emil Ruder",
+          "1914–1970",
+          "Basel Typographie"
+        ],
+        [
+          "Armin Hofmann",
+          "1920–2020",
+          "Basel poster master"
+        ],
+        [
+          "Josef Müller-Brockmann",
+          "1914–1996",
+          "Grid Systems author"
+        ],
+        [
+          "Max Miedinger",
+          "1910–1980",
+          "Designed Helvetica"
+        ]
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Biography",
+      "heading": "Josef Müller-Brockmann · 1914–1996",
+      "events": [
+        {
+          "date": "1914",
+          "title": "Born",
+          "desc": "Rapperswil, Switzerland"
+        },
+        {
+          "date": "1936",
+          "title": "Studio",
+          "desc": "Independent studio in Zurich"
+        },
+        {
+          "date": "1950",
+          "title": "Tonhalle",
+          "desc": "Musica Viva poster series begins"
+        },
+        {
+          "date": "1958",
+          "title": "Neue Grafik",
+          "desc": "Co-founded the journal"
+        },
+        {
+          "date": "1981",
+          "title": "Grid Systems",
+          "desc": "Published Grid Systems in Graphic Design"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Typography",
+      "heading": "Three Definitive Typefaces",
+      "columns": [
+        {
+          "title": "Akzidenz-Grotesk",
+          "points": [
+            "1896 · Berthold",
+            "First modern commercial sans-serif",
+            "Swiss school early favorite"
+          ]
+        },
+        {
+          "title": "Helvetica",
+          "points": [
+            "1957 · Miedinger",
+            "Named \"Swiss\" in Latin",
+            "Neutral, objective, maximally readable"
+          ]
+        },
+        {
+          "title": "Univers",
+          "points": [
+            "1957 · Frutiger",
+            "21 weights in numerical coordinate system",
+            "Beginning of type family engineering"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Grid Types",
+      "heading": "Four Grid Types",
+      "left": {
+        "title": "Simple",
+        "points": [
+          "Manuscript: single column, ancient, long-form",
+          "Column: multi-column, magazine grammar"
+        ]
+      },
+      "right": {
+        "title": "Complex",
+        "points": [
+          "Modular: row × column matrix, poster & catalog",
+          "Hierarchical: irregular but internally logical"
+        ]
+      }
+    },
+    {
+      "type": "flow",
+      "label": "Digital Era",
+      "heading": "The Digital Continuation",
+      "steps": [
+        {
+          "title": "960 Grid",
+          "desc": "2008 — Grid grammar on the web"
+        },
+        {
+          "title": "Bootstrap 12-col",
+          "desc": "2011 — Modular grid democratized"
+        },
+        {
+          "title": "CSS Grid",
+          "desc": "2017 — Browser-native grid"
+        },
+        {
+          "title": "Design Systems",
+          "desc": "2020s — Enterprise VI on screens"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Legacy",
+      "heading": "Swiss DNA in Modern Brands",
+      "items": [
+        {
+          "title": "Apple & Google",
+          "desc": "Minimalist rationalism · Material grid + geometric type"
+        },
+        {
+          "title": "Spotify & Airbnb",
+          "desc": "Magazine-feel layout · Modular grid + minimal identity"
+        },
+        {
+          "title": "IBM & Lufthansa",
+          "desc": "1960s Swiss pedigree · Corporate identity systems"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Negative Space",
+      "heading": "Whitespace Is Structure",
+      "imgAlt": "Red dot on white field with fine horizontal line",
+      "points": [
+        "Whitespace is not leftover — it is the carrier of information",
+        "The space between is the message"
+      ]
+    },
+    {
+      "type": "end",
+      "text": "The grid is not a constraint. It is a grammar of freedom."
+    }
+  ]
+}

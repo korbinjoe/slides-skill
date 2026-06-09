@@ -1,0 +1,204 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Maison Collection",
+      "subtitle": "Autumn/Winter 2026 · Private Preview",
+      "info": "Luxury Hospitality Group"
+    },
+    {
+      "type": "quote",
+      "text": "Luxury is not about what you add. It is about what you refuse to compromise.",
+      "attribution": "Brand Philosophy"
+    },
+    {
+      "type": "cards",
+      "label": "Collection",
+      "heading": "Three New Properties",
+      "items": [
+        {
+          "title": "Kyoto Pavilion",
+          "desc": "12-room ryokan where every surface is handcrafted from local hinoki and Shigaraki clay"
+        },
+        {
+          "title": "Amalfi Terrace",
+          "desc": "Cliffside retreat with private sea access, restored from an 18th-century lemon grove estate"
+        },
+        {
+          "title": "Marrakech Riad",
+          "desc": "A 16th-century courtyard palace reimagined with contemporary Berber artisanship"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Performance",
+      "heading": "Portfolio Numbers",
+      "desc": "Twelve months of measured guest experience and commercial performance.",
+      "items": [
+        {
+          "value": "97%",
+          "label": "Guest satisfaction score"
+        },
+        {
+          "value": "$1,240",
+          "label": "Average daily rate"
+        },
+        {
+          "value": "82%",
+          "label": "Annual occupancy"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Spotlight",
+      "heading": "The Kyoto Pavilion Experience",
+      "imgAlt": "Kyoto Pavilion interior",
+      "points": [
+        "Private onsen fed by natural mineral springs",
+        "Kaiseki dining with ingredients from the estate garden",
+        "Tea ceremony room designed by Kengo Kuma Studio",
+        "Meditation garden accessible only to guests"
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Philosophy",
+      "heading": "Design Language",
+      "left": {
+        "title": "Material",
+        "points": [
+          "Natural stone, aged timber, raw linen",
+          "No synthetic surfaces in guest areas",
+          "Every textile handwoven or hand-dyed",
+          "Hardware: unlacquered brass, aged patina"
+        ]
+      },
+      "right": {
+        "title": "Experience",
+        "points": [
+          "No visible technology in guest rooms",
+          "Sound design: silence as a luxury",
+          "Scent program: site-specific botanicals",
+          "Staff ratio: 3:1 minimum"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Heritage",
+      "heading": "Brand Journey",
+      "events": [
+        {
+          "date": "2008",
+          "title": "Founded",
+          "desc": "First property in Provence"
+        },
+        {
+          "date": "2014",
+          "title": "Asia Entry",
+          "desc": "Bali and Kyoto properties"
+        },
+        {
+          "date": "2020",
+          "title": "Collection",
+          "desc": "Curated portfolio model"
+        },
+        {
+          "date": "2026",
+          "title": "12 Properties",
+          "desc": "Four continents, one voice"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Guest Journey",
+      "heading": "The Guest Experience Arc",
+      "steps": [
+        {
+          "title": "Anticipation",
+          "desc": "Personal concierge contact 14 days before arrival"
+        },
+        {
+          "title": "Arrival",
+          "desc": "No check-in desk — greeted by name, shown to room"
+        },
+        {
+          "title": "Immersion",
+          "desc": "Curated daily experiences tailored to guest profile"
+        },
+        {
+          "title": "Departure",
+          "desc": "Handwritten note + bespoke gift from local artisan"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Sustainability",
+      "heading": "Environmental Commitments",
+      "desc": "Progress toward 2028 full sustainability certification.",
+      "items": [
+        {
+          "label": "Local sourcing",
+          "value": 92
+        },
+        {
+          "label": "Renewable energy",
+          "value": 78
+        },
+        {
+          "label": "Water recycling",
+          "value": 85
+        },
+        {
+          "label": "Zero waste (food)",
+          "value": 68
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Calendar",
+      "heading": "2026–27 Private Events",
+      "headers": [
+        "Date",
+        "Property",
+        "Experience",
+        "Capacity"
+      ],
+      "rows": [
+        [
+          "Oct 2026",
+          "Kyoto",
+          "Autumn Viewing Dinner",
+          "16 guests"
+        ],
+        [
+          "Dec 2026",
+          "Marrakech",
+          "Winter Solstice Retreat",
+          "24 guests"
+        ],
+        [
+          "Mar 2027",
+          "Amalfi",
+          "Spring Harvest Week",
+          "20 guests"
+        ],
+        [
+          "Jun 2027",
+          "Provence",
+          "Lavender Season Residency",
+          "12 guests"
+        ]
+      ]
+    },
+    {
+      "type": "end",
+      "text": "Maison Collection · Where Every Detail Is a Decision"
+    }
+  ]
+}

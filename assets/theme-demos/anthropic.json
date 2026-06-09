@@ -1,0 +1,211 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Responsible AI Progress",
+      "subtitle": "Building AI Systems That Are Safe, Beneficial, and Understandable",
+      "info": "Research Update · 2026"
+    },
+    {
+      "type": "cards",
+      "label": "Research",
+      "heading": "Three Research Frontiers",
+      "items": [
+        {
+          "title": "Interpretability",
+          "desc": "Mechanistic understanding of model internals — from circuits to features to behaviors"
+        },
+        {
+          "title": "Alignment",
+          "desc": "Training methods that reliably produce models pursuing intended objectives"
+        },
+        {
+          "title": "Evaluation",
+          "desc": "Comprehensive benchmarks for safety-relevant capabilities and failure modes"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Scale",
+      "heading": "Research Output",
+      "desc": "Expanding the frontier of AI safety research while building production systems.",
+      "items": [
+        {
+          "value": "34",
+          "label": "Papers published (12-month)"
+        },
+        {
+          "value": "12",
+          "label": "Open-source safety tools"
+        },
+        {
+          "value": "8",
+          "label": "Industry collaborations"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Approach",
+      "heading": "Safety by Design, Not by Patch",
+      "left": {
+        "title": "Proactive Measures",
+        "points": [
+          "Constitutional AI training methodology",
+          "Red-teaming before every model release",
+          "Automated monitoring of model outputs",
+          "Staged deployment with human oversight"
+        ]
+      },
+      "right": {
+        "title": "Research Directions",
+        "points": [
+          "Scaling monosemanticity to frontier models",
+          "Sleeper agent detection techniques",
+          "Reward hacking identification",
+          "Honest and calibrated uncertainty"
+        ]
+      }
+    },
+    {
+      "type": "flow",
+      "label": "Process",
+      "heading": "Model Release Protocol",
+      "steps": [
+        {
+          "title": "Train",
+          "desc": "RLHF + Constitutional AI constraints"
+        },
+        {
+          "title": "Evaluate",
+          "desc": "Safety evals across 200+ scenarios"
+        },
+        {
+          "title": "Red Team",
+          "desc": "Internal + external adversarial testing"
+        },
+        {
+          "title": "Deploy",
+          "desc": "Staged rollout with usage monitoring"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Methods",
+      "heading": "Alignment Approaches Compared",
+      "columns": [
+        {
+          "title": "RLHF",
+          "points": [
+            "Human preference learning",
+            "Scalable but preference-dependent",
+            "Widely adopted baseline"
+          ]
+        },
+        {
+          "title": "Constitutional AI",
+          "points": [
+            "Principle-based self-supervision",
+            "Reduced human labeling burden",
+            "Explicit value specification"
+          ]
+        },
+        {
+          "title": "Debate",
+          "points": [
+            "Model-vs-model argumentation",
+            "Scalable oversight mechanism",
+            "Active research frontier"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "200+",
+      "label": "Safety Evaluation Scenarios",
+      "desc": "Every model release passes through 200+ structured safety evaluations before any external access."
+    },
+    {
+      "type": "timeline",
+      "label": "Journey",
+      "heading": "Safety Research Milestones",
+      "events": [
+        {
+          "date": "2023",
+          "title": "Constitutional AI",
+          "desc": "Published foundational paper"
+        },
+        {
+          "date": "2024",
+          "title": "Monosemanticity",
+          "desc": "Dictionary learning at scale"
+        },
+        {
+          "date": "2025",
+          "title": "RSP v2",
+          "desc": "Updated scaling policy"
+        },
+        {
+          "date": "2026",
+          "title": "Interpretability",
+          "desc": "Circuit-level model understanding"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Evals",
+      "heading": "Safety Evaluation Categories",
+      "headers": [
+        "Category",
+        "Tests",
+        "Coverage",
+        "Frequency"
+      ],
+      "rows": [
+        [
+          "Harmful content",
+          "48",
+          "Text + code + multimodal",
+          "Every release"
+        ],
+        [
+          "Honesty",
+          "32",
+          "Calibration + refusal accuracy",
+          "Every release"
+        ],
+        [
+          "Jailbreak resistance",
+          "64",
+          "Known + novel attack patterns",
+          "Weekly"
+        ],
+        [
+          "Bias & fairness",
+          "28",
+          "Demographic + contextual",
+          "Monthly"
+        ],
+        [
+          "Privacy",
+          "18",
+          "PII handling + memorization",
+          "Every release"
+        ]
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The goal is not to build the most powerful AI. The goal is to build the most trustworthy AI — and demonstrate that safety and capability are not at odds.",
+      "attribution": "Research Charter"
+    },
+    {
+      "type": "end",
+      "text": "Responsible AI Progress · Safety as a Foundation"
+    }
+  ]
+}

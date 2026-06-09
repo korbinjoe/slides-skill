@@ -1,0 +1,247 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Autonomous Driving Technology White Paper",
+      "subtitle": "From Driver Assistance to High-Level Autonomous Driving",
+      "info": "CATARC · Intelligent Connected Vehicle Research Institute · 2026"
+    },
+    {
+      "type": "big-number",
+      "number": "L3",
+      "label": "Highway Autonomous Driving",
+      "desc": "In 2026, the first L3 highway autonomous driving systems pass national type approval and enter mass production."
+    },
+    {
+      "type": "cards",
+      "label": "Challenges",
+      "heading": "Three Technical Bottlenecks",
+      "items": [
+        {
+          "title": "Perception Limits",
+          "desc": "Perception reliability in extreme weather and occlusion remains the core L4 obstacle"
+        },
+        {
+          "title": "Decision Safety",
+          "desc": "Insufficient long-tail scenario decision coverage — requires trillion-kilometer simulation validation"
+        },
+        {
+          "title": "Liability Framework",
+          "desc": "Legal responsibility in human-machine handoff scenarios — standards still maturing"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Testing",
+      "heading": "National Test Data",
+      "desc": "Cumulative data from CATARC intelligent connected vehicle test facilities.",
+      "items": [
+        {
+          "value": "2.8M km",
+          "label": "Closed-Course Test Mileage"
+        },
+        {
+          "value": "1.2B km",
+          "label": "Simulation Test Mileage"
+        },
+        {
+          "value": "180+",
+          "label": "Standard Test Scenarios"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Roadmap",
+      "heading": "Autonomous Driving Level Progression",
+      "steps": [
+        {
+          "title": "L2+",
+          "desc": "Highway NOA with continuous driver monitoring"
+        },
+        {
+          "title": "L3",
+          "desc": "Conditional highway autonomy — system responsible"
+        },
+        {
+          "title": "L4",
+          "desc": "Full automation in designated areas, no driver required"
+        },
+        {
+          "title": "L5",
+          "desc": "Full-scenario automation — ultimate goal"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Approach",
+      "heading": "Technology Route Comparison",
+      "columns": [
+        {
+          "title": "Vision-Dominant",
+          "points": [
+            "BEV + Transformer architecture",
+            "Significant cost advantage",
+            "Data-driven iteration dependency",
+            "Exemplar: Tesla FSD"
+          ]
+        },
+        {
+          "title": "Multi-Sensor Fusion",
+          "points": [
+            "LiDAR + camera + radar",
+            "Redundant design for safety",
+            "Higher hardware cost",
+            "Exemplar: Waymo, Huawei"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Standards",
+      "heading": "Autonomous Driving Standards Framework",
+      "headers": [
+        "Category",
+        "Total",
+        "Published",
+        "In Draft",
+        "Planned"
+      ],
+      "rows": [
+        [
+          "General Foundation",
+          "12",
+          "8",
+          "3",
+          "1"
+        ],
+        [
+          "Functional Safety",
+          "8",
+          "5",
+          "2",
+          "1"
+        ],
+        [
+          "Test & Evaluation",
+          "15",
+          "9",
+          "4",
+          "2"
+        ],
+        [
+          "Cybersecurity",
+          "10",
+          "6",
+          "3",
+          "1"
+        ],
+        [
+          "Data Management",
+          "6",
+          "2",
+          "3",
+          "1"
+        ]
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Maturity",
+      "heading": "Key Technology Readiness Assessment",
+      "desc": "Based on TRL rating, scale of 9.",
+      "items": [
+        {
+          "label": "Sensor Fusion",
+          "value": 82
+        },
+        {
+          "label": "Planning & Decision",
+          "value": 68
+        },
+        {
+          "label": "V2X Communication",
+          "value": 75
+        },
+        {
+          "label": "OTA Updates",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Ecosystem",
+      "heading": "Industry Ecosystem Development",
+      "left": {
+        "title": "Test Infrastructure",
+        "points": [
+          "4 national closed test tracks",
+          "12 open-road test zones",
+          "Simulation test cloud platform",
+          "V2X communication test environment"
+        ]
+      },
+      "right": {
+        "title": "Standards & Regulation",
+        "points": [
+          "Participation in UN/WP.29 regulation drafting",
+          "National + industry standards dual track",
+          "Test and evaluation methodology research",
+          "Data security compliance framework"
+        ]
+      }
+    },
+    {
+      "type": "image-text",
+      "label": "Case Study",
+      "heading": "Highway L3 Type Approval Testing",
+      "imgAlt": "L3 highway test scenario",
+      "points": [
+        "Covers 12 typical highway scenario categories",
+        "Includes ramp merging, tunnels, and construction zones",
+        "Human-machine handoff response time ≤ 10 seconds",
+        "Degradation strategy validation under extreme weather"
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Outlook",
+      "heading": "Autonomous Driving Development Roadmap",
+      "events": [
+        {
+          "date": "2026",
+          "title": "L3 Approval",
+          "desc": "Highway L3 mass production"
+        },
+        {
+          "date": "2027",
+          "title": "Urban NOA",
+          "desc": "Urban L2+ widespread adoption"
+        },
+        {
+          "date": "2028",
+          "title": "L4 Pilot",
+          "desc": "Port and mining L4 at scale"
+        },
+        {
+          "date": "2030",
+          "title": "L4 Expansion",
+          "desc": "Designated urban L4 commercial operation"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The ultimate goal of autonomous driving is not to replace the driver — it is to eliminate traffic accidents.",
+      "attribution": "White Paper Conclusion"
+    },
+    {
+      "type": "end",
+      "text": "Autonomous Driving Technology White Paper · CATARC"
+    }
+  ]
+}

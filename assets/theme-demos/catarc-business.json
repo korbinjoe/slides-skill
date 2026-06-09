@@ -1,0 +1,223 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "New Energy Vehicle Certification Report",
+      "subtitle": "CATARC · 2026 Annual Technical Certification & Testing Services",
+      "info": "Testing & Certification Division"
+    },
+    {
+      "type": "stats",
+      "label": "Business",
+      "heading": "Annual Certification Data",
+      "desc": "New energy vehicle certification and testing business continues rapid growth.",
+      "items": [
+        {
+          "value": "3,420",
+          "label": "Certification Projects"
+        },
+        {
+          "value": "+38%",
+          "label": "YoY Growth"
+        },
+        {
+          "value": "99.2%",
+          "label": "Client Satisfaction"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Services",
+      "heading": "Three Core Service Lines",
+      "items": [
+        {
+          "title": "Whole-Vehicle Certification",
+          "desc": "42 mandatory test standards covering safety, emissions, and energy consumption with nationally recognized reports"
+        },
+        {
+          "title": "Battery Testing",
+          "desc": "28 safety tests including thermal runaway, crush, and overcharge — cell, module, and pack levels"
+        },
+        {
+          "title": "Intelligent Connected Vehicles",
+          "desc": "L2–L4 autonomous driving system evaluation across 180+ test scenarios"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "3,420",
+      "label": "Annual Certification Projects",
+      "desc": "Up 38% YoY, serving 86 OEMs and 210 component suppliers domestically and internationally."
+    },
+    {
+      "type": "flow",
+      "label": "Process",
+      "heading": "Certification & Testing Service Workflow",
+      "steps": [
+        {
+          "title": "Intake",
+          "desc": "Client submits application materials and test samples"
+        },
+        {
+          "title": "Test",
+          "desc": "Testing conducted per national and industry standards"
+        },
+        {
+          "title": "Review",
+          "desc": "Technical committee reviews test results"
+        },
+        {
+          "title": "Certify",
+          "desc": "Test report and certification certificate issued"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Standards",
+      "heading": "Key New Standards in 2026",
+      "headers": [
+        "Standard",
+        "Name",
+        "Effective Date",
+        "Scope"
+      ],
+      "rows": [
+        [
+          "GB 38031-2025",
+          "EV Power Battery Safety",
+          "2026-07",
+          "All new energy vehicles"
+        ],
+        [
+          "GB/T 40429-2025",
+          "L3 Intelligent Connected Vehicle Requirements",
+          "2026-01",
+          "L3-level models"
+        ],
+        [
+          "GB 19578-2025",
+          "Passenger Vehicle Fuel Consumption",
+          "2026-07",
+          "All passenger vehicles"
+        ],
+        [
+          "GB/T XXXXX",
+          "Solid-State Battery Safety Testing",
+          "2026-12",
+          "Solid-state battery models"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Facilities",
+      "heading": "Testing Facility Upgrade",
+      "columns": [
+        {
+          "title": "Existing Facilities",
+          "points": [
+            "4 crash test laboratories",
+            "12 environmental chambers",
+            "6 EMC anechoic chambers",
+            "8 battery safety laboratories"
+          ]
+        },
+        {
+          "title": "New Construction",
+          "points": [
+            "Extreme climate test center",
+            "Intelligent connected vehicle proving ground",
+            "Dedicated hydrogen fuel cell laboratory",
+            "High-voltage fast-charging test platform"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Revenue",
+      "heading": "Certification Revenue Structure",
+      "desc": "Distribution by business type.",
+      "items": [
+        {
+          "label": "Whole-Vehicle Certification",
+          "value": 42
+        },
+        {
+          "label": "Battery Testing",
+          "value": 28
+        },
+        {
+          "label": "Intelligent Connected",
+          "value": 18
+        },
+        {
+          "label": "Technical Consulting",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "International",
+      "heading": "Global Business Expansion",
+      "left": {
+        "title": "Accreditations Secured",
+        "points": [
+          "UN ECE certification qualification",
+          "EU e-Mark testing authorization",
+          "Japan PSE partner laboratory",
+          "ASEAN mutual recognition agreement signed"
+        ]
+      },
+      "right": {
+        "title": "Expansion Targets",
+        "points": [
+          "Middle East GCC certification channels",
+          "South America INMETRO partnership",
+          "India AIS standards alignment",
+          "Belt and Road technical services"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Development",
+      "heading": "Certification Capability Timeline",
+      "events": [
+        {
+          "date": "2018",
+          "title": "New Energy",
+          "desc": "NEV testing capability built"
+        },
+        {
+          "date": "2021",
+          "title": "Intelligent Connected",
+          "desc": "Autonomous driving proving ground commissioned"
+        },
+        {
+          "date": "2024",
+          "title": "Solid-State Battery",
+          "desc": "New battery testing standards co-developed"
+        },
+        {
+          "date": "2026",
+          "title": "Global Network",
+          "desc": "Overseas certification service network established"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Behind every certification report is a solemn commitment to public safety.",
+      "attribution": "Testing & Certification Mission"
+    },
+    {
+      "type": "end",
+      "text": "New Energy Vehicle Certification Report · CATARC"
+    }
+  ]
+}

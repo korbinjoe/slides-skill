@@ -1,0 +1,235 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Chongqing University Research Achievements Report",
+      "subtitle": "Basic and Applied Research for National Strategic Needs",
+      "info": "Science & Technology Development Office · 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Overview",
+      "heading": "Annual Research Data",
+      "desc": "Research funding and high-impact outputs reach new highs.",
+      "items": [
+        {
+          "value": "$4.0B",
+          "label": "Research Funding Received"
+        },
+        {
+          "value": "186",
+          "label": "National-Level Projects Approved"
+        },
+        {
+          "value": "12",
+          "label": "National Science & Technology Awards"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Focus Areas",
+      "heading": "Three Strength Discipline Clusters",
+      "items": [
+        {
+          "title": "Intelligent Manufacturing",
+          "desc": "Robotics and intelligent equipment lab selected for national key lab restructuring; 3 Nature sub-journal publications"
+        },
+        {
+          "title": "Green Building",
+          "desc": "Mountain urban construction national key lab leading major Yangtze River ecological restoration project"
+        },
+        {
+          "title": "Biomedical Engineering",
+          "desc": "Bioengineering school leads brain science and brain-inspired intelligence major program — $170M approved"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "186",
+      "label": "National-Level Projects Approved",
+      "desc": "Including 142 NSFC grants (8 key projects) and 24 national key R&D program projects."
+    },
+    {
+      "type": "flow",
+      "label": "Transfer",
+      "heading": "Technology Transfer Pathway",
+      "steps": [
+        {
+          "title": "Discover",
+          "desc": "Basic research produces original findings"
+        },
+        {
+          "title": "Validate",
+          "desc": "Lab validation and pilot-scale demonstration"
+        },
+        {
+          "title": "Transfer",
+          "desc": "Technology licensing or spin-off company formation"
+        },
+        {
+          "title": "Commercialize",
+          "desc": "Industry capital and market application alignment"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Publications",
+      "heading": "High-Impact Publication Output",
+      "headers": [
+        "Category",
+        "Count",
+        "YoY",
+        "Representative Work"
+      ],
+      "rows": [
+        [
+          "Nature/Science Main",
+          "4",
+          "+100%",
+          "Novel topological quantum materials"
+        ],
+        [
+          "Nature Sub-Journals",
+          "18",
+          "+38%",
+          "New brain-computer interface paradigm"
+        ],
+        [
+          "ESI Highly Cited",
+          "86",
+          "+24%",
+          "Green building materials"
+        ],
+        [
+          "Top International Conferences",
+          "142",
+          "+16%",
+          "Embodied intelligence"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Collaboration",
+      "heading": "Industry-Academia-Research Models",
+      "columns": [
+        {
+          "title": "Traditional Model",
+          "points": [
+            "Project-based collaboration",
+            "Engagement ends at deliverable",
+            "Enterprises passively receive",
+            "3–5 year transfer cycle"
+          ]
+        },
+        {
+          "title": "New Model",
+          "points": [
+            "Joint laboratory co-establishment",
+            "Full-cycle deep participation",
+            "Demand-driven R&D",
+            "1–2 year transfer cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Platforms",
+      "heading": "Major Research Platforms",
+      "left": {
+        "title": "National-Level Platforms",
+        "points": [
+          "3 national key laboratories",
+          "2 national engineering research centers",
+          "4 national international cooperation bases",
+          "1 frontier science center"
+        ]
+      },
+      "right": {
+        "title": "Provincial-Level Platforms",
+        "points": [
+          "8 Ministry of Education key labs",
+          "22 Chongqing key laboratories",
+          "3 collaborative innovation centers",
+          "6 academician workstations"
+        ]
+      }
+    },
+    {
+      "type": "bars",
+      "label": "Funding",
+      "heading": "Research Funding Source Structure",
+      "desc": "Diversified funding sources ensuring research continuity.",
+      "items": [
+        {
+          "label": "National Programs",
+          "value": 48
+        },
+        {
+          "label": "Industry Partnerships",
+          "value": 28
+        },
+        {
+          "label": "Local Government",
+          "value": 16
+        },
+        {
+          "label": "International Collaboration",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Highlight",
+      "heading": "Brain-Computer Interface Breakthrough",
+      "imgAlt": "Brain-computer interface experimental setup",
+      "points": [
+        "World-first non-invasive high-precision brain-computer interface",
+        "Signal decoding accuracy 96.8%, surpassing invasive approaches",
+        "Published in Nature Biomedical Engineering",
+        "12 international patents filed"
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Planning",
+      "heading": "Five-Year Research Development Milestones",
+      "events": [
+        {
+          "date": "2024",
+          "title": "Foundation",
+          "desc": "3 new national-level platforms added"
+        },
+        {
+          "date": "2025",
+          "title": "Talent",
+          "desc": "12 full-time academicians and Changjiang Scholars recruited"
+        },
+        {
+          "date": "2026",
+          "title": "Breakthrough",
+          "desc": "4 Nature/Science main journal publications"
+        },
+        {
+          "date": "2027",
+          "title": "Acceleration",
+          "desc": "Technology transfer revenue doubled"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Research for application, learning for the nation. CQU research always addresses national strategic needs — rooted in the west, serving the whole country.",
+      "attribution": "Research Guiding Philosophy"
+    },
+    {
+      "type": "end",
+      "text": "Chongqing University Research Achievements Report · Revive the Nation, Lead from the Front"
+    }
+  ]
+}

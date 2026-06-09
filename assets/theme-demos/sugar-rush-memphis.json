@@ -1,0 +1,204 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "SUGAR RUSH",
+      "subtitle": "2026 Summer Music Festival · Annual Handbook",
+      "info": "7.18 – 7.24 · Coconut Island · Let the sweetest summer arrive"
+    },
+    {
+      "type": "section",
+      "label": "Part 1",
+      "title": "WHAT.",
+      "subtitle": "When the whole world is getting hotter, we decided to make it sweeter."
+    },
+    {
+      "type": "stats",
+      "label": "By the Numbers",
+      "heading": "Festival at a Glance",
+      "desc": "Seven days of non-stop celebration.",
+      "items": [
+        {
+          "value": "7",
+          "label": "Days of Music"
+        },
+        {
+          "value": "80",
+          "label": "Artists"
+        },
+        {
+          "value": "50K",
+          "label": "Expected Fans"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Values",
+      "heading": "What We Stand For",
+      "items": [
+        {
+          "title": "FREE",
+          "desc": "No genre snobbery — all styles welcome"
+        },
+        {
+          "title": "FUN",
+          "desc": "Play to the max, keep the sweetest memories"
+        },
+        {
+          "title": "FOREVER YOUNG",
+          "desc": "18 or 80, no age on the dance floor"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Headliners",
+      "heading": "The Headliners",
+      "headers": [
+        "Artist",
+        "Genre",
+        "Signature Track"
+      ],
+      "rows": [
+        [
+          "Cherry Bomb",
+          "Rock",
+          "Pink Static"
+        ],
+        [
+          "Neon Cloud",
+          "Electronic",
+          "3AM Mirror"
+        ],
+        [
+          "Mint Folk",
+          "Folk",
+          "Slow Lemon"
+        ],
+        [
+          "Yellow Hustle",
+          "Hip-Hop",
+          "Sugar High"
+        ]
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Genre Split",
+      "heading": "Four Flavors, One Festival",
+      "desc": "80 artists across four genre camps.",
+      "items": [
+        {
+          "label": "Electronic",
+          "value": 38
+        },
+        {
+          "label": "Rock",
+          "value": 31
+        },
+        {
+          "label": "Folk",
+          "value": 19
+        },
+        {
+          "label": "Hip-Hop",
+          "value": 13
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Schedule",
+      "heading": "Seven Days of Sugar",
+      "events": [
+        {
+          "date": "7.18",
+          "title": "Opening Night",
+          "desc": "Grand ceremony"
+        },
+        {
+          "date": "7.19",
+          "title": "Rock Day",
+          "desc": "Cherry Stage headliner"
+        },
+        {
+          "date": "7.20",
+          "title": "Electro Night",
+          "desc": "Neon Grid all night"
+        },
+        {
+          "date": "7.21",
+          "title": "Folk Afternoon",
+          "desc": "Mint Grove sessions"
+        },
+        {
+          "date": "7.22",
+          "title": "Hip-Hop Midnight",
+          "desc": "Yellow Block takeover"
+        },
+        {
+          "date": "7.24",
+          "title": "Closing",
+          "desc": "Grand finale"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Beyond Music",
+      "heading": "Beyond the Music",
+      "left": {
+        "title": "Market",
+        "points": [
+          "50+ vendor stalls",
+          "Limited-edition merch",
+          "Local street food"
+        ]
+      },
+      "right": {
+        "title": "Art Installations",
+        "points": [
+          "10 giant installations",
+          "AR interactive experiences",
+          "Glow-in-the-dark graffiti wall"
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "label": "Tickets",
+      "heading": "Get Your Ticket",
+      "columns": [
+        {
+          "title": "Early Bird",
+          "points": [
+            "¥499",
+            "Limited 5,000",
+            "SOLD OUT"
+          ]
+        },
+        {
+          "title": "Regular",
+          "points": [
+            "¥799",
+            "Includes 1 drink",
+            "General admission"
+          ]
+        },
+        {
+          "title": "VIP 7-Day",
+          "points": [
+            "¥1,999",
+            "All-access pass",
+            "VIP lounge + meet & greet"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "text": "SEE YOU IN SUMMER. SUGAR RUSH 2026 · 7.18–7.24"
+    }
+  ]
+}

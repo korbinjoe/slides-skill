@@ -1,0 +1,199 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "$ dev-stack",
+      "subtitle": "A Developer's Toolkit, Rebuilt from Scratch",
+      "info": "Open Source · v1.0 Release Notes"
+    },
+    {
+      "type": "big-number",
+      "number": "0",
+      "label": "Runtime Dependencies",
+      "desc": "Zero external dependencies. One binary. Every platform. No node_modules, no pip install, no cargo fetch."
+    },
+    {
+      "type": "cards",
+      "label": "Design",
+      "heading": "Three Design Principles",
+      "items": [
+        {
+          "title": "Single Binary",
+          "desc": "One executable, no runtime, no container. Copy it anywhere and run."
+        },
+        {
+          "title": "Config as Code",
+          "desc": "TOML config, version-controlled, diffable, mergeable."
+        },
+        {
+          "title": "Unix Philosophy",
+          "desc": "Does one thing. Composes with pipes. Exits with meaningful codes."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Benchmarks",
+      "heading": "Performance Comparison",
+      "headers": [
+        "Task",
+        "dev-stack",
+        "Tool A",
+        "Tool B",
+        "Tool C"
+      ],
+      "rows": [
+        [
+          "Cold start",
+          "12ms",
+          "340ms",
+          "890ms",
+          "1.2s"
+        ],
+        [
+          "File watch",
+          "2ms",
+          "45ms",
+          "120ms",
+          "200ms"
+        ],
+        [
+          "Full rebuild",
+          "0.8s",
+          "4.2s",
+          "12s",
+          "18s"
+        ],
+        [
+          "Memory (idle)",
+          "8MB",
+          "120MB",
+          "340MB",
+          "1.1GB"
+        ]
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Architecture",
+      "heading": "How It Works",
+      "steps": [
+        {
+          "title": "Parse",
+          "desc": "TOML config → typed AST in <1ms"
+        },
+        {
+          "title": "Watch",
+          "desc": "Kernel-level FS events, no polling"
+        },
+        {
+          "title": "Build",
+          "desc": "Incremental graph with content hashing"
+        },
+        {
+          "title": "Serve",
+          "desc": "Zero-copy HTTP with live reload"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "API",
+      "heading": "CLI Interface",
+      "left": {
+        "title": "Core Commands",
+        "points": [
+          "dev-stack init — scaffold project",
+          "dev-stack build — incremental build",
+          "dev-stack serve — dev server",
+          "dev-stack check — lint + typecheck"
+        ]
+      },
+      "right": {
+        "title": "Flags",
+        "points": [
+          "--watch — file watcher mode",
+          "--release — optimized output",
+          "--port=N — server port",
+          "--verbose — debug logging"
+        ]
+      }
+    },
+    {
+      "type": "stats",
+      "label": "Community",
+      "heading": "One Month Post-Launch",
+      "desc": "Organic growth through developer word-of-mouth.",
+      "items": [
+        {
+          "value": "4.2K",
+          "label": "GitHub stars"
+        },
+        {
+          "value": "186",
+          "label": "Contributors"
+        },
+        {
+          "value": "12",
+          "label": "Language plugins"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Trade-offs",
+      "heading": "What We Chose — And What We Didn't",
+      "columns": [
+        {
+          "title": "Chose",
+          "points": [
+            "Speed over plugin ecosystem",
+            "Convention over configuration",
+            "Stability over bleeding-edge features"
+          ]
+        },
+        {
+          "title": "Did Not Choose",
+          "points": [
+            "GUI configuration panels",
+            "Cloud-hosted build service",
+            "Proprietary extension format"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Language Support",
+      "heading": "Plugin Maturity by Language",
+      "desc": "Community-maintained language plugins ranked by test coverage.",
+      "items": [
+        {
+          "label": "TypeScript",
+          "value": 98
+        },
+        {
+          "label": "Rust",
+          "value": 94
+        },
+        {
+          "label": "Go",
+          "value": 88
+        },
+        {
+          "label": "Python",
+          "value": 76
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The fastest build tool is the one with nothing left to remove.",
+      "attribution": "dev-stack README.md"
+    },
+    {
+      "type": "end",
+      "text": "$ dev-stack · v1.0 · MIT License"
+    }
+  ]
+}

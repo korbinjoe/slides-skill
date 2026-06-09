@@ -1,0 +1,227 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Building for Everyone",
+      "subtitle": "Product Ecosystem Update · 2026",
+      "info": "Developer Conference Keynote"
+    },
+    {
+      "type": "stats",
+      "label": "Reach",
+      "heading": "Platform Scale",
+      "desc": "Serving billions of users across every screen and surface.",
+      "items": [
+        {
+          "value": "4.3B",
+          "label": "Monthly active users"
+        },
+        {
+          "value": "15M",
+          "label": "Developers on platform"
+        },
+        {
+          "value": "190+",
+          "label": "Countries served"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "AI",
+      "heading": "AI Across Every Product",
+      "items": [
+        {
+          "title": "Search",
+          "desc": "AI Overviews now handle 40% of queries with direct, conversational answers"
+        },
+        {
+          "title": "Workspace",
+          "desc": "Help Me Write, Smart Canvas, and Duet AI embedded in every collaboration tool"
+        },
+        {
+          "title": "Cloud",
+          "desc": "Vertex AI processes 2B+ predictions daily across enterprise customers"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "40%",
+      "label": "Queries with AI Overviews",
+      "desc": "Four in ten search queries now receive AI-generated answers alongside traditional results."
+    },
+    {
+      "type": "comparison",
+      "label": "Platform",
+      "heading": "Android vs Web — Developer Focus",
+      "columns": [
+        {
+          "title": "Android",
+          "points": [
+            "Kotlin-first with Jetpack Compose",
+            "On-device ML via MediaPipe",
+            "Adaptive layouts for foldables"
+          ]
+        },
+        {
+          "title": "Web",
+          "points": [
+            "Core Web Vitals as ranking signal",
+            "WebGPU for ML inference in browser",
+            "Baseline for cross-browser compat"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Developer",
+      "heading": "Build → Test → Launch → Grow",
+      "steps": [
+        {
+          "title": "Build",
+          "desc": "Firebase + Android Studio + AI code assist"
+        },
+        {
+          "title": "Test",
+          "desc": "Cloud Testing Lab: 1000+ device configurations"
+        },
+        {
+          "title": "Launch",
+          "desc": "Play Console with staged rollouts and ANR tracking"
+        },
+        {
+          "title": "Grow",
+          "desc": "Analytics + A/B testing + acquisition campaigns"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Cloud",
+      "heading": "Google Cloud Platform Highlights",
+      "left": {
+        "title": "Infrastructure",
+        "points": [
+          "6th-gen TPU pods for training",
+          "Distributed cloud across 40 regions",
+          "Confidential computing GA",
+          "Carbon-neutral since 2007"
+        ]
+      },
+      "right": {
+        "title": "AI/ML",
+        "points": [
+          "Gemini API in Vertex AI",
+          "Grounding with Google Search",
+          "Enterprise-grade RAG pipeline",
+          "Managed fine-tuning service"
+        ]
+      }
+    },
+    {
+      "type": "table",
+      "label": "Products",
+      "heading": "Key Product Metrics",
+      "headers": [
+        "Product",
+        "MAU",
+        "YoY Growth",
+        "AI Feature"
+      ],
+      "rows": [
+        [
+          "Search",
+          "4.3B",
+          "+2%",
+          "AI Overviews"
+        ],
+        [
+          "YouTube",
+          "2.5B",
+          "+8%",
+          "Dream Screen"
+        ],
+        [
+          "Gmail",
+          "1.8B",
+          "+4%",
+          "Help Me Write"
+        ],
+        [
+          "Maps",
+          "1.2B",
+          "+6%",
+          "Immersive View"
+        ],
+        [
+          "Photos",
+          "1.1B",
+          "+12%",
+          "Magic Editor"
+        ]
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "2026 Launch Calendar",
+      "events": [
+        {
+          "date": "Q1",
+          "title": "Gemini 2.5",
+          "desc": "Multimodal reasoning model"
+        },
+        {
+          "date": "Q2",
+          "title": "Android 17",
+          "desc": "On-device AI runtime"
+        },
+        {
+          "date": "Q3",
+          "title": "Pixel 11",
+          "desc": "Custom Tensor G6 chip"
+        },
+        {
+          "date": "Q4",
+          "title": "Cloud Next",
+          "desc": "Enterprise AI platform update"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Sustainability",
+      "heading": "Environmental Progress",
+      "desc": "On track for 24/7 carbon-free energy by 2030.",
+      "items": [
+        {
+          "label": "Carbon-free energy",
+          "value": 78
+        },
+        {
+          "label": "Water replenishment",
+          "value": 62
+        },
+        {
+          "label": "Circular economy",
+          "value": 45
+        },
+        {
+          "label": "Supply chain audit",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Technology is most powerful when it works for everyone — not just the technically savvy, not just the well-connected, but everyone.",
+      "attribution": "Product Philosophy"
+    },
+    {
+      "type": "end",
+      "text": "Building for Everyone · Google 2026"
+    }
+  ]
+}

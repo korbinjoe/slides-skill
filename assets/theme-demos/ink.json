@@ -1,0 +1,172 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "The Future of Long-Form",
+      "subtitle": "How Readers, Writers, and Algorithms Are Reshaping Publishing",
+      "info": "Editorial Analysis · 2026"
+    },
+    {
+      "type": "quote",
+      "text": "A book is no longer a fixed object. It is a living conversation between author and audience, mediated by recommendation engines.",
+      "attribution": "Frankfurt Book Fair Keynote, 2025"
+    },
+    {
+      "type": "cards",
+      "label": "Landscape",
+      "heading": "Three Forces Reshaping Publishing",
+      "items": [
+        {
+          "title": "Algorithmic Discovery",
+          "desc": "68% of book purchases now begin with a recommendation engine, not a bookshelf"
+        },
+        {
+          "title": "Serial Renaissance",
+          "desc": "Serialized fiction platforms grew 140% — readers want ongoing relationships, not endpoints"
+        },
+        {
+          "title": "Audio-First",
+          "desc": "Audiobook revenue surpassed hardcover for the first time in Q4 2025"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Market",
+      "heading": "Global Publishing Numbers",
+      "desc": "The industry is growing, but the growth is unevenly distributed.",
+      "items": [
+        {
+          "value": "$138B",
+          "label": "Global book market 2026"
+        },
+        {
+          "value": "42%",
+          "label": "Digital format share"
+        },
+        {
+          "value": "3.2×",
+          "label": "Indie pub growth rate vs trad"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Shift",
+      "heading": "Traditional vs New Publishing",
+      "left": {
+        "title": "Traditional Model",
+        "points": [
+          "18-month production cycle",
+          "Advance against royalties",
+          "Bookstore-centric distribution",
+          "Editor as gatekeeper"
+        ]
+      },
+      "right": {
+        "title": "Emerging Model",
+        "points": [
+          "4-week serial release cadence",
+          "Revenue share from day one",
+          "Algorithm-driven distribution",
+          "Reader metrics as signal"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "History",
+      "heading": "Inflection Points in Publishing",
+      "events": [
+        {
+          "date": "2007",
+          "title": "Kindle Launch",
+          "desc": "E-book as mainstream format"
+        },
+        {
+          "date": "2014",
+          "title": "KU Model",
+          "desc": "Subscription reading arrives"
+        },
+        {
+          "date": "2021",
+          "title": "BookTok",
+          "desc": "Social discovery explodes"
+        },
+        {
+          "date": "2025",
+          "title": "AI Writing Tools",
+          "desc": "Co-creation becomes normal"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Formats",
+      "heading": "Revenue Share by Format",
+      "desc": "Digital formats now dominate in units but print holds value share.",
+      "items": [
+        {
+          "label": "Audiobook",
+          "value": 34
+        },
+        {
+          "label": "E-book",
+          "value": 28
+        },
+        {
+          "label": "Paperback",
+          "value": 22
+        },
+        {
+          "label": "Hardcover",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Case Study",
+      "heading": "How Serial Fiction Won Gen Z",
+      "imgAlt": "Mobile reading app screenshot",
+      "points": [
+        "Daily chapter drops create habit loops",
+        "Comment threads per paragraph build community",
+        "Tip-based monetization outperforms subscriptions 2:1",
+        "Top serialized authors earn $400K+/year"
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Strategy",
+      "heading": "The Modern Author Playbook",
+      "steps": [
+        {
+          "title": "Build Audience",
+          "desc": "Newsletter + social proof before the manuscript"
+        },
+        {
+          "title": "Serialize",
+          "desc": "Release chapters weekly, measure engagement"
+        },
+        {
+          "title": "Bundle",
+          "desc": "Collected edition as premium product"
+        },
+        {
+          "title": "Extend",
+          "desc": "Audio, translation, adaptation rights"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "The question is no longer 'will people read?' — it's 'will your work find the algorithm that connects it to the right reader?'",
+      "attribution": "Industry Forecast"
+    },
+    {
+      "type": "end",
+      "text": "The Future of Long-Form · An Editorial Analysis"
+    }
+  ]
+}

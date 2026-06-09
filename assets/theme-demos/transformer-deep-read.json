@@ -1,0 +1,223 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Attention Is All You Need",
+      "subtitle": "A Paper Deep-Read",
+      "info": "Vaswani et al. · Google Brain · NeurIPS 2017 · arXiv:1706.03762"
+    },
+    {
+      "type": "stats",
+      "label": "Impact",
+      "heading": "A Simpler Model, Better Results, Less Training",
+      "desc": "Zero recurrence, zero convolution — only attention + feed-forward.",
+      "items": [
+        {
+          "value": "28.4",
+          "label": "BLEU EN-DE (+2.0 SOTA)"
+        },
+        {
+          "value": "41.8",
+          "label": "BLEU EN-FR (new SOTA)"
+        },
+        {
+          "value": "3.5 days",
+          "label": "8× P100 GPUs training"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Motivation",
+      "heading": "What Hurts in RNN/CNN Sequence Models",
+      "items": [
+        {
+          "title": "Sequential Bottleneck",
+          "desc": "h_t depends on h_{t-1} — no within-example parallelism"
+        },
+        {
+          "title": "Long-Range Path",
+          "desc": "Distant tokens hard to relate; path grows with distance"
+        },
+        {
+          "title": "Memory Ceiling",
+          "desc": "Sequence length limits batch size at long context"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Architecture",
+      "heading": "Encoder-Decoder Stack",
+      "steps": [
+        {
+          "title": "Input Embed",
+          "desc": "Embeddings + positional encoding"
+        },
+        {
+          "title": "Encoder ×N",
+          "desc": "Multi-Head Self-Attention + FFN"
+        },
+        {
+          "title": "Decoder ×N",
+          "desc": "Masked Self-Attn + Cross-Attn + FFN"
+        },
+        {
+          "title": "Output",
+          "desc": "Linear + Softmax → token probabilities"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Enc vs Dec",
+      "heading": "Same Skeleton, Three Asymmetries",
+      "left": {
+        "title": "Encoder (N=6)",
+        "points": [
+          "Multi-Head Self-Attention → FFN",
+          "LayerNorm(x + Sublayer(x))",
+          "All positions attend to all"
+        ]
+      },
+      "right": {
+        "title": "Decoder (N=6)",
+        "points": [
+          "Masked Self-Attn → Cross-Attn → FFN",
+          "Same residual + LayerNorm",
+          "Auto-regressive: attend only to earlier"
+        ]
+      }
+    },
+    {
+      "type": "image-text",
+      "label": "Attention",
+      "heading": "Scaled Dot-Product Attention",
+      "imgAlt": "QKV attention mechanism diagram",
+      "points": [
+        "Compute QK^T, scale by sqrt(d_k), softmax → weights",
+        "Multiply by V — weighted sum is the output",
+        "Scaling prevents softmax saturation in high-d_k",
+        "Multi-Head: h=8 parallel subspace projections, then concat"
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Three Roles",
+      "heading": "One Mechanism, Three Roles",
+      "columns": [
+        {
+          "title": "Encoder Self-Attn",
+          "points": [
+            "Q, K, V from encoder",
+            "Every position attends all"
+          ]
+        },
+        {
+          "title": "Decoder Masked",
+          "points": [
+            "Same but masked",
+            "Position i only sees ≤i"
+          ]
+        },
+        {
+          "title": "Encoder-Decoder",
+          "points": [
+            "Q from decoder",
+            "K, V from encoder output"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Complexity",
+      "heading": "Complexity Comparison (Table 1)",
+      "headers": [
+        "Layer Type",
+        "Complexity",
+        "Sequential Ops",
+        "Max Path"
+      ],
+      "rows": [
+        [
+          "Self-Attention",
+          "O(n²·d)",
+          "O(1)",
+          "O(1)"
+        ],
+        [
+          "Recurrent",
+          "O(n·d²)",
+          "O(n)",
+          "O(n)"
+        ],
+        [
+          "Convolutional",
+          "O(k·n·d²)",
+          "O(1)",
+          "O(log_k n)"
+        ],
+        [
+          "Restricted Attn",
+          "O(r·n·d)",
+          "O(1)",
+          "O(n/r)"
+        ]
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Results",
+      "heading": "WMT'14 EN-DE BLEU Scores",
+      "desc": "Transformer (big) achieves 28.4 BLEU — new SOTA at a fraction of training cost.",
+      "items": [
+        {
+          "label": "Transformer (big)",
+          "value": 95
+        },
+        {
+          "label": "Prior ensemble",
+          "value": 88
+        },
+        {
+          "label": "ConvS2S",
+          "value": 84
+        },
+        {
+          "label": "ByteNet",
+          "value": 79
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Ablations",
+      "heading": "Five Takeaways from Ablation Study",
+      "items": [
+        {
+          "title": "Head Count Sweet Spot",
+          "desc": "Single-head loses 0.9 BLEU; too many (32) also degrades"
+        },
+        {
+          "title": "Key Dim > Value Dim",
+          "desc": "Reducing d_k hurts more than reducing d_v"
+        },
+        {
+          "title": "Dropout Essential",
+          "desc": "Removing it loses ~0.5–1.0 BLEU"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "10,000+",
+      "label": "Citations and Counting",
+      "desc": "Transformer became the substrate for BERT, GPT, T5, ViT, AlphaFold, and most modern LLMs. \"Just attention\" was the right inductive bias."
+    },
+    {
+      "type": "end",
+      "text": "One paper, a generation of models. arXiv:1706.03762"
+    }
+  ]
+}

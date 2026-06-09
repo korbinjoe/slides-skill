@@ -1,0 +1,207 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Visual Composition",
+      "subtitle": "20 Visual Language Experiments in Juxtaposition",
+      "info": "PPT Master · 2026"
+    },
+    {
+      "type": "cards",
+      "label": "Classic Layouts",
+      "heading": "Three Foundational Image-Text Patterns",
+      "items": [
+        {
+          "title": "Left Image, Right Text",
+          "desc": "Vertical image left (3:7 ratio) — text-dominant narrative pages"
+        },
+        {
+          "title": "Right Image Bleed",
+          "desc": "Image bleeds to edge (7:3 ratio) — creates visual tension"
+        },
+        {
+          "title": "Top Banner + 3 Columns",
+          "desc": "Wide image header with three-column text annotations below"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Rendering Styles",
+      "heading": "Visual Rendering Approaches",
+      "columns": [
+        {
+          "title": "Editorial + Corporate",
+          "points": [
+            "Corporate photography",
+            "Cool professional palette",
+            "Clean Swiss minimalism"
+          ]
+        },
+        {
+          "title": "Artistic + Organic",
+          "points": [
+            "Watercolor rendering",
+            "Paper-cut layering",
+            "Ink-wash brush notes"
+          ]
+        },
+        {
+          "title": "Digital + Tech",
+          "points": [
+            "3D isometric views",
+            "Pixel art retro",
+            "Digital dashboard neon"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Layout Grid",
+      "heading": "12 Layout Patterns by Complexity",
+      "headers": [
+        "Pattern",
+        "Image Area",
+        "Text Area",
+        "Best For"
+      ],
+      "rows": [
+        [
+          "Left 1/3 vertical",
+          "427px",
+          "733px",
+          "Text-dominant narratives"
+        ],
+        [
+          "Z-shape 3-row",
+          "3 alternating",
+          "3 alternating",
+          "Visual storytelling"
+        ],
+        [
+          "9-grid center",
+          "1 center cell",
+          "8 surrounding",
+          "Technical annotation"
+        ],
+        [
+          "Diagonal split",
+          "Upper-left triangle",
+          "Lower-right",
+          "Dynamic tension"
+        ],
+        [
+          "Circle crop + radial",
+          "Center 380px Ø",
+          "4 corner blocks",
+          "Dashboard focus"
+        ]
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Composition",
+      "heading": "Four Composition Principles",
+      "steps": [
+        {
+          "title": "Hierarchy",
+          "desc": "Image vs text — who leads?"
+        },
+        {
+          "title": "Proportion",
+          "desc": "3:7, 5:5, or 7:3 ratio"
+        },
+        {
+          "title": "Negative Space",
+          "desc": "Breathing room defines structure"
+        },
+        {
+          "title": "Visual Flow",
+          "desc": "Z-path, L-path, or radial"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Advanced",
+      "heading": "Advanced Techniques",
+      "left": {
+        "title": "Image as Canvas",
+        "points": [
+          "Full-bleed with dark overlay",
+          "Dense info cards layered on top",
+          "Text becomes foreground architecture"
+        ]
+      },
+      "right": {
+        "title": "Shape Masking",
+        "points": [
+          "Circle, hexagon, polygon crops",
+          "Text fills gaps around shapes",
+          "Creates organic layout rhythm"
+        ]
+      }
+    },
+    {
+      "type": "stats",
+      "label": "Coverage",
+      "heading": "20 Patterns in One Deck",
+      "desc": "A comprehensive visual language laboratory.",
+      "items": [
+        {
+          "value": "20",
+          "label": "Unique layout patterns"
+        },
+        {
+          "value": "12",
+          "label": "Rendering × palette combos"
+        },
+        {
+          "value": "6",
+          "label": "Image-text ratio variants"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Effectiveness",
+      "heading": "Layout Effectiveness by Use Case",
+      "desc": "Subjective ratings across presentation contexts.",
+      "items": [
+        {
+          "label": "Corporate decks",
+          "value": 85
+        },
+        {
+          "label": "Creative portfolios",
+          "value": 92
+        },
+        {
+          "label": "Data presentations",
+          "value": 70
+        },
+        {
+          "label": "Editorial features",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Closing Pattern",
+      "heading": "Chalkboard Mono — The Minimal Close",
+      "imgAlt": "Dark chalkboard texture with single centered line",
+      "points": [
+        "Full-bleed dark background with 60%+ negative space",
+        "Single sentence absolutely centered",
+        "Negative space IS the content",
+        "Maximum restraint, maximum impact"
+      ]
+    },
+    {
+      "type": "end",
+      "text": "20 Visual Languages · One Design System"
+    }
+  ]
+}

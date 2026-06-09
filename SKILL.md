@@ -208,7 +208,7 @@ The validator splits checks by severity:
 
 | Severity | Examples | Delivery rule |
 |----------|----------|---------------|
-| ERROR | Unresolved placeholders, slide/NOTES count mismatch, missing engine tokens, unknown type/rhythm | Must fix — deck fails even without `--strict` |
+| ERROR | Unresolved placeholders, slide/NOTES count mismatch, missing engine tokens, unknown type/rhythm, invalid deck-lock theme slug, lock/HTML type or rhythm mismatch | Must fix — deck fails even without `--strict` |
 | WARNING | Missing deck-lock, missing `data-slide-type`/`data-rhythm`, Anti-AI rhythm/label/callout rules, missing Google Fonts URL on system-font presets | Must fix before delivery (`--strict`) |
 
 Anti-AI rules (rhythm, labels, callouts, breath/hero) are enforced as WARNINGs by default. They are **MUST follow** design rules — treat `--strict` as the delivery gate, not optional polish.
@@ -221,6 +221,8 @@ ERRORs (must be zero):
 [ ] Exactly one active slide, and it is the first slide
 [ ] Speaker notes complete for every slide
 [ ] Slide count matches NOTES count and deck-lock count
+[ ] deck-lock theme is a valid sampler slug (see references/theme-slugs.md)
+[ ] deck-lock type and rhythm match each slide's data-slide-type and data-rhythm
 [ ] Hash navigation, keyboard navigation, notes, timer, and scaling code are present
 [ ] No unknown slide type or rhythm values
 

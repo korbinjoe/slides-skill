@@ -1,0 +1,194 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Zine Culture Guide",
+      "subtitle": "A map from a single sheet of paper to an indie bookstore",
+      "info": "PPT Master Risograph Demo · 2026"
+    },
+    {
+      "type": "section",
+      "label": "Part 1",
+      "title": "ZINE = MAGAZINE − Commercial Logic",
+      "subtitle": "Self-made, non-commercial, ultra-small print runs"
+    },
+    {
+      "type": "timeline",
+      "label": "History",
+      "heading": "Four Waves of Zine History",
+      "events": [
+        {
+          "date": "1920s",
+          "title": "Amateur Publishing",
+          "desc": "Harlem Renaissance Fire!! magazine"
+        },
+        {
+          "date": "1930s",
+          "title": "Sci-Fi Fanzines",
+          "desc": "\"Fanzine\" coined by Russ Chauvenet 1940"
+        },
+        {
+          "date": "1976",
+          "title": "Punk Era",
+          "desc": "Sniffin' Glue + photocopier revolution"
+        },
+        {
+          "date": "1991",
+          "title": "Riot Grrrl",
+          "desc": "Bikini Kill + Riot Grrrl Press"
+        },
+        {
+          "date": "2010s",
+          "title": "Contemporary Revival",
+          "desc": "Zine fairs explode worldwide"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Risograph",
+      "heading": "Risograph: The Soul of Zine Craft",
+      "items": [
+        {
+          "title": "Limited Palette",
+          "desc": "One ink drum per color — constrained creativity"
+        },
+        {
+          "title": "Misregistration",
+          "desc": "1–3px offset — the signature analog charm"
+        },
+        {
+          "title": "Halftone + Overlap",
+          "desc": "Screen dots + ink layering creates third colors"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Process",
+      "heading": "5 Steps: Digital Image to Printed Sheet",
+      "steps": [
+        {
+          "title": "Receive Image",
+          "desc": "Digital file input"
+        },
+        {
+          "title": "Burn Master",
+          "desc": "Ablate pixelated master plate"
+        },
+        {
+          "title": "Mount Drum",
+          "desc": "Master wraps color ink drum"
+        },
+        {
+          "title": "Print",
+          "desc": "Multi-pass for multiple colors"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "DIY",
+      "heading": "One Sheet → One Zine (8-Page Fold)",
+      "imgAlt": "Hands folding a single sheet into an 8-page booklet",
+      "points": [
+        "Fold: long edge → short edge → center line = 8 panels",
+        "Cut: one slit along the fold to the center",
+        "Assemble: push both ends inward",
+        "Fill: no rules — draw, paste, write"
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Global Bookstores",
+      "heading": "Three Cities, Three Attitudes",
+      "columns": [
+        {
+          "title": "Paris",
+          "points": [
+            "Shakespeare and Company",
+            "Hosted thousands of writers since 1951"
+          ]
+        },
+        {
+          "title": "London",
+          "points": [
+            "Daunt Books + Word on the Water",
+            "1920s Dutch canal barge bookshop"
+          ]
+        },
+        {
+          "title": "New York",
+          "points": [
+            "Strand: 18 miles of books since 1927",
+            "Yu & Me: Chinatown women's bookshop"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "China Map",
+      "heading": "China Indie Bookstore Map (Zine-Friendly)",
+      "headers": [
+        "Bookstore",
+        "City",
+        "Specialty",
+        "Zine Score"
+      ],
+      "rows": [
+        [
+          "1200bookshop",
+          "Guangzhou",
+          "24-hour indie",
+          "★★★"
+        ],
+        [
+          "Librairie Avant-Garde",
+          "Nanjing",
+          "Underground parking lot",
+          "★★"
+        ],
+        [
+          "Fangsuo Commune",
+          "Chengdu",
+          "Art + design focus",
+          "★★★"
+        ],
+        [
+          "PageOne",
+          "Beijing",
+          "Photography + architecture",
+          "★★"
+        ]
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Action",
+      "heading": "Your First Zine: 4 Steps",
+      "steps": [
+        {
+          "title": "Pick a Topic",
+          "desc": "Something you genuinely care about"
+        },
+        {
+          "title": "Fold A4",
+          "desc": "Use the 8-page fold method"
+        },
+        {
+          "title": "Fill 8 Pages",
+          "desc": "Handwrite, collage, old photos"
+        },
+        {
+          "title": "Print 10 Copies",
+          "desc": "5 for friends, 5 for a bookstore"
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "text": "Print one. Give one. Trade one. A zine is the world's smallest publishing house."
+    }
+  ]
+}

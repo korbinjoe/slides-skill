@@ -1,0 +1,228 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Rural Revitalization Work Report",
+      "subtitle": "Consolidating Poverty Alleviation · Advancing Rural Development",
+      "info": "Department of Agriculture and Rural Affairs · 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Results",
+      "heading": "Annual Core Indicators",
+      "desc": "Steady progress — all targets met or exceeded for the reporting year.",
+      "items": [
+        {
+          "value": "98.6%",
+          "label": "Employment Rate Among Ex-Poverty Population"
+        },
+        {
+          "value": "$2,560",
+          "label": "Per-Capita Income (Ex-Poverty)"
+        },
+        {
+          "value": "↑12.3%",
+          "label": "Income Growth (Above Provincial Avg)"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Initiatives",
+      "heading": "Three Priority Programs",
+      "items": [
+        {
+          "title": "Return-to-Poverty Monitoring",
+          "desc": "Three-line early warning system — 124,000 households screened, 96.2% risk elimination rate"
+        },
+        {
+          "title": "Industry Support",
+          "desc": "34 specialty industry projects benefiting 8,600 households, avg. income gain $860 per household"
+        },
+        {
+          "title": "Talent Development",
+          "desc": "86 science and technology commissioners deployed; 2,400 new professional farmers trained"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Mechanism",
+      "heading": "Return-to-Poverty Monitoring Workflow",
+      "steps": [
+        {
+          "title": "Screen",
+          "desc": "Monthly household visits by grid workers, data synced to system"
+        },
+        {
+          "title": "Alert",
+          "desc": "Automated warnings on income, healthcare, and education indicators"
+        },
+        {
+          "title": "Assist",
+          "desc": "Tailored household support plans launched within 30 days"
+        },
+        {
+          "title": "Close",
+          "desc": "Six-month follow-up after risk elimination before case closure"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Industry",
+      "heading": "Specialty Industry Impact",
+      "headers": [
+        "Sector",
+        "Projects",
+        "Households",
+        "Avg. Income Gain",
+        "Jobs Created"
+      ],
+      "rows": [
+        [
+          "Specialty Crops",
+          "12",
+          "3,200",
+          "$800",
+          "1,400"
+        ],
+        [
+          "Eco-Livestock",
+          "8",
+          "2,100",
+          "$890",
+          "860"
+        ],
+        [
+          "Agri-Processing",
+          "6",
+          "1,800",
+          "$1,000",
+          "1,200"
+        ],
+        [
+          "Rural Tourism",
+          "8",
+          "1,500",
+          "$780",
+          "640"
+        ]
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Infrastructure",
+      "heading": "Rural Development Actions",
+      "left": {
+        "title": "Infrastructure",
+        "points": [
+          "186 km of new rural roads",
+          "99.2% tap water coverage",
+          "4G/5G coverage in all administrative villages",
+          "95% rural waste collection rate"
+        ]
+      },
+      "right": {
+        "title": "Public Services",
+        "points": [
+          "100% standardized village clinics",
+          "28 township boarding schools renovated",
+          "340 digital village libraries upgraded",
+          "78% elderly care station coverage"
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "label": "Innovation",
+      "heading": "Support Model Innovation",
+      "columns": [
+        {
+          "title": "Traditional Support",
+          "points": [
+            "Government-led investment",
+            "Single funding channel",
+            "Short-term visible results",
+            "Limited sustainability"
+          ]
+        },
+        {
+          "title": "Innovative Model",
+          "points": [
+            "Government guidance + market operation",
+            "Industry + employment + finance combo",
+            "Benefit-linkage mechanisms",
+            "Endogenous development capacity"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "96.2%",
+      "label": "Return-to-Poverty Risk Elimination Rate",
+      "desc": "1,240 at-risk households identified; 1,193 cleared; 47 with active support measures."
+    },
+    {
+      "type": "bars",
+      "label": "Funding",
+      "heading": "Transition Fund Allocation",
+      "desc": "Optimized spending structure — industry development share continues to rise.",
+      "items": [
+        {
+          "label": "Industry Development",
+          "value": 62
+        },
+        {
+          "label": "Infrastructure",
+          "value": 18
+        },
+        {
+          "label": "Employment Support",
+          "value": 12
+        },
+        {
+          "label": "Other",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Planning",
+      "heading": "Rural Revitalization Phase Targets",
+      "events": [
+        {
+          "date": "2024",
+          "title": "Consolidation",
+          "desc": "Hold the line against large-scale return to poverty"
+        },
+        {
+          "date": "2025",
+          "title": "Enhancement",
+          "desc": "Specialty industries fully covered"
+        },
+        {
+          "date": "2027",
+          "title": "Development",
+          "desc": "Initial urban-rural integration"
+        },
+        {
+          "date": "2030",
+          "title": "Revitalization",
+          "desc": "Substantive progress toward agricultural modernization"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Lifting a county out of poverty is not the finish line — it is the starting point of a new life and a new struggle.",
+      "attribution": "Overall Work Guideline"
+    },
+    {
+      "type": "end",
+      "text": "Rural Revitalization Work Report · Building Better Lives for Rural Communities"
+    }
+  ]
+}

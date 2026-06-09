@@ -1,0 +1,223 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Digital Government Initiative",
+      "subtitle": "Smart City Development · Annual Work Report",
+      "info": "Digital Transformation Office · 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Results",
+      "heading": "Core Digital Transformation Outcomes",
+      "desc": "Data-driven, collaborative governance advancing government digitization across all domains.",
+      "items": [
+        {
+          "value": "92%",
+          "label": "Online Service Rate"
+        },
+        {
+          "value": "1,240",
+          "label": "High-Frequency \"One-Stop\" Services"
+        },
+        {
+          "value": "↓64%",
+          "label": "Average Processing Time"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "92%",
+      "label": "Online Government Service Rate",
+      "desc": "Up from 61% in 2023 — citizens and businesses can now complete most tasks in a single visit."
+    },
+    {
+      "type": "cards",
+      "label": "Programs",
+      "heading": "Three Flagship Initiatives",
+      "items": [
+        {
+          "title": "One-Stop Services",
+          "desc": "Integrated 42 departments and 1,240 high-frequency services with unified intake and feedback"
+        },
+        {
+          "title": "Unified Urban Management",
+          "desc": "City operations center connected to 180,000 sensors for real-time urban state awareness"
+        },
+        {
+          "title": "Cross-Agency Collaboration",
+          "desc": "Inter-departmental platform serving 56 agencies — document flow efficiency up 3.2×"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Process",
+      "heading": "\"One Matter\" Service Redesign",
+      "steps": [
+        {
+          "title": "Map",
+          "desc": "Decompose services into minimum-granularity document checklists"
+        },
+        {
+          "title": "Integrate",
+          "desc": "Cross-agency data sharing to eliminate duplicate submissions"
+        },
+        {
+          "title": "Optimize",
+          "desc": "Parallel approvals replace serial workflows, compressing timelines"
+        },
+        {
+          "title": "Evaluate",
+          "desc": "Continuous optimization driven by case completion data"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Progress",
+      "heading": "Key Service Acceleration",
+      "headers": [
+        "Service",
+        "Before Reform",
+        "After Reform",
+        "Speedup"
+      ],
+      "rows": [
+        [
+          "Business Registration",
+          "5 business days",
+          "0.5 business days",
+          "10×"
+        ],
+        [
+          "Property Registration",
+          "15 business days",
+          "1 business day",
+          "15×"
+        ],
+        [
+          "Construction Permit",
+          "60 business days",
+          "20 business days",
+          "3×"
+        ],
+        [
+          "Social Security Transfer",
+          "30 business days",
+          "3 business days",
+          "10×"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Model",
+      "heading": "Traditional Government vs Digital Government",
+      "columns": [
+        {
+          "title": "Traditional Model",
+          "points": [
+            "Citizens visit multiple windows",
+            "Documents submitted repeatedly",
+            "Agencies operate in silos",
+            "Post-hoc supervision only"
+          ]
+        },
+        {
+          "title": "Digital Model",
+          "points": [
+            "One window, one completion",
+            "Data sharing, no re-submission",
+            "Coordinated, integrated governance",
+            "End-to-end online, real-time oversight"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Satisfaction",
+      "heading": "Citizen Satisfaction Survey",
+      "desc": "Government service evaluation data, H1 2026.",
+      "items": [
+        {
+          "label": "Convenience",
+          "value": 94
+        },
+        {
+          "label": "Service Attitude",
+          "value": 92
+        },
+        {
+          "label": "Processing Speed",
+          "value": 88
+        },
+        {
+          "label": "Information Transparency",
+          "value": 86
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "History",
+      "heading": "Digital Government Timeline",
+      "events": [
+        {
+          "date": "2022",
+          "title": "Top-Level Design",
+          "desc": "Digital government master plan issued"
+        },
+        {
+          "date": "2023",
+          "title": "Foundation",
+          "desc": "Government cloud and data platform launched"
+        },
+        {
+          "date": "2025",
+          "title": "Deep Application",
+          "desc": "One-stop services rolled out nationwide"
+        },
+        {
+          "date": "2027",
+          "title": "Smart Governance",
+          "desc": "AI-assisted decision-making across all domains"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Security",
+      "heading": "Data Security Framework",
+      "left": {
+        "title": "Technical Measures",
+        "points": [
+          "Tiered data classification",
+          "End-to-end encrypted transmission",
+          "Access audit and traceability",
+          "Privacy computing deployment"
+        ]
+      },
+      "right": {
+        "title": "Institutional Safeguards",
+        "points": [
+          "Data security accountability",
+          "Regular security assessments",
+          "Emergency response protocols",
+          "Staff training and certification"
+        ]
+      }
+    },
+    {
+      "type": "quote",
+      "text": "Let data run the errands so citizens run fewer — not a slogan, but a systems-engineering redesign of every government process.",
+      "attribution": "Digital Transformation Guiding Principle"
+    },
+    {
+      "type": "end",
+      "text": "Digital Government Initiative · Serving the People Through Technology"
+    }
+  ]
+}

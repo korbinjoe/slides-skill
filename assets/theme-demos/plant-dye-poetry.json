@@ -1,0 +1,218 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Clouds Woven, Flora Composed",
+      "subtitle": "300 Traditional Chinese Colors from Botanical Dyes",
+      "info": "Source · Phoenix Space | 2026.04"
+    },
+    {
+      "type": "image-text",
+      "label": "Opening",
+      "heading": "The Most Beautiful Colors",
+      "imgAlt": "Spring Festival Gala costume close-up",
+      "points": [
+        "The most beautiful colors aren't on a Pantone card",
+        "They've always been hidden in mountains, rivers, and plants",
+        "2025 Spring Festival Gala visual show · 13 heritage crafts",
+        "Yellow-green gradient · butterfly fairy"
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Costume Decoded",
+      "heading": "Five Cardinal Colors × Hand Dip Dyeing",
+      "left": {
+        "title": "Yellow · Earth",
+        "points": [
+          "Sourced from Huanglu in Shennongjia, Hubei",
+          "Represents the Chinese earth"
+        ]
+      },
+      "right": {
+        "title": "Blue-Green · Spring",
+        "points": [
+          "Sourced from early spring Malan grass in Jiangnan",
+          "Represents endless vitality"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Millennium Dyeing",
+      "heading": "The Art of Dyeing · Since Ancient Times",
+      "events": [
+        {
+          "date": "Xuan Yuan Era",
+          "title": "Plant Juices",
+          "desc": "Yellow Emperor's robes dyed with plant extracts"
+        },
+        {
+          "date": "Western Zhou",
+          "title": "Dye Master Office",
+          "desc": "Dedicated dyeing official position established"
+        },
+        {
+          "date": "Qin Dynasty",
+          "title": "Dye Bureau",
+          "desc": "National dyeing institution"
+        },
+        {
+          "date": "Tang-Song",
+          "title": "Dye Workshops",
+          "desc": "Imperial dyeing workshops"
+        },
+        {
+          "date": "Ming-Qing",
+          "title": "Indigo Works",
+          "desc": "Techniques recorded in Tiangong Kaiwu"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Botanical Colors",
+      "heading": "Botanical Colors · Dyeing Nature's Palette",
+      "headers": [
+        "Color Name",
+        "Hex",
+        "Poetic Reference",
+        "Dye Source"
+      ],
+      "rows": [
+        [
+          "Rain-Washed Sky Blue",
+          "#7AA4B6",
+          "Emperor Huizong: where sky breaks after rain",
+          "Indigo 95% + Scutellaria 5%"
+        ],
+        [
+          "Pale Yellow",
+          "#B29A55",
+          "Spring bird · fawn color",
+          "Rhubarb + Sappanwood"
+        ],
+        [
+          "Twilight Gray",
+          "#7D6E74",
+          "Liu Yong: mist over a thousand miles",
+          "Sappanwood + Blue vitriol"
+        ],
+        [
+          "Sky Water Green",
+          "#8FB09A",
+          "Consort of Li Yu · silk left in dew",
+          "Indigo on moon-white silk"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Poetic Colors",
+      "heading": "Poetic Colors · Literary Imagery",
+      "columns": [
+        {
+          "title": "Silver Red",
+          "points": [
+            "#E49AA5",
+            "Light crimson · dawn-touched",
+            "Daiyu's window gauze at dawn"
+          ]
+        },
+        {
+          "title": "Flushed",
+          "points": [
+            "#C86868",
+            "Beauty flushed as if drunk",
+            "Yang Guifei drunk on wine"
+          ]
+        },
+        {
+          "title": "Longing Gray",
+          "points": [
+            "#A69E98",
+            "An inch of longing, an inch of ash",
+            "Tea leaves + pomegranate peel"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Dye Plants",
+      "heading": "Dye Plants · Four Colors from Flora",
+      "items": [
+        {
+          "title": "Red: Madder · Sappan · Safflower",
+          "desc": "Warm hues from petals and roots"
+        },
+        {
+          "title": "Blue: Indigo · Buckthorn",
+          "desc": "Indigo from leaves and stems"
+        },
+        {
+          "title": "Yellow-Black: Pagoda Tree · Walnut Hull",
+          "desc": "Natural gifts from buds and shells"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Hand Dyeing",
+      "heading": "A Process of Self-Healing",
+      "steps": [
+        {
+          "title": "Boil Water",
+          "desc": "Clear water brought to boil"
+        },
+        {
+          "title": "Add Material",
+          "desc": "Plant dye immersed"
+        },
+        {
+          "title": "Simmer",
+          "desc": "1–2 hours, strain the dye liquor"
+        },
+        {
+          "title": "Dye & Fix",
+          "desc": "Cloth immersed · sun-dried to set color"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Cultural Lineage",
+      "heading": "Xue Tao Paper · A Thousand Years of Elegance",
+      "desc": "Tang poet Xue Tao dyed letter paper with hibiscus bark into crimson stationery",
+      "items": [
+        {
+          "value": "300+",
+          "label": "Traditional Chinese Colors"
+        },
+        {
+          "value": "13",
+          "label": "Heritage Crafts in One Garment"
+        },
+        {
+          "value": "Millennia",
+          "label": "Plant Dyeing Tradition"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "300",
+      "label": "Traditional Chinese Colors",
+      "desc": "From botanical hues born of heaven and earth to silk brilliance passed down a thousand years. Chinese color = visual experience × cultural memory."
+    },
+    {
+      "type": "quote",
+      "text": "Color is more than vision — it is the bearer of cultural memory.",
+      "attribution": "300 Traditional Colors · Huang Ronghua"
+    },
+    {
+      "type": "end",
+      "text": "Flora Composed · Fin"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "AI Operations Platform",
+      "subtitle": "Intelligent Operations Management System · Quarterly Report",
+      "info": "IT Department · Q2 2026"
+    },
+    {
+      "type": "stats",
+      "label": "Core Metrics",
+      "heading": "Platform Operations Overview",
+      "desc": "Intelligent O&M coverage continues to expand across the network.",
+      "items": [
+        {
+          "value": "99.99%",
+          "label": "Network Availability"
+        },
+        {
+          "value": "↓62%",
+          "label": "Alerts (YoY)"
+        },
+        {
+          "value": "85%",
+          "label": "Auto-Recovery Rate"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Capabilities",
+      "heading": "Three Core Capabilities",
+      "items": [
+        {
+          "title": "Smart Alerting",
+          "desc": "Time-series anomaly detection engine — false positive rate down to 3.2%, 68% YoY reduction"
+        },
+        {
+          "title": "Root Cause Analysis",
+          "desc": "Multi-dimensional correlation — mean time to locate reduced from 47 min to 8 min"
+        },
+        {
+          "title": "Auto Remediation",
+          "desc": "120+ pre-orchestrated repair scripts — 85% of common faults auto-recovered in minutes"
+        }
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "8min",
+      "label": "Mean Time to Locate",
+      "desc": "From 47 minutes of manual triage to 8 minutes with AI assistance — 83% faster."
+    },
+    {
+      "type": "flow",
+      "label": "Architecture",
+      "heading": "Intelligent O&M Pipeline",
+      "steps": [
+        {
+          "title": "Collect",
+          "desc": "Real-time metrics, logs, and topology from all network devices"
+        },
+        {
+          "title": "Detect",
+          "desc": "AI models for real-time anomaly detection and alert compression"
+        },
+        {
+          "title": "Analyze",
+          "desc": "Knowledge-graph-driven root cause correlation"
+        },
+        {
+          "title": "Execute",
+          "desc": "Automated runbooks with human review where needed"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Impact",
+      "heading": "Operations Efficiency Comparison",
+      "headers": [
+        "Metric",
+        "Traditional",
+        "AI Mode",
+        "Improvement"
+      ],
+      "rows": [
+        [
+          "Alerts handled/person/day",
+          "120",
+          "450",
+          "3.75×"
+        ],
+        [
+          "False positive rate",
+          "22%",
+          "3.2%",
+          "↓85%"
+        ],
+        [
+          "MTTR",
+          "47 min",
+          "8 min",
+          "↓83%"
+        ],
+        [
+          "Devices managed/person",
+          "800",
+          "3,200",
+          "4×"
+        ]
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Approach",
+      "heading": "Operations Model Evolution",
+      "columns": [
+        {
+          "title": "Traditional O&M",
+          "points": [
+            "Reactive alert response",
+            "Manual tier-by-tier triage",
+            "High reliance on experience",
+            "24/7 human watch"
+          ]
+        },
+        {
+          "title": "AI O&M",
+          "points": [
+            "Proactive fault prediction",
+            "Intelligent root cause location",
+            "Knowledge graph institutionalized",
+            "Automation-first remediation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Coverage",
+      "heading": "Domain Integration Progress",
+      "desc": "Core and transport networks fully integrated; access network in progress.",
+      "items": [
+        {
+          "label": "Core Network",
+          "value": 100
+        },
+        {
+          "label": "Transport Network",
+          "value": 95
+        },
+        {
+          "label": "Access Network",
+          "value": 72
+        },
+        {
+          "label": "IT Support Systems",
+          "value": 68
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "label": "Roadmap",
+      "heading": "Platform Milestones",
+      "events": [
+        {
+          "date": "2025-Q1",
+          "title": "1.0 Launch",
+          "desc": "Alert compression and basic analysis"
+        },
+        {
+          "date": "2025-Q3",
+          "title": "2.0 Upgrade",
+          "desc": "Root cause analysis and auto-recovery"
+        },
+        {
+          "date": "2026-Q2",
+          "title": "3.0 Evolution",
+          "desc": "Predictive maintenance capability"
+        },
+        {
+          "date": "2026-Q4",
+          "title": "4.0 Target",
+          "desc": "Full-scenario autonomous O&M"
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Organization",
+      "heading": "Organizational Support",
+      "left": {
+        "title": "Technical Team",
+        "points": [
+          "12 AI algorithm engineers",
+          "18 platform developers",
+          "8 O&M experts (knowledge capture)"
+        ]
+      },
+      "right": {
+        "title": "Operating Model",
+        "points": [
+          "Weekly release cadence",
+          "Monthly effectiveness review",
+          "Quarterly OKR alignment",
+          "Annual capability assessment"
+        ]
+      }
+    },
+    {
+      "type": "quote",
+      "text": "From humans watching screens to machines watching the network — not replacing operators, but freeing them for higher-value work.",
+      "attribution": "Platform Design Philosophy"
+    },
+    {
+      "type": "end",
+      "text": "AI Operations Platform · Let the Network Take Care of Itself"
+    }
+  ]
+}

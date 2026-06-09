@@ -11,7 +11,7 @@
     {
       "name": "slides",
       "source": ".",
-      "description": "Professional HTML presentation generator with 12 themes, 19 slide types, speaker notes, and keyboard navigation. No dependencies, no build step.",
+      "description": "Professional HTML presentation generator with 50 themes, 19 slide types, speaker notes, and keyboard navigation. No dependencies, no build step.",
       "version": "1.0.0"
     }
   ]

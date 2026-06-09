@@ -1,0 +1,163 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Building Effective Agents",
+      "subtitle": "Simple, composable patterns for LLM-based agentic systems",
+      "info": "Anthropic Engineering · December 2024"
+    },
+    {
+      "type": "two-column",
+      "label": "Definitions",
+      "heading": "What Are Agents?",
+      "left": {
+        "title": "Workflows",
+        "points": [
+          "LLMs + tools in predefined code paths",
+          "Orchestrated by developer logic",
+          "Predictable and consistent"
+        ]
+      },
+      "right": {
+        "title": "Agents",
+        "points": [
+          "LLMs dynamically direct processes",
+          "Autonomous tool usage",
+          "Flexible, model-driven decisions"
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "label": "When to Use",
+      "heading": "When (and When Not) to Use Agents",
+      "items": [
+        {
+          "title": "Start Simple",
+          "desc": "Single LLM calls with retrieval often suffice"
+        },
+        {
+          "title": "Workflows for Predictability",
+          "desc": "Well-defined tasks needing consistency"
+        },
+        {
+          "title": "Agents for Flexibility",
+          "desc": "Complex tasks needing model-driven decisions at scale"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Building Block",
+      "heading": "The Augmented LLM",
+      "imgAlt": "LLM augmented with retrieval, tools, and memory",
+      "points": [
+        "Foundation: LLM + retrieval + tools + memory",
+        "Models generate queries, select tools, manage retention",
+        "Tailor capabilities to your use case",
+        "Model Context Protocol (MCP) for tool integration"
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Patterns",
+      "heading": "Four Workflow Patterns",
+      "steps": [
+        {
+          "title": "Prompt Chaining",
+          "desc": "Sequential steps with gate checks"
+        },
+        {
+          "title": "Routing",
+          "desc": "Classify → direct to specialized handler"
+        },
+        {
+          "title": "Parallelization",
+          "desc": "Sectioning + voting for speed/diversity"
+        },
+        {
+          "title": "Orchestrator-Workers",
+          "desc": "Dynamic subtask delegation"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Patterns Detail",
+      "heading": "Chaining vs Routing vs Parallelization",
+      "columns": [
+        {
+          "title": "Chaining",
+          "points": [
+            "Fixed subtask sequence",
+            "Gate checks at each step",
+            "Trade latency for accuracy"
+          ]
+        },
+        {
+          "title": "Routing",
+          "points": [
+            "Input classification",
+            "Specialized prompts",
+            "Separation of concerns"
+          ]
+        },
+        {
+          "title": "Parallelization",
+          "points": [
+            "Independent subtasks",
+            "Multiple perspectives",
+            "Speed optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Evaluator-Optimizer",
+      "heading": "Evaluator-Optimizer Pattern",
+      "imgAlt": "Generate-evaluate feedback loop diagram",
+      "points": [
+        "One LLM generates, another evaluates in a loop",
+        "Best when evaluation criteria are clear",
+        "Iterative refinement adds measurable value",
+        "Examples: literary translation, multi-round search"
+      ]
+    },
+    {
+      "type": "big-number",
+      "number": "3",
+      "label": "Core Principles",
+      "desc": "Simplicity: keep agent design simple. Transparency: show planning steps. ACI Design: craft agent-computer interfaces through thorough tool docs and testing."
+    },
+    {
+      "type": "stats",
+      "label": "Practice",
+      "heading": "Agents in Practice",
+      "desc": "Two proven domains where agents deliver measurable value.",
+      "items": [
+        {
+          "value": "Support",
+          "label": "Conversation + tools + measurable resolutions"
+        },
+        {
+          "value": "Coding",
+          "label": "Verifiable via tests, SWE-bench validated"
+        },
+        {
+          "value": "> Prompts",
+          "label": "More time on tool engineering than prompt tuning"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Build the right system, not the most sophisticated one. Start simple, add complexity only when simpler solutions fall short.",
+      "attribution": "Anthropic Engineering"
+    },
+    {
+      "type": "end",
+      "text": "Simple, composable patterns for effective agents."
+    }
+  ]
+}

@@ -171,13 +171,18 @@ The output is a single `.html` file with inline CSS, inline JS, and no build ste
 | `assets/template.html` | Base deck skeleton |
 | `assets/theme-sampler.html` | Interactive theme picker UI |
 | `assets/theme-demo.html` | Playable demo decks per preset |
-| `assets/theme-data.js` | Sampler data + example style CSS variables |
+| `assets/theme-data.js` | Sampler data + theme CSS variables (metadata only) |
+| `assets/theme-demos/` | Per-theme playable demo slide content (`{slug}.json`) |
+| `assets/theme-demos.js` | Bundled demo content for `theme-demo.html` (generated) |
 | `references/themes.md` | 12 core theme definitions |
 | `references/style-presets.md` | Extended theme definitions (38 themes from `ppt-master`) |
 | `references/theme-slugs.md` | Canonical slugs for all 50 themes |
 | `references/slide-types.md` | Slide type HTML templates |
 | `references/deck-contract.md` | Deck lock schema and rhythm rules |
 | `scripts/validate_deck.py` | HTML deck validator |
+| `scripts/verify_themes.py` | Theme count, slug uniqueness, doc sync |
+| `scripts/sync_theme_slugs.py` | Regenerate `references/theme-slugs.md` from `theme-data.js` |
+| `scripts/build_theme_demos.py` | Bundle `assets/theme-demos/*.json` into `theme-demos.js` |
 
 ## Validation
 
@@ -189,13 +194,24 @@ python3 scripts/validate_deck.py path/to/deck.html --strict
 
 Use `--strict` as the delivery gate — it treats Anti-AI rhythm rules, missing deck-lock, and missing slide metadata as failures.
 
+The validator also checks `deck-lock` theme slugs against the sampler registry and compares per-slide `type`/`rhythm` between the lock and HTML.
+
+Theme registry integrity (50 themes, unique slugs, `theme-slugs.md` in sync):
+
+```bash
+python3 scripts/verify_themes.py
+python3 scripts/sync_theme_slugs.py   # regenerate slug doc after theme-data.js changes
+```
+
+CI runs `verify_themes.py`, the reference deck `--strict` check, and pytest on every push/PR.
+
 Reference example: [`examples/multi-agent-orchestration.html`](examples/multi-agent-orchestration.html) passes `--strict`.
 
 ## Contributing
 
 Contributions are welcome. Please keep changes focused:
 
-- **New themes** — add to `assets/theme-data.js` and the sampler; add full CSS to `references/themes.md` or `references/style-presets.md` when applicable
+- **New themes** — add to `assets/theme-data.js` and the sampler; add full CSS to `references/themes.md` or `references/style-presets.md` when applicable; add demo slides to `assets/theme-demos/<slug>.json`; run `python3 scripts/sync_theme_slugs.py` and `python3 scripts/build_theme_demos.py`
 - **Sampler UI** — edit `assets/theme-sampler.html` and `assets/theme-demo.html` as needed
 - **New slide types** — add to `references/slide-types.md` with HTML template and usage guidance
 - **New visual patterns** — add selection rules to `references/visualizations.md`

@@ -1,0 +1,219 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Kubernetes Cluster Architecture",
+      "subtitle": "A Blueprint of the Modern Container Orchestrator",
+      "info": "K8S-ARCH-2026 · Engineering Reference"
+    },
+    {
+      "type": "two-column",
+      "label": "Architecture",
+      "heading": "Two Planes, One Spine",
+      "left": {
+        "title": "Control Plane",
+        "points": [
+          "Global decisions, desired-state holder",
+          "kube-apiserver is the single link",
+          "Every line crosses through it"
+        ]
+      },
+      "right": {
+        "title": "Data Plane",
+        "points": [
+          "Workload execution (Pods)",
+          "Worker nodes run containers",
+          "Reports status back via kubelet"
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "label": "Control Plane",
+      "heading": "Control Plane: 5 Components",
+      "items": [
+        {
+          "title": "kube-apiserver",
+          "desc": "Central hub — only component talking to etcd"
+        },
+        {
+          "title": "etcd",
+          "desc": "Consistent key-value store — the single source of truth"
+        },
+        {
+          "title": "Scheduler + Controllers",
+          "desc": "Place pods on nodes · Reconcile desired vs actual state"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "label": "Worker Node",
+      "heading": "Worker Node: Three Layers",
+      "columns": [
+        {
+          "title": "kubelet",
+          "points": [
+            "Agent reconciling PodSpecs",
+            "Reports node status"
+          ]
+        },
+        {
+          "title": "kube-proxy",
+          "points": [
+            "Service rules via iptables/IPVS",
+            "Network routing"
+          ]
+        },
+        {
+          "title": "Container Runtime",
+          "points": [
+            "containerd or CRI-O",
+            "CRI contract interface"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Pod Lifecycle",
+      "heading": "Pod Lifecycle: One Schedule, Many States",
+      "steps": [
+        {
+          "title": "Pending",
+          "desc": "Scheduled but not yet running"
+        },
+        {
+          "title": "Running",
+          "desc": "At least one container active"
+        },
+        {
+          "title": "Succeeded",
+          "desc": "All containers terminated with exit 0"
+        },
+        {
+          "title": "Failed",
+          "desc": "At least one container terminated non-zero"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Services",
+      "heading": "Services: Four Ways to Be Reachable",
+      "headers": [
+        "Type",
+        "Scope",
+        "Port Range"
+      ],
+      "rows": [
+        [
+          "ClusterIP",
+          "Internal only",
+          "Any"
+        ],
+        [
+          "NodePort",
+          "Every node",
+          "30000–32767"
+        ],
+        [
+          "LoadBalancer",
+          "Cloud LB → nodes",
+          "Any"
+        ],
+        [
+          "ExternalName",
+          "DNS CNAME",
+          "N/A"
+        ]
+      ]
+    },
+    {
+      "type": "image-text",
+      "label": "Storage",
+      "heading": "Storage: PV / PVC / StorageClass",
+      "imgAlt": "Layered diagram: Pod → PVC → PV → StorageClass",
+      "points": [
+        "Static vs dynamic provisioning",
+        "Access modes: RWO / ROX / RWX / RWOP",
+        "Reclaim policies: Retain / Delete",
+        "CSI driver as the provisioner spine"
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "HA Topology",
+      "heading": "HA Topology: Stacked vs External etcd",
+      "left": {
+        "title": "Stacked",
+        "points": [
+          "etcd co-located with control plane",
+          "Simpler setup, fewer hosts",
+          "Coupled failure domain"
+        ]
+      },
+      "right": {
+        "title": "External",
+        "points": [
+          "etcd on dedicated hosts",
+          "Independent scaling",
+          "Requires more infrastructure"
+        ]
+      }
+    },
+    {
+      "type": "bars",
+      "label": "API Server",
+      "heading": "Everything Through the API Server",
+      "desc": "All state transitions are API-mediated for pluggability, observability, and audit.",
+      "items": [
+        {
+          "label": "kubectl",
+          "value": 95
+        },
+        {
+          "label": "kubelet",
+          "value": 88
+        },
+        {
+          "label": "scheduler",
+          "value": 72
+        },
+        {
+          "label": "controller-mgr",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Takeaways",
+      "heading": "Three Things to Remember",
+      "desc": "The essential architecture invariants.",
+      "items": [
+        {
+          "value": "1 Spine",
+          "label": "kube-apiserver mediates every state change"
+        },
+        {
+          "value": "1 Truth",
+          "label": "etcd is the only persistent store"
+        },
+        {
+          "value": "1 Loop",
+          "label": "Controllers: watch, diff, act"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "One spine, one truth, one reconcile loop — controllers watch, diff, act. Everything else is a variation.",
+      "attribution": "Kubernetes Architecture Principles"
+    },
+    {
+      "type": "end",
+      "text": "Kubernetes Cluster Architecture · K8S-ARCH-2026"
+    }
+  ]
+}

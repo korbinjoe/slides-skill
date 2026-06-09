@@ -1,0 +1,196 @@
+{
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Roots & Growth",
+      "subtitle": "Sustainability Report 2026",
+      "info": "ESG & Impact · Annual Review"
+    },
+    {
+      "type": "big-number",
+      "number": "−42%",
+      "label": "Carbon Reduction",
+      "desc": "Year-over-year decrease in Scope 1+2 emissions, on track for net-zero by 2030."
+    },
+    {
+      "type": "cards",
+      "label": "Impact",
+      "heading": "Three Commitments Delivered",
+      "items": [
+        {
+          "title": "100% Renewable",
+          "desc": "All data centers now powered by renewable energy through direct PPAs"
+        },
+        {
+          "title": "Zero Waste",
+          "desc": "Office operations achieved zero-landfill status across 8 locations"
+        },
+        {
+          "title": "Carbon Negative",
+          "desc": "Offset purchases exceed remaining emissions by 1.4× since March"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Metrics",
+      "heading": "Environmental Performance",
+      "desc": "Tracked against Science Based Targets initiative framework.",
+      "items": [
+        {
+          "value": "12,400t",
+          "label": "CO₂e avoided"
+        },
+        {
+          "value": "98%",
+          "label": "Renewable energy share"
+        },
+        {
+          "value": "340ML",
+          "label": "Water recycled"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "label": "Supply Chain",
+      "heading": "Green Procurement Pipeline",
+      "steps": [
+        {
+          "title": "Assess",
+          "desc": "Supplier ESG scoring on 14 criteria"
+        },
+        {
+          "title": "Engage",
+          "desc": "Improvement plans for high-risk tier"
+        },
+        {
+          "title": "Audit",
+          "desc": "Third-party verification annually"
+        },
+        {
+          "title": "Report",
+          "desc": "Transparent supply chain dashboard"
+        }
+      ]
+    },
+    {
+      "type": "bars",
+      "label": "Energy",
+      "heading": "Energy Mix Transition",
+      "desc": "Shift from grid-dependent to renewable-first operations.",
+      "items": [
+        {
+          "label": "Solar PPA",
+          "value": 42
+        },
+        {
+          "label": "Wind PPA",
+          "value": 38
+        },
+        {
+          "label": "Hydro",
+          "value": 12
+        },
+        {
+          "label": "Grid (remaining)",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "type": "two-column",
+      "label": "Social",
+      "heading": "Community & Workforce Impact",
+      "left": {
+        "title": "Workforce",
+        "points": [
+          "46% women in leadership (↑8pp)",
+          "Living wage certified globally",
+          "12,000 training hours delivered"
+        ]
+      },
+      "right": {
+        "title": "Community",
+        "points": [
+          "$2.4M in grants to local orgs",
+          "8 reforestation partnerships",
+          "340 employee volunteer days"
+        ]
+      }
+    },
+    {
+      "type": "timeline",
+      "label": "Journey",
+      "heading": "Sustainability Milestones",
+      "events": [
+        {
+          "date": "2022",
+          "title": "Baseline",
+          "desc": "First GHG inventory completed"
+        },
+        {
+          "date": "2023",
+          "title": "SBTi",
+          "desc": "Targets validated by SBTi"
+        },
+        {
+          "date": "2025",
+          "title": "Renewable",
+          "desc": "100% renewable electricity"
+        },
+        {
+          "date": "2030",
+          "title": "Net Zero",
+          "desc": "Full value chain target"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Governance",
+      "heading": "ESG Governance Structure",
+      "headers": [
+        "Level",
+        "Body",
+        "Frequency",
+        "Focus"
+      ],
+      "rows": [
+        [
+          "Board",
+          "ESG Committee",
+          "Quarterly",
+          "Strategy & targets"
+        ],
+        [
+          "C-Suite",
+          "Sustainability Council",
+          "Monthly",
+          "Execution & KPIs"
+        ],
+        [
+          "Operations",
+          "Green Teams",
+          "Bi-weekly",
+          "Project delivery"
+        ],
+        [
+          "External",
+          "Advisory Panel",
+          "Semi-annual",
+          "Stakeholder alignment"
+        ]
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Growth without conscience is just extraction. We're building a company that can look at the next generation and say: we left it better.",
+      "attribution": "Sustainability Charter"
+    },
+    {
+      "type": "end",
+      "text": "Roots & Growth · Sustainability Report 2026"
+    }
+  ]
+}
