@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Demo Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fontLink" rel="stylesheet">
+<style id="themeVars"></style>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  height: 100vh;
+  font-family: var(--demo-font, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+#deck {
+  width: 1280px;
+  height: 720px;
+  position: relative;
+  transform-origin: top left;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px 112px;
+  background: var(--bg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.48s cubic-bezier(0.16, 1, 0.3, 1), transform 0.48s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(18px);
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--accent), transparent 92%) 1px, transparent 1px),
+    linear-gradient(180deg, color-mix(in srgb, var(--accent), transparent 94%) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: var(--grid-opacity, 0);
+}
+
+.slide > * { position: relative; z-index: 1; }
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  width: 0;
+  z-index: 100;
+  transition: width 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-num,
+.keys,
+.back-link {
+  position: fixed;
+  z-index: 110;
+  color: var(--text-3);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.page-num { right: 36px; bottom: 28px; }
+.keys { left: 36px; bottom: 28px; opacity: 0.72; }
+.back-link {
+  left: 36px;
+  top: 24px;
+  color: var(--text-2);
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--surface), transparent 16%);
+}
+
+body.frame-academic .back-link,
+body.frame-medical .back-link,
+body.frame-brand-red .back-link {
+  left: auto;
+  right: 36px;
+}
+
+#timer {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 110;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+#notes-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background: color-mix(in srgb, var(--surface), #000 18%);
+  border-top: 1px solid var(--border);
+  color: var(--text-2);
+  padding: 16px 48px;
+  max-height: 170px;
+  overflow-y: auto;
+  transform: translateY(100%);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#notes-panel.visible { transform: translateY(0); }
+.notes-label {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.label {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: var(--text);
+  font-size: 88px;
+  font-weight: 850;
+  letter-spacing: -3px;
+  line-height: 0.96;
+  max-width: 12ch;
+}
+
+h2 {
+  color: var(--text);
+  font-size: 56px;
+  font-weight: 780;
+  letter-spacing: -1.8px;
+  line-height: 1.05;
+  max-width: 14ch;
+}
+
+p {
+  color: var(--text-2);
+  font-size: 20px;
+  line-height: 1.55;
+  max-width: 58ch;
+}
+
+.cover {
+  justify-content: flex-end;
+  padding-bottom: 88px;
+}
+
+.cover .subtitle {
+  margin-top: 18px;
+  font-size: 24px;
+  max-width: 34ch;
+}
+
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-2);
+  font-size: 14px;
+  margin-top: 28px;
+}
+
+.stamp i {
+  width: 44px;
+  height: 2px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 58px;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius, 8px);
+  padding: 24px;
+  min-height: 150px;
+}
+
+.card strong {
+  display: block;
+  color: var(--text);
+  font-size: 22px;
+  letter-spacing: -0.4px;
+  margin-bottom: 10px;
+}
+
+.card span {
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 34px;
+}
+
+.stat {
+  border-top: 2px solid var(--accent);
+  padding-top: 18px;
+}
+
+.stat strong {
+  display: block;
+  color: var(--accent);
+  font-size: 60px;
+  letter-spacing: -2.5px;
+  line-height: 1;
+}
+
+.stat span {
+  display: block;
+  color: var(--text-3);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.flow-step {
+  min-height: 170px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius, 8px);
+  padding: 20px;
+}
+
+.flow-step b {
+  display: block;
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  margin-bottom: 18px;
+}
+
+.flow-step strong {
+  display: block;
+  color: var(--text);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.flow-step span {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.bars {
+  display: grid;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 60px;
+  gap: 18px;
+  align-items: center;
+  color: var(--text-2);
+  font-size: 16px;
+}
+
+.bar-track {
+  height: 14px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent), transparent 88%);
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2, var(--accent)));
+}
+
+.quote {
+  border-left: 3px solid var(--accent);
+  padding-left: 28px;
+  max-width: 760px;
+}
+
+.quote p {
+  color: var(--text);
+  font-size: 40px;
+  letter-spacing: -1.2px;
+  line-height: 1.18;
+  max-width: none;
+}
+
+.quote span {
+  display: block;
+  color: var(--text-3);
+  font-size: 16px;
+  margin-top: 22px;
+}
+
+.end {
+  justify-content: flex-end;
+  padding-bottom: 96px;
+}
+
+.end h2 {
+  max-width: 17ch;
+  font-size: 64px;
+}
+
+.mini-note {
+  color: var(--text-3);
+  font-size: 14px;
+  margin-top: 28px;
+}
+
+/* --- Section divider --- */
+.slide.section-divider {
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-divider h2 {
+  font-size: 72px;
+  letter-spacing: -2.4px;
+  max-width: 16ch;
+}
+.section-divider .subtitle {
+  color: var(--text-2);
+  font-size: 22px;
+  margin-top: 14px;
+  max-width: 38ch;
+  line-height: 1.45;
+}
+.section-divider .section-num {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* --- Two-column --- */
+.slide-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+  margin-top: 28px;
+}
+.slide-two-col .col h3 {
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.slide-two-col .col p {
+  color: var(--text-2);
+  font-size: 17px;
+  line-height: 1.55;
+}
+.slide-two-col .col ul {
+  list-style: none;
+  padding: 0;
+}
+.slide-two-col .col li {
+  color: var(--text-2);
+  font-size: 17px;
+  line-height: 1.55;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.slide-two-col .col li:last-child { border-bottom: none; }
+
+/* --- Comparison columns --- */
+.comparison {
+  display: grid;
+  gap: 20px;
+  margin-top: 28px;
+}
+.comparison.cols-2 { grid-template-columns: 1fr 1fr; }
+.comparison.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+.cmp-col {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius, 8px);
+  padding: 24px;
+}
+.cmp-col .cmp-head {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent);
+}
+.cmp-col ul {
+  list-style: none;
+  padding: 0;
+}
+.cmp-col li {
+  color: var(--text-2);
+  font-size: 15px;
+  line-height: 1.45;
+  padding: 5px 0;
+}
+
+/* --- Timeline --- */
+.timeline {
+  display: flex;
+  gap: 0;
+  margin-top: 36px;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border);
+}
+.tl-event {
+  flex: 1;
+  padding-top: 28px;
+  position: relative;
+  padding-right: 16px;
+}
+.tl-event::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.tl-event .tl-date {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.tl-event strong {
+  display: block;
+  color: var(--text);
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.tl-event span {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* --- Table / matrix --- */
+.slide-table {
+  width: 100%;
+  margin-top: 28px;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.slide-table th {
+  color: var(--text);
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--accent);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.slide-table td {
+  color: var(--text-2);
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.slide-table tr:last-child td { border-bottom: none; }
+.slide-table td:first-child { color: var(--text); font-weight: 600; }
+
+/* --- Big number --- */
+.slide.big-number {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.big-number .hero-num {
+  color: var(--accent);
+  font-size: 160px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  line-height: 1;
+}
+.big-number .hero-label {
+  color: var(--text);
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 8px;
+  letter-spacing: -0.6px;
+}
+.big-number .hero-desc {
+  color: var(--text-2);
+  font-size: 20px;
+  margin-top: 16px;
+  max-width: 44ch;
+  line-height: 1.5;
+}
+
+/* --- Image-text placeholder --- */
+.img-placeholder {
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--accent), transparent 82%),
+    color-mix(in srgb, var(--surface), transparent 20%));
+  border-radius: var(--card-radius, 8px);
+  border: 1px solid var(--border);
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-3);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+body.frame-tech { --grid-opacity: 0.34; }
+body.frame-pixel { --grid-opacity: 0.42; --card-radius: 0px; }
+body.frame-pixel .card,
+body.frame-pixel .flow-step {
+  border-width: 2px;
+  box-shadow: 8px 8px 0 color-mix(in srgb, var(--accent), transparent 80%);
+}
+body.frame-academic .slide,
+body.frame-medical .slide,
+body.frame-brand-red .slide {
+  padding-top: 110px;
+}
+body.frame-academic .slide::after,
+body.frame-medical .slide::after,
+body.frame-brand-red .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 66px;
+  background: var(--accent);
+}
+body.frame-split .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 52px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2, var(--accent)));
+}
+body.frame-google .progress {
+  background: linear-gradient(90deg, #4285f4 0 25%, #34a853 25% 50%, #fbbc05 50% 75%, #ea4335 75% 100%);
+}
+body.frame-psych .progress {
+  background: linear-gradient(90deg, #2e5c8e, #3d8b7a, #e07843);
+}
+body.frame-brutalist { --card-radius: 0px; }
+body.frame-brutalist .slide {
+  padding-left: 86px;
+  padding-right: 86px;
+}
+body.frame-brutalist .card,
+body.frame-brutalist .flow-step {
+  border-width: 2px;
+}
+body.frame-brutalist .label {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+body.frame-glass { --grid-opacity: 0.26; }
+body.frame-glass .card,
+body.frame-glass .flow-step {
+  backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 18px 60px rgba(0,0,0,0.22);
+}
+body.frame-swiss { --card-radius: 0px; }
+body.frame-swiss .slide {
+  padding-left: 96px;
+}
+body.frame-swiss .label {
+  color: var(--accent);
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+body.frame-memphis { --card-radius: 0px; }
+body.frame-memphis .slide::before {
+  opacity: 0.18;
+  background:
+    radial-gradient(circle at 18% 22%, var(--accent) 0 10px, transparent 11px),
+    radial-gradient(circle at 78% 18%, var(--accent-2) 0 12px, transparent 13px),
+    linear-gradient(135deg, transparent 0 46%, var(--accent-3) 47% 53%, transparent 54% 100%);
+}
+body.frame-memphis .card,
+body.frame-memphis .flow-step {
+  border: 3px solid var(--border);
+  box-shadow: 8px 8px 0 var(--accent-3);
+}
+body.frame-zine { --card-radius: 0px; }
+body.frame-zine .slide::before {
+  opacity: 0.25;
+  background-image: radial-gradient(circle, rgba(26,26,26,0.22) 1px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+body.frame-zine .card,
+body.frame-zine .flow-step {
+  border: 2px solid var(--border);
+  transform: rotate(-0.4deg);
+}
+body.frame-blueprint { --grid-opacity: 0.5; }
+body.frame-blueprint .card,
+body.frame-blueprint .flow-step {
+  background: color-mix(in srgb, var(--surface), transparent 20%);
+  border-style: dashed;
+}
+body.frame-ink .slide::before {
+  opacity: 0.15;
+  background: radial-gradient(circle at 82% 18%, color-mix(in srgb, var(--accent), transparent 70%), transparent 30%);
+}
+body.frame-ink .label {
+  letter-spacing: 0.4em;
+}
+</style>
+</head>
+<body tabindex="-1">
+<div id="deck"></div>
+
+<a class="back-link" href="theme-sampler.html">← Sampler</a>
+<div class="progress" id="progress"></div>
+<div class="page-num" id="pageNum"></div>
+<div class="keys">← → / Space · F Fullscreen · T Timer · N Notes</div>
+<div id="timer">00:00</div>
+<div id="notes-panel"><div class="notes-label">Speaker Notes</div><div id="notes-content"></div></div>
+
+<script src="theme-data.js?v=2"></script>
+<script>
+const { previews, themeVars, fontUrl, slugify } = window.SLIDES_THEME_DATA;
+const params = new URLSearchParams(location.search);
+const requested = params.get("style") || location.hash.replace("#", "") || "obsidian";
+const item = previews.find(entry => entry.slug === requested) || previews[0];
+const deck = document.getElementById("deck");
+const notesPanel = document.getElementById("notes-panel");
+const notesContent = document.getElementById("notes-content");
+const progress = document.getElementById("progress");
+const pageNum = document.getElementById("pageNum");
+const timerEl = document.getElementById("timer");
+let cur = 0;
+let notesVisible = false;
+let timerStart = 0;
+let timerInterval = null;
+let timerVisible = false;
+
+document.title = `${item.name} Demo Deck`;
+document.getElementById("fontLink").href = fontUrl(item);
+document.getElementById("themeVars").textContent = `${themeVars(item)}
+:root {
+  --demo-font: ${item.vars.font};
+  --accent-2: ${item.vars.accent2 || item.vars.accent};
+  --accent-3: ${item.vars.accent3 || item.vars.accent2 || item.vars.accent};
+}`;
+document.body.classList.add(`frame-${item.frame}`);
+
+function renderSlide(s, i, total, kind) {
+  const cls = i === 0 ? "slide cover active" : "slide" + (s.type === "end" ? " end" : "") + (s.type === "section" ? " section-divider" : "") + (s.type === "big-number" ? " big-number" : "");
+  switch (s.type) {
+    case "cover":
+      return `<section class="${cls}" data-slide-type="cover" data-rhythm="anchor">
+        <div class="label">${kind} · Full Demo</div>
+        <h1>${s.title || item.name}</h1>
+        <p class="subtitle">${s.subtitle || item.desc}</p>
+        ${s.info ? `<p class="subtitle" style="font-size:16px;margin-top:8px;color:var(--text-3)">${s.info}</p>` : ""}
+        <div class="stamp"><i></i><span>${total}-slide playable preview · 1280×720</span></div>
+      </section>`;
+    case "section":
+      return `<section class="${cls}" data-slide-type="section" data-rhythm="breath">
+        ${s.label ? `<div class="section-num">${s.label}</div>` : ""}
+        <h2>${s.title}</h2>
+        ${s.subtitle ? `<div class="subtitle">${s.subtitle}</div>` : ""}
+      </section>`;
+    case "cards":
+      return `<section class="${cls}" data-slide-type="three-column" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        <div class="cards">${(s.items || []).map(c => `<div class="card"><strong>${c.title}</strong><span>${c.desc}</span></div>`).join("")}</div>
+      </section>`;
+    case "stats":
+      return `<section class="${cls}" data-slide-type="stats-row" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        ${s.desc ? `<p>${s.desc}</p>` : ""}
+        <div class="stat-row">${(s.items || []).map(st => `<div class="stat"><strong>${st.value}</strong><span>${st.label}</span></div>`).join("")}</div>
+      </section>`;
+    case "flow":
+      return `<section class="${cls}" data-slide-type="flow" data-rhythm="dense">
+        <div class="label">${s.label || "Flow"}</div>
+        <h2>${s.heading}</h2>
+        <div class="flow">${(s.steps || []).map((st, j) => `<div class="flow-step"><b>${String(j + 1).padStart(2, "0")}</b><strong>${st.title}</strong><span>${st.desc}</span></div>`).join("")}</div>
+      </section>`;
+    case "bars":
+      return `<section class="${cls}" data-slide-type="diagram" data-rhythm="dense">
+        <div class="two-col"><div>
+          <div class="label">${s.label || ""}</div>
+          <h2>${s.heading}</h2>
+          ${s.desc ? `<p>${s.desc}</p>` : ""}
+        </div><div class="bars">${(s.items || []).map(b => `<div class="bar-row"><span>${b.label}</span><div class="bar-track"><div class="bar-fill" style="width:${b.value}%"></div></div><span>${b.value}</span></div>`).join("")}</div></div>
+      </section>`;
+    case "two-column":
+      return `<section class="${cls}" data-slide-type="two-column" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        <div class="slide-two-col">
+          <div class="col">${s.left.title ? `<h3>${s.left.title}</h3>` : ""}${Array.isArray(s.left.points) ? `<ul>${s.left.points.map(p => `<li>${p}</li>`).join("")}</ul>` : `<p>${s.left.text || s.left}</p>`}</div>
+          <div class="col">${s.right.title ? `<h3>${s.right.title}</h3>` : ""}${Array.isArray(s.right.points) ? `<ul>${s.right.points.map(p => `<li>${p}</li>`).join("")}</ul>` : `<p>${s.right.text || s.right}</p>`}</div>
+        </div>
+      </section>`;
+    case "comparison":
+      return `<section class="${cls}" data-slide-type="comparison" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        <div class="comparison cols-${(s.columns || []).length}">${(s.columns || []).map(col => `<div class="cmp-col"><div class="cmp-head">${col.title}</div><ul>${(col.points || []).map(p => `<li>${p}</li>`).join("")}</ul></div>`).join("")}</div>
+      </section>`;
+    case "timeline":
+      return `<section class="${cls}" data-slide-type="timeline" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        <div class="timeline">${(s.events || []).map(e => `<div class="tl-event"><div class="tl-date">${e.date}</div><strong>${e.title}</strong><span>${e.desc || ""}</span></div>`).join("")}</div>
+      </section>`;
+    case "table":
+      return `<section class="${cls}" data-slide-type="table" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        <table class="slide-table"><thead><tr>${(s.headers || []).map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${(s.rows || []).map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>
+      </section>`;
+    case "big-number":
+      return `<section class="${cls}" data-slide-type="big-number" data-rhythm="breath">
+        <div class="hero-num">${s.number}</div>
+        <div class="hero-label">${s.label}</div>
+        ${s.desc ? `<div class="hero-desc">${s.desc}</div>` : ""}
+      </section>`;
+    case "image-text":
+      return `<section class="${cls}" data-slide-type="image-text" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading}</h2>
+        <div class="slide-two-col">
+          <div class="img-placeholder">${s.imgAlt || "IMAGE"}</div>
+          <div class="col">${Array.isArray(s.points) ? `<ul>${s.points.map(p => `<li>${p}</li>`).join("")}</ul>` : `<p>${s.text || ""}</p>`}</div>
+        </div>
+      </section>`;
+    case "quote":
+      return `<section class="${cls}" data-slide-type="quote" data-rhythm="breath">
+        <div class="quote">
+          <p>${s.text}</p>
+          ${s.attribution ? `<span>${s.attribution}</span>` : ""}
+        </div>
+      </section>`;
+    case "end":
+      return `<section class="${cls}" data-slide-type="end" data-rhythm="breath">
+        <div class="quote">
+          <p>${s.text || s.heading || ""}</p>
+          <span>${item.name} · ${kind} · ${item.mode} mode</span>
+        </div>
+        <div class="mini-note">Use ← →, Space, F, T, and N while reviewing.</div>
+      </section>`;
+    default:
+      return `<section class="${cls}" data-slide-type="${s.type}" data-rhythm="dense">
+        <div class="label">${s.label || ""}</div>
+        <h2>${s.heading || s.title || ""}</h2>
+        ${s.desc ? `<p>${s.desc}</p>` : ""}
+      </section>`;
+  }
+}
+
+function slideMarkup() {
+  const kind = item.kind === "core" ? "Core Theme" : `${item.kind[0].toUpperCase()}${item.kind.slice(1)} Preset`;
+  const dc = item.demoContent;
+
+  if (dc?.slides) {
+    return dc.slides.map((s, i) => renderSlide(s, i, dc.slides.length, kind)).join("\n");
+  }
+
+  const cardsLabel = dc?.cardsLabel || "System Check";
+  const cardsHeading = dc?.cardsHeading || "What this style needs to prove";
+  const cards = dc?.cards || [
+    { title: "Hierarchy", desc: "Can the eye land on one idea before scanning the supporting structure?" },
+    { title: "Density", desc: "Can regular content stay readable without becoming a wall of cards?" },
+    { title: "Rhythm", desc: "Can anchor, dense, and breathing slides feel like one family?" }
+  ];
+  const statsHeading = dc?.statsHeading || "Numbers should carry the room";
+  const statsDesc = dc?.statsDesc || "Metric slides test contrast, spacing, and whether accents are strong enough without overwhelming the content.";
+  const stats = dc?.stats || [
+    { value: "93%", label: "Primary metric clarity" },
+    { value: "2.4s", label: "Time-to-scan target" },
+    { value: "6", label: "Distinct slide rhythms" }
+  ];
+  const stepsHeading = dc?.stepsHeading || "A complete deck needs process language";
+  const steps = dc?.steps || [
+    { title: "Frame", desc: "Set the argument and audience expectation." },
+    { title: "Structure", desc: "Group the content into a clear sequence." },
+    { title: "Evidence", desc: "Use numbers, diagrams, and contrast." },
+    { title: "Close", desc: "Leave one decision or memory behind." }
+  ];
+  const barsHeading = dc?.barsHeading || "Visual systems are judged in layers";
+  const barsDesc = dc?.barsDesc || "Theme demos need charts, labels, cards, and body copy on the same canvas so weak combinations surface early.";
+  const bars = dc?.bars || [
+    { label: "Typography", value: 86 },
+    { label: "Color contrast", value: 74 },
+    { label: "Card density", value: 68 },
+    { label: "Presentation chrome", value: 58 }
+  ];
+  const quote = dc?.quote || "Pick the style that makes the argument easier to believe.";
+
+  return renderSlide({ type: "cover" }, 0, 6, kind)
+    + renderSlide({ type: "cards", label: cardsLabel, heading: cardsHeading, items: cards }, 1, 6, kind)
+    + renderSlide({ type: "stats", label: cardsLabel, heading: statsHeading, desc: statsDesc, items: stats }, 2, 6, kind)
+    + renderSlide({ type: "flow", heading: stepsHeading, steps }, 3, 6, kind)
+    + renderSlide({ type: "bars", label: "Signal Mix", heading: barsHeading, desc: barsDesc, items: bars }, 4, 6, kind)
+    + renderSlide({ type: "end", text: quote }, 5, 6, kind);
+}
+
+deck.innerHTML = slideMarkup();
+const slides = Array.from(document.querySelectorAll(".slide"));
+
+function scaleDeck() {
+  const s = Math.min(window.innerWidth / 1280, window.innerHeight / 720);
+  deck.style.transform = `scale(${s})`;
+  deck.style.marginLeft = `${(window.innerWidth - 1280 * s) / 2}px`;
+  deck.style.marginTop = `${(window.innerHeight - 720 * s) / 2}px`;
+}
+
+function updateNotes() {
+  const slideEl = slides[cur];
+  const type = slideEl?.getAttribute("data-slide-type") || "";
+  const noteMap = {
+    cover: `This opening slide establishes ${item.name}. Evaluate whether the type hierarchy, accent color, and overall density set up a professional first impression.`,
+    section: "Section dividers test the theme's ability to create breathing room. The transition should feel clean.",
+    "three-column": "Card layouts test density control: labels, headings, and body copy should feel coherent in the visual language.",
+    "stats-row": "Metric slides test whether numbers, labels, and evidence have enough contrast without overwhelming the content.",
+    flow: "Process slides show how the style handles sequences. Watch spacing, card shape, and accent behavior.",
+    diagram: "Data visualization slides test chart-like rhythm without relying on a charting library.",
+    "two-column": "Two-column layouts test information balance. Both sides should feel visually weighted.",
+    comparison: "Comparison slides test whether parallel structures are easy to scan across columns.",
+    timeline: "Timeline slides test horizontal rhythm and the theme's ability to handle sequential markers.",
+    table: "Table slides test grid legibility. Borders, header contrast, and cell density all matter.",
+    "big-number": "Hero number slides test whether the accent color is strong enough at display size.",
+    "image-text": "Image-text slides test mixed media layout. The placeholder represents a real image area.",
+    quote: "Quote slides test restraint. The theme should let the words carry the weight.",
+    end: "The closing slide checks whether the theme can end with restraint and a strong final note."
+  };
+  notesContent.textContent = noteMap[type] || "";
+}
+
+function go(n, pushHash = true) {
+  if (n < 0 || n >= slides.length) return;
+  slides[cur].classList.remove("active");
+  cur = n;
+  slides[cur].classList.add("active");
+  progress.style.width = `${cur / (slides.length - 1) * 100}%`;
+  pageNum.textContent = `${cur + 1} / ${slides.length}`;
+  updateNotes();
+  if (pushHash) history.replaceState(null, "", `?style=${item.slug}#${cur + 1}`);
+  if (cur > 0 && !timerInterval) startTimer();
+}
+
+function goFromHash() {
+  const n = Number(location.hash.replace("#", ""));
+  if (Number.isFinite(n) && n > 0) go(Math.min(n - 1, slides.length - 1), false);
+}
+
+function toggleNotes() {
+  notesVisible = !notesVisible;
+  notesPanel.classList.toggle("visible", notesVisible);
+}
+
+function startTimer() {
+  if (timerInterval) return;
+  timerStart = Date.now();
+  timerInterval = setInterval(() => {
+    const seconds = Math.floor((Date.now() - timerStart) / 1000);
+    const minutes = Math.floor(seconds / 60);
+    timerEl.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`;
+  }, 1000);
+}
+
+function toggleTimer() {
+  timerVisible = !timerVisible;
+  timerEl.style.opacity = timerVisible ? "1" : "0";
+  if (timerVisible) startTimer();
+}
+
+document.addEventListener("keydown", event => {
+  if (event.key === "ArrowRight" || event.key === " " || event.key === "PageDown") { event.preventDefault(); go(cur + 1); }
+  else if (event.key === "ArrowLeft" || event.key === "PageUp") { event.preventDefault(); go(cur - 1); }
+  else if (event.key === "Home") go(0);
+  else if (event.key === "End") go(slides.length - 1);
+  else if (event.key === "f" || event.key === "F") document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+  else if (event.key === "n" || event.key === "N") toggleNotes();
+  else if (event.key === "t" || event.key === "T") toggleTimer();
+});
+
+document.addEventListener("fullscreenchange", () => {
+  if (document.fullscreenElement) {
+    timerVisible = true;
+    timerEl.style.opacity = "1";
+    startTimer();
+  }
+});
+
+let touchX = 0;
+document.addEventListener("touchstart", event => { touchX = event.touches[0].clientX; });
+document.addEventListener("touchend", event => {
+  const delta = event.changedTouches[0].clientX - touchX;
+  if (Math.abs(delta) > 50) delta < 0 ? go(cur + 1) : go(cur - 1);
+});
+
+document.addEventListener("click", event => {
+  if (event.target.closest("a")) return;
+  event.clientX > window.innerWidth / 2 ? go(cur + 1) : go(cur - 1);
+});
+
+window.addEventListener("resize", scaleDeck);
+window.addEventListener("hashchange", goFromHash);
+scaleDeck();
+go(0, false);
+goFromHash();
+</script>
+</body>
+</html>

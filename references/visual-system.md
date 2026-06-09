@@ -4,7 +4,7 @@ Design tokens and customization guide for the slides framework.
 
 ## Color Tokens
 
-> **8 theme presets are defined in `references/themes.md`** — including Obsidian (dark+gold), Glacier (dark+blue), Paper (light+blue), Ink (light+indigo), Ember (dark+red), Forest (dark+green), Neon (dark+purple), and Mono (dark+white). See that file for complete `:root` CSS blocks, font URLs, and usage guidance.
+> **12 core theme presets are defined in `references/themes.md`** — including Obsidian, Glacier, Paper, Ink, Ember, Forest, Neon, Mono, Dusk, Slate, Sand, and Crimson. Brand / layout / industry deck presets adapted from `ppt-master` are defined in `references/style-presets.md`. See those files for complete `:root` CSS blocks, font URLs, and usage guidance.
 
 ### CSS Variable Reference
 
@@ -65,12 +65,16 @@ Each theme preset in `references/themes.md` pairs a specific font with its color
 
 | Font | Style | Used By |
 |------|-------|---------|
-| Outfit | Geometric display | Obsidian, Forest |
+| Outfit | Geometric display | Obsidian, Forest, Crimson |
 | Inter | Technical, neutral | Glacier |
 | DM Sans | Clean, rounded | Paper |
 | Playfair Display | Serif, editorial | Ink |
 | Space Grotesk | Bold, geometric | Ember, Neon |
 | JetBrains Mono | Monospace, hacker | Mono |
+| Sora | Refined geometric | Dusk |
+| Manrope | Quiet corporate | Slate |
+| Plus Jakarta Sans | Warm editorial | Sand |
+| Noto Sans SC | CJK deck typography | style presets |
 
 ## Spacing System
 

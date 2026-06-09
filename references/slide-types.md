@@ -33,7 +33,7 @@ Pick the right type for each slide's content — don't default to bullet lists.
 The opening slide. Sets tone, provides context. Use `class="slide cover active"` for the first slide.
 
 ```html
-<div class="slide cover active">
+<div class="slide cover active" data-slide-type="cover" data-rhythm="anchor">
   <p style="font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-3); margin-bottom: 20px;">TEAM NAME · DATE</p>
   <h1>Presentation Title</h1>
   <p style="margin-top: 12px; font-size: 20px; color: var(--text-2);">Subtitle or tagline</p>
@@ -50,7 +50,7 @@ The opening slide. Sets tone, provides context. Use `class="slide cover active"`
 Chapter divider. Signals a topic shift. Minimal content, maximum breathing room.
 
 ```html
-<div class="slide section-intro">
+<div class="slide section-intro" data-slide-type="section-intro" data-rhythm="anchor">
   <div class="label">Part N · Section Label</div>
   <h2>Section Title</h2>
   <p style="margin-top: 8px; font-size: 18px; color: var(--text-2);">Optional one-line subtitle</p>
@@ -66,7 +66,7 @@ Chapter divider. Signals a topic shift. Minimal content, maximum breathing room.
 One bold claim that fills the slide. No supporting detail — the speaker provides context verbally. **No label** — the statement itself is the entry point. Adding a label above a statement weakens it.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="statement" data-rhythm="breath" style="align-items: flex-start;">
   <p style="font-size: 48px; font-weight: 700; line-height: 1.2; color: var(--text); letter-spacing: -1.5px; max-width: 18ch;">The bold<br>statement here</p>
   <p style="margin-top: 20px; font-size: 20px; color: var(--text-2); max-width: 36ch;">One supporting sentence that adds nuance.</p>
 </div>
@@ -81,7 +81,7 @@ One bold claim that fills the slide. No supporting detail — the speaker provid
 Side-by-side layout for comparisons, parallel concepts, or text + visual.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="two-column" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Slide Title</h3>
   <div class="two-col">
     <div class="block bordered">
@@ -120,7 +120,7 @@ Side-by-side layout for comparisons, parallel concepts, or text + visual.
 Three content blocks. Default is equal-width, but **prefer the asymmetric variant** to avoid the "three pillars" AI pattern.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="three-column" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Slide Title</h3>
   <div class="three-col">
     <div style="padding: 18px; background: var(--surface); border-radius: 8px; border-top: 2px solid var(--accent);">
@@ -142,7 +142,7 @@ Three content blocks. Default is equal-width, but **prefer the asymmetric varian
 **Variant — 1-big + 2-small (asymmetric, preferred):**
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="three-column" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Slide Title</h3>
   <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; margin-top: 20px;">
     <div style="padding: 24px; background: var(--surface); border-radius: 10px; border-left: 3px solid var(--accent); grid-row: span 2;">
@@ -172,7 +172,7 @@ Three content blocks. Default is equal-width, but **prefer the asymmetric varian
 A single metric that tells the story. The number is the hero. **No label needed** — the number itself is the entry point.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="big-number" data-rhythm="breath" style="align-items: flex-start;">
   <div style="display: flex; align-items: baseline; gap: 16px; margin: 12px 0 24px;">
     <span style="font-size: 120px; font-weight: 800; color: var(--accent); letter-spacing: -4px; line-height: 1;">93%</span>
     <span style="font-size: 22px; color: var(--text-2);">descriptive label for the number</span>
@@ -191,7 +191,7 @@ A single metric that tells the story. The number is the hero. **No label needed*
 Before/After or Old/New with visual distinction between sides.
 
 ```html
-<div class="slide">
+<div class="slide" data-slide-type="comparison" data-rhythm="dense">
   <h3>Slide Title</h3>
   <div class="compare" style="margin-top: 12px;">
     <div class="compare-side old">
@@ -219,7 +219,7 @@ Before/After or Old/New with visual distinction between sides.
 Expert opinion, user testimonial, or memorable phrase. **No label** — the quote mark and left border are enough visual signal.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="quote" data-rhythm="breath" style="align-items: flex-start;">
   <div class="quote-block">
     <p>"The quoted text goes here. Keep it under two lines for readability."</p>
     <div class="attr">— Author Name, Title/Organization</div>
@@ -237,7 +237,7 @@ Expert opinion, user testimonial, or memorable phrase. **No label** — the quot
 Process visualization using CSS flex boxes and arrows.
 
 ```html
-<div class="slide">
+<div class="slide" data-slide-type="flow" data-rhythm="dense">
   <h3>Process Title</h3>
   <div class="flow-visual">
     <div class="flow-step active-step">Step 1</div>
@@ -263,7 +263,7 @@ Use `active-step` class to highlight key steps (typically the start and end, or 
 Code snippet or terminal output. Uses monospace styling.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="code" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Code Title</h3>
   <div class="mono">Agent(
   name="reviewer",
@@ -294,7 +294,7 @@ Code snippet or terminal output. Uses monospace styling.
 Hierarchical breakdown with tagged levels. Good for architectures and taxonomies.
 
 ```html
-<div class="slide">
+<div class="slide" data-slide-type="layer-stack" data-rhythm="dense">
   <h3>Stack Title</h3>
   <div class="layer-stack">
     <div class="layer-item">
@@ -326,7 +326,7 @@ Hierarchical breakdown with tagged levels. Good for architectures and taxonomies
 Inline SVG for custom visuals — network diagrams, flow charts, topologies.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="diagram" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Diagram Title</h3>
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 12px; width: 100%;">
     <!-- Left: SVG diagram -->
@@ -360,7 +360,7 @@ Inline SVG for custom visuals — network diagrams, flow charts, topologies.
 Multiple metrics displayed horizontally. **Use 2-3 stats, not 4+** — fewer numbers hit harder.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="stats-row" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Performance Metrics</h3>
   <div class="stat-row">
     <div class="stat">
@@ -382,7 +382,7 @@ Multiple metrics displayed horizontally. **Use 2-3 stats, not 4+** — fewer num
 **Variant — One hero stat + supporting context:**
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="stats-row" data-rhythm="dense" style="align-items: flex-start;">
   <div style="display: flex; align-items: baseline; gap: 16px; margin: 12px 0;">
     <span style="font-size: 96px; font-weight: 800; color: var(--accent); letter-spacing: -3px; line-height: 1;">90%</span>
     <span style="font-size: 20px; color: var(--text-2);">faster delivery</span>
@@ -411,7 +411,7 @@ Multiple metrics displayed horizontally. **Use 2-3 stats, not 4+** — fewer num
 2x2 card layout. **Vary the card content** — don't make all four cards identical in structure.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="four-grid" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Grid Title</h3>
   <div class="four-grid">
     <div class="block">
@@ -437,7 +437,7 @@ Multiple metrics displayed horizontally. **Use 2-3 stats, not 4+** — fewer num
 **Variant — 1-hero + 3-supporting (asymmetric):**
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="four-grid" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Grid Title</h3>
   <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 16px; margin-top: 16px;">
     <div style="grid-column: span 2; padding: 20px 24px; background: var(--accent-dim); border-radius: 10px; border-left: 3px solid var(--accent);">
@@ -467,7 +467,7 @@ Multiple metrics displayed horizontally. **Use 2-3 stats, not 4+** — fewer num
 Horizontal timeline with milestone markers.
 
 ```html
-<div class="slide" style="align-items: flex-start;">
+<div class="slide" data-slide-type="timeline" data-rhythm="dense" style="align-items: flex-start;">
   <h3>Timeline Title</h3>
   <div style="display: flex; align-items: center; gap: 0; margin: 20px 0; width: 100%; position: relative;">
     <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent), rgba(212,160,74,0.3)); transform: translateY(-50%);"></div>
@@ -490,7 +490,7 @@ Horizontal timeline with milestone markers.
 Closing slide. The simplest version is the strongest — **don't add a callout box underneath**.
 
 ```html
-<div class="slide end-slide">
+<div class="slide end-slide" data-slide-type="end" data-rhythm="anchor">
   <h2>The closing statement<br>goes here, making it<br><strong>memorable</strong>.</h2>
 </div>
 ```
@@ -498,7 +498,7 @@ Closing slide. The simplest version is the strongest — **don't add a callout b
 **Variant — Summary grid (max 3 rows, no callout):**
 
 ```html
-<div class="slide" style="align-items: flex-start; justify-content: center;">
+<div class="slide" data-slide-type="end" data-rhythm="anchor" style="align-items: flex-start; justify-content: center;">
   <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 14px 20px; align-items: center;">
     <p style="font-size: 19px; color: var(--text-3); text-align: right;">Old way</p>
     <span style="color: var(--accent); font-size: 18px;">→</span>
@@ -519,7 +519,7 @@ Closing slide. The simplest version is the strongest — **don't add a callout b
 Audience engagement slide with voting options or discussion prompt.
 
 ```html
-<div class="slide" style="align-items: flex-start; padding-top: 90px;">
+<div class="slide" data-slide-type="interactive-question" data-rhythm="breath" style="align-items: flex-start; padding-top: 90px;">
   <h2 style="font-size: 52px; font-weight: 700; line-height: 1.2; letter-spacing: -2px;">The question<br><span style="color: var(--accent);">to the audience?</span></h2>
   <div style="margin-top: 32px; display: flex; gap: 16px;">
     <div style="padding: 14px 28px; border: 2px solid rgba(80,200,120,0.4); border-radius: 10px; background: rgba(80,200,120,0.06); text-align: center; min-width: 140px;">
@@ -542,7 +542,7 @@ Audience engagement slide with voting options or discussion prompt.
 A near-empty slide that lets the audience reset. Use between dense sections. The simplest slide type — and the one AI almost never generates on its own.
 
 ```html
-<div class="slide" style="align-items: center; justify-content: center;">
+<div class="slide" data-slide-type="breath" data-rhythm="breath" style="align-items: center; justify-content: center;">
   <p style="font-size: 36px; font-weight: 300; color: var(--text-3); letter-spacing: -1px;">So what does this actually mean?</p>
 </div>
 ```
@@ -550,7 +550,7 @@ A near-empty slide that lets the audience reset. Use between dense sections. The
 **Variant — with accent highlight:**
 
 ```html
-<div class="slide" style="align-items: center; justify-content: center;">
+<div class="slide" data-slide-type="breath" data-rhythm="breath" style="align-items: center; justify-content: center;">
   <p style="font-size: 28px; font-weight: 400; color: var(--text-2);">We built it.</p>
   <p style="font-size: 28px; font-weight: 400; color: var(--text-2);">We shipped it.</p>
   <p style="font-size: 28px; font-weight: 700; color: var(--accent); margin-top: 8px;">Then we threw it away.</p>
@@ -566,7 +566,7 @@ A near-empty slide that lets the audience reset. Use between dense sections. The
 Full-slide visual with text overlay. Uses a gradient or solid background with a prominent SVG, emoji, or visual metaphor as the centerpiece. Breaks the "rectangles in rectangles" monotony.
 
 ```html
-<div class="slide" style="align-items: center; justify-content: center; background: radial-gradient(ellipse at 30% 50%, rgba(212,160,74,0.08) 0%, transparent 70%);">
+<div class="slide" data-slide-type="hero-image" data-rhythm="breath" style="align-items: center; justify-content: center; background: radial-gradient(ellipse at 30% 50%, rgba(212,160,74,0.08) 0%, transparent 70%);">
   <p style="font-size: 80px; margin-bottom: 24px;">🏗️</p>
   <p style="font-size: 36px; font-weight: 600; color: var(--text); letter-spacing: -1px;">Building in public</p>
   <p style="font-size: 18px; color: var(--text-3); margin-top: 8px;">What happens when you ship before it's ready</p>
@@ -576,7 +576,7 @@ Full-slide visual with text overlay. Uses a gradient or solid background with a 
 **Variant — SVG centerpiece:**
 
 ```html
-<div class="slide" style="align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(212,160,74,0.06) 0%, transparent 60%);">
+<div class="slide" data-slide-type="hero-image" data-rhythm="breath" style="align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(212,160,74,0.06) 0%, transparent 60%);">
   <svg viewBox="0 0 200 200" style="width: 160px; height: 160px; margin-bottom: 20px;">
     <circle cx="100" cy="100" r="80" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="8,4"/>
     <circle cx="100" cy="100" r="40" fill="var(--accent-dim)" stroke="var(--accent)" stroke-width="1.5"/>

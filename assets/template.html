@@ -211,13 +211,17 @@ td:first-child { color: var(--text); font-weight: 500; }
 
 <!-- ==========================================
      SLIDES GO HERE
-     Each slide is a <div class="slide">
+     Each slide is a <div class="slide" data-slide-type="..." data-rhythm="...">
      First slide needs class="slide cover active"
      ========================================== -->
 
 {{SLIDES}}
 
 </div><!-- /deck -->
+
+<script type="application/json" id="deck-lock">
+{{DECK_LOCK}}
+</script>
 
 <!-- Chrome -->
 <div class="progress" id="progress"></div>

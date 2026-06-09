@@ -25,26 +25,34 @@ This is not PowerPoint-as-HTML. These are **developer-grade presentations** with
 
 ## Workflow
 
-### 1. Choose a Theme (MUST be first)
+### 1. Choose a Theme or Style Preset (MUST be first)
 
-**This step is mandatory and comes before anything else.** Open `assets/theme-sampler.html` in the browser so the user can see all 8 themes as high-fidelity preview cards:
+**This step is mandatory and comes before anything else.** Open `assets/theme-sampler.html` in the browser so the user can see all visual directions as high-fidelity preview cards:
 
 ```bash
 open assets/theme-sampler.html
 ```
 
-The sampler shows each theme with identical neutral content (same metrics, same cards, same layout), so the user compares pure visual style — not topic associations.
+The sampler includes:
+- 12 core themes from `references/themes.md`
+- Brand / layout / deck presets and example styles adapted from `ppt-master` in `references/style-presets.md`
+
+The sampler shows each option with identical neutral content for fast comparison. Clicking any card opens `assets/theme-demo.html?style=<slug>` in a new page with a full 6-slide playable demo deck, including navigation, fullscreen, timer, and speaker notes.
 
 Then ask the user to pick one. **Do NOT auto-select a theme. Do NOT skip this step.** Even if the user's request implies urgency, the theme choice takes 5 seconds and affects the entire deck.
 
 **Anti-AI theme selection**: NEVER recommend a theme based on topic keywords. "AI topic → purple/neon" is the same cliché as "finance → green" or "healthcare → blue." If the user asks "which fits my topic," recommend based on *presentation context* (formal → Paper/Ink, high-energy → Ember, minimal → Mono) not the topic's semantic field.
 
-After the user picks a theme, read `references/themes.md` to get the exact CSS `:root` variables, Google Fonts URL, and `font-family` for that theme. Fill these into the template placeholders:
+After the user picks:
+- Core theme: read `references/themes.md`
+- Brand / layout / deck / example preset: read `references/style-presets.md`
+
+Use the exact CSS `:root` variables, Google Fonts URL, `font-family`, and layout DNA for that option. Fill these into the template placeholders:
 - `{{FONT_URL}}` — the Google Fonts `<link>` URL
 - `{{FONT_FAMILY}}` — the `font-family` CSS value (including fallbacks)
 - `{{THEME_VARS}}` — the complete `:root { ... }` CSS block
 
-**Light theme note**: For Paper and Ink themes, some inline styles need adjustment — see the notes in themes.md for `.compare-side.old` backgrounds, badge/tag backgrounds, and notes panel colors.
+**Light theme note**: For light themes and presets, some inline styles need adjustment — see the notes in themes.md and style-presets.md for `.compare-side.old` backgrounds, badge/tag backgrounds, and notes panel colors.
 
 ### 2. Understand the Presentation
 
@@ -74,7 +82,34 @@ Common narrative structures:
 - **Three pillars**: Setup → Pillar 1 → Pillar 2 → Pillar 3 → Synthesis
 - **Demo sandwich**: Context → Live demo → Takeaways
 
-### 4. Build the Deck
+### 4. Lock the Deck Contract
+
+Read `references/deck-contract.md`. Before writing HTML, create a compact `deck_plan.md` and `deck_lock.json` for the deck in the output directory or alongside the final HTML.
+
+The contract is mandatory because it prevents drift between narrative, theme, slide types, pacing, and speaker notes. `deck_lock.json` MUST include:
+- Chosen theme, canvas size, and font family
+- One slide entry per final slide
+- Slide `type` and `rhythm` for every slide
+- Notes text or notes intent for every slide
+- Quality thresholds (`max_callouts`, `max_label_ratio`, `require_breath_or_hero`, `no_adjacent_same_type`)
+
+When writing the final HTML, embed the lock exactly once:
+
+```html
+<script type="application/json" id="deck-lock">
+{ ...deck_lock.json content... }
+</script>
+```
+
+Every slide element MUST declare:
+
+```html
+data-slide-type="..." data-rhythm="..."
+```
+
+Use the allowed values from `references/deck-contract.md`. If a slide type is missing, the validator will infer it but this is treated as a warning and should be fixed.
+
+### 5. Build the Deck
 
 Read `assets/template.html` for the base HTML skeleton. This gives you the CSS design system, JavaScript engine (navigation, scaling, notes, timer), and structural boilerplate.
 
@@ -82,9 +117,11 @@ Read `assets/template.html` for the base HTML skeleton. This gives you the CSS d
 
 Read `references/slide-types.md` for the full catalog of slide type templates. Pick the right type for each slide's content.
 
+Read `references/visualizations.md` before creating custom diagrams, timelines, comparison visuals, architecture diagrams, or data/metric layouts. Pick visual forms by content shape, not by topic keywords.
+
 Read `references/visual-system.md` when you need to customize colors, fonts, or create new visual elements beyond the standard types.
 
-### 5. Write Speaker Notes
+### 6. Write Speaker Notes
 
 Every slide MUST have speaker notes in the `NOTES` array. Notes should be:
 - Conversational, not a script — bullet points of what to say
@@ -92,26 +129,39 @@ Every slide MUST have speaker notes in the `NOTES` array. Notes should be:
 - Include transition phrases ("So now that we've seen X, let's talk about Y...")
 - Mark audience interaction points ("Pause for questions", "Show of hands")
 
-### 6. Self-Check
+### 7. Validate
 
-Before delivering, verify:
+After writing the HTML, run:
+
+```bash
+python3 scripts/validate_deck.py <deck.html>
 ```
-[ ] Narrative flows — each slide leads naturally to the next
-[ ] No wall-of-text slides — if it has >40 words of body text, split or use visuals
+
+Fix every `ERROR` before delivering. Resolve `WARNING`s when the fix improves clarity or reliability. Use `--strict` when preparing a demo or public example.
+
+Validator-backed checks:
+```
+[ ] No unresolved template placeholders
+[ ] Exactly one active slide, and it is the first slide
 [ ] Speaker notes complete for every slide
-[ ] First slide has context (date, team, speaker name)
-[ ] Last slide has a clear ending (CTA, summary, or memorable closing)
-[ ] Slide count matches talk duration
-[ ] All SVG diagrams render correctly
-[ ] Font loads (Google Fonts CDN link present)
-[ ] Hash navigation works (#1, #2, etc.)
+[ ] Slide count matches NOTES count and deck-lock count
+[ ] Font URL is present
+[ ] Hash navigation, keyboard navigation, notes, timer, and scaling code are present
+[ ] No unknown slide type or rhythm values
 [ ] Anti-AI: no two adjacent slides share the same layout type
-[ ] Anti-AI: labels used on <40% of slides, never on Statement/Quote/Big Number/End
+[ ] Anti-AI: labels used on <40% of slides, never on Statement/Quote/Big Number/End/Breath
 [ ] Anti-AI: max 2 callout boxes in the entire deck
-[ ] Anti-AI: at least 1 Breath or Hero Image slide exists
-[ ] Anti-AI: parallel cards (3-col, 4-grid) don't mirror sentence structure
-[ ] Anti-AI: Summary grid has max 3 rows
+[ ] Anti-AI: at least 1 Breath or Hero Image slide exists in decks with 8+ slides
 ```
+
+Human visual checks still required:
+- Narrative flows — each slide leads naturally to the next
+- No wall-of-text slides — if a slide feels crowded, split it
+- First slide has context (date, team, speaker name)
+- Last slide has a clear ending (CTA, summary, or memorable closing)
+- Inline SVG diagrams render correctly in the browser
+- Parallel cards do not mirror sentence structure
+- Summary grid has max 3 rows
 
 ## Slide Design Principles
 
@@ -177,6 +227,8 @@ Always produce a **single .html file** that:
 - Renders at 1280x720 base resolution with automatic scaling
 - Works in any modern browser
 - Supports keyboard nav (←→), touch swipe, click, fullscreen (F), timer (T), notes (N)
+- Embeds `deck-lock` JSON and declares `data-slide-type` / `data-rhythm` on every slide
+- Passes `python3 scripts/validate_deck.py <deck.html>` with zero errors
 
 ## Customization
 

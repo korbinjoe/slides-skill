@@ -30,15 +30,17 @@ git clone git@github.com:korbinjoe/slides-skill.git ~/.claude/skills/slides
 
 ## What You Get
 
-- **12 themes** — dark premium, light editorial, monochrome, and more
+- **41 visual directions** — 12 core themes plus brand, layout, deck, and example styles adapted from `ppt-master`
+- **Playable theme demos** — every visual direction opens a full 6-slide deck preview
 - **19 slide types** — from bold statements to inline SVG diagrams
 - **Self-contained HTML** — single file, no external dependencies (except font CDN)
 - **Speaker notes + timer** — press `N` for notes, `T` for timer
 - **Keyboard navigation** — arrow keys, swipe, click, fullscreen (`F`)
+- **Deck contract + validator** — lock the plan, then check the generated HTML
 - **Anti-AI design system** — rhythm rules that prevent generated-looking decks
 - **1280x720 base** with automatic scaling to any screen
 
-## Themes
+## Themes And Style Presets
 
 | Theme | Mode | Accent | Font | Best For |
 |-------|------|--------|------|----------|
@@ -54,6 +56,15 @@ git clone git@github.com:korbinjoe/slides-skill.git ~/.claude/skills/slides
 | Slate | Dark | Steel Gray | Manrope | Understated, architectural |
 | Sand | Light | Warm Brown | Plus Jakarta Sans | Luxury, artisanal |
 | Crimson | Dark | Wine Red | Outfit | Authoritative, powerful |
+
+The interactive sampler also includes `ppt-master`-inspired presets:
+
+- **Brands**: Anthropic, Google
+- **Layouts**: Academic Defense, AI Ops, Government Blue, Government Red, Medical University, Pixel Retro, Psychology Attachment
+- **Deck presets**: China Telecom, POWERCHINA Classic/Modern, CATARC Business/Classic/Modern, CMB Transaction Banking, Chongqing University
+- **Example styles**: Brutalist Newspaper, Glassmorphism SaaS, Swiss Grid, Sugar Rush Memphis, Risograph Zine, Kubernetes Blueprint, Ink Wash Literati, Plant Dye Poetry, Pritzker Editorial, Global AI Capital, Warm Home Editorial, Fashion Magazine
+
+Click any sampler card to open a full playable demo deck in a new page. Demo decks support arrow-key navigation, swipe, click-to-advance, fullscreen (`F`), timer (`T`), and speaker notes (`N`).
 
 ## Quick Start
 
@@ -126,20 +137,33 @@ Then add the skill path to your Claude Code configuration.
 
 ## How It Works
 
-1. **Theme selection** — you pick from 12 visual themes via an interactive sampler
+1. **Visual direction selection** — you pick from 12 core themes or `ppt-master`-inspired style presets via an interactive sampler
 2. **Narrative planning** — the skill structures your content into a coherent arc
-3. **Slide generation** — each slide gets the right layout type for its content
-4. **Speaker notes** — every slide includes notes for the presenter
-5. **Single HTML output** — one file you can open, share, or host anywhere
+3. **Deck contract** — `deck_plan.md` and `deck_lock.json` keep theme, slide types, rhythm, and notes aligned
+4. **Slide generation** — each slide gets the right layout type for its content
+5. **Validation** — `scripts/validate_deck.py` checks structure, notes, anti-AI rhythm, and deck-lock consistency
+6. **Single HTML output** — one file you can open, share, or host anywhere
 
 The output is a single `.html` file with inline CSS, inline JS, and no build step. It renders at 1280x720 and scales automatically.
+
+## Validation
+
+Generated decks should pass the local validator:
+
+```bash
+python3 scripts/validate_deck.py path/to/deck.html
+```
+
+Use `--strict` for public examples or demos where warnings should fail the check.
 
 ## Contributing
 
 Contributions are welcome. Please keep changes focused:
 
 - **New themes** — add to `references/themes.md` following the existing format
+- **New style presets** — add to `references/style-presets.md` and the sampler data in `assets/theme-sampler.html`
 - **New slide types** — add to `references/slide-types.md` with HTML template and usage guidance
+- **New visual patterns** — add selection rules to `references/visualizations.md`
 - **Bug fixes** — open an issue first if the fix is non-trivial
 
 ## License
